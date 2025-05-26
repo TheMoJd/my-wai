@@ -1,0 +1,83 @@
+
+import React from 'react';
+import { ArrowRight, Check } from 'lucide-react';
+
+const Pricing = () => {
+  const features = [
+    "Livre de 6 chapitres thématiques",
+    "Jusqu'à 20 contributeurs",
+    "Édition professionnelle",
+    "Mise en page soignée",
+    "Livre relié de qualité",
+    "Livraison offerte",
+  ];
+
+  return (
+    <section className="section-padding bg-white relative" id="pricing">
+      <div className="container mx-auto px-4">
+        <h2 className="section-title">Un prix unique et transparent</h2>
+        <p className="section-subtitle">
+          Une offre complète pour créer un cadeau inestimable
+        </p>
+
+        <div className="max-w-3xl mx-auto mt-12 bg-gradient-to-br from-mywai-light/30 to-mywai/30 rounded-2xl shadow-xl p-1">
+          <div className="bg-white rounded-xl p-8 md:p-12">
+            <div className="text-center mb-8">
+              <span className="text-sm font-medium text-mywai-dark bg-mywai/20 px-3 py-1 rounded-full">
+                Offre complète
+              </span>
+              <div className="mt-6 flex items-center justify-center">
+                <span className="text-5xl font-display font-bold">100€</span>
+                <span className="ml-2 text-muted-foreground">TTC</span>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div>
+                <h3 className="text-xl font-display font-bold mb-4">Tout ce qui est inclus</h3>
+                <ul className="space-y-3">
+                  {features.map((feature, index) => (
+                    <li key={index} className="flex items-start">
+                      <Check className="h-5 w-5 text-mywai mr-2 flex-shrink-0 mt-0.5" />
+                      <span>{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="bg-cream rounded-xl p-6">
+                <h3 className="text-xl font-display font-bold mb-4">Comment procéder ?</h3>
+                <p className="text-muted-foreground mb-6">
+                  Lancez votre projet dès aujourd'hui et offrez un cadeau qui restera gravé dans les mémoires.
+                </p>
+                <a href="#contact" className="btn-demo w-full flex items-center justify-center gap-2">
+                  <span>Créer mon livre</span>
+                  <ArrowRight className="h-4 w-4" />
+                </a>
+                <p className="text-sm text-center text-muted-foreground mt-4">
+                  Paiement sécurisé - Satisfaction garantie
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-8 pt-6 border-t border-gray-100">
+              <h4 className="font-medium mb-2">Besoin d'options supplémentaires ?</h4>
+              <p className="text-sm text-muted-foreground">
+                Contactez-nous pour des demandes spéciales comme des exemplaires supplémentaires, une couverture personnalisée premium ou des pages supplémentaires.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-16 text-center">
+          <a href="#testimonials" className="btn-demo inline-flex items-center gap-2">
+            <span>Voir les avis clients</span>
+            <ArrowRight className="h-4 w-4" />
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Pricing;

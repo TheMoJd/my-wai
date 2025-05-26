@@ -1,0 +1,106 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 48 100% 97%;
+    --foreground: 20 10% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 20 10% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 10% 20%;
+
+    --primary: 20 100% 67%;
+    --primary-foreground: 60 100% 99%;
+
+    --secondary: 30 100% 86%;
+    --secondary-foreground: 20 10% 20%;
+
+    --muted: 30 30% 96%;
+    --muted-foreground: 20 10% 40%;
+
+    --accent: 30 100% 96%;
+    --accent-foreground: 20 10% 20%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 60 100% 99%;
+
+    --border: 20 10% 90%;
+    --input: 20 10% 90%;
+    --ring: 20 100% 67%;
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 20 10% 10%;
+    --foreground: 60 10% 98%;
+
+    --card: 20 10% 10%;
+    --card-foreground: 60 10% 98%;
+
+    --popover: 20 10% 10%;
+    --popover-foreground: 60 10% 98%;
+
+    --primary: 20 100% 67%;
+    --primary-foreground: 60 100% 99%;
+
+    --secondary: 30 30% 20%;
+    --secondary-foreground: 60 10% 98%;
+
+    --muted: 30 30% 20%;
+    --muted-foreground: 60 10% 70%;
+
+    --accent: 30 30% 20%;
+    --accent-foreground: 60 10% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 60 10% 98%;
+
+    --border: 30 30% 30%;
+    --input: 30 30% 30%;
+    --ring: 20 100% 67%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-cream text-foreground font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-semibold;
+  }
+}
+
+@layer components {
+  .btn-demo {
+    @apply bg-gradient-orange text-white font-medium py-3 px-6 rounded-full shadow-md hover:shadow-lg transform transition-all duration-300 hover:-translate-y-1;
+  }
+  
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6 text-center;
+  }
+
+  .section-subtitle {
+    @apply text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto text-center mb-12;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+  }
+}

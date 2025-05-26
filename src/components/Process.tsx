@@ -1,0 +1,103 @@
+
+import React from 'react';
+import { ArrowRight } from 'lucide-react';
+
+const Process = () => {
+  const steps = [
+    {
+      title: "Création du projet",
+      description: "Lancez votre projet en quelques clics et personnalisez les thèmes du livre selon vos préférences.",
+      icon: (
+        <svg viewBox="0 0 24 24" className="h-8 w-8 fill-mywai">
+          <path d="M12,2 C6.48,2 2,6.48 2,12 C2,17.52 6.48,22 12,22 C17.52,22 22,17.52 22,12 C22,6.48 17.52,2 12,2 Z M17,13 L13,13 L13,17 L11,17 L11,13 L7,13 L7,11 L11,11 L11,7 L13,7 L13,11 L17,11 L17,13 Z" />
+        </svg>
+      ),
+      number: "01"
+    },
+    {
+      title: "Invitation des contributeurs",
+      description: "Invitez jusqu'à 20 proches à contribuer avec leurs anecdotes, souvenirs et messages personnels.",
+      icon: (
+        <svg viewBox="0 0 24 24" className="h-8 w-8 fill-mywai">
+          <path d="M16,11 C17.66,11 18.99,9.66 18.99,8 C18.99,6.34 17.66,5 16,5 C14.34,5 13,6.34 13,8 C13,9.66 14.34,11 16,11 Z M8,11 C9.66,11 10.99,9.66 10.99,8 C10.99,6.34 9.66,5 8,5 C6.34,5 5,6.34 5,8 C5,9.66 6.34,11 8,11 Z M8,13 C5.67,13 1,14.17 1,16.5 L1,19 L15,19 L15,16.5 C15,14.17 10.33,13 8,13 Z M16,13 C15.71,13 15.38,13.02 15.03,13.05 C16.19,13.89 17,15.02 17,16.5 L17,19 L23,19 L23,16.5 C23,14.17 18.33,13 16,13 Z" />
+        </svg>
+      ),
+      number: "02"
+    },
+    {
+      title: "Collecte des témoignages",
+      description: "Les contributeurs partagent leurs histoires à travers un formulaire simple et guidé.",
+      icon: (
+        <svg viewBox="0 0 24 24" className="h-8 w-8 fill-mywai">
+          <path d="M20,2 L4,2 C2.9,2 2,2.9 2,4 L2,22 L6,18 L20,18 C21.1,18 22,17.1 22,16 L22,4 C22,2.9 21.1,2 20,2 Z M6,9 L18,9 L18,11 L6,11 L6,9 Z M14,14 L6,14 L6,12 L14,12 L14,14 Z M18,8 L6,8 L6,6 L18,6 L18,8 Z" />
+        </svg>
+      ),
+      number: "03"
+    },
+    {
+      title: "Édition professionnelle",
+      description: "Nos rédacteurs transforment les témoignages en un récit cohérent et émouvant.",
+      icon: (
+        <svg viewBox="0 0 24 24" className="h-8 w-8 fill-mywai">
+          <path d="M3,17.25 L3,21 L6.75,21 L17.81,9.94 L14.06,6.19 L3,17.25 Z M20.71,7.04 C21.1,6.65 21.1,6.02 20.71,5.63 L18.37,3.29 C17.98,2.9 17.35,2.9 16.96,3.29 L15.13,5.12 L18.88,8.87 L20.71,7.04 Z" />
+        </svg>
+      ),
+      number: "04"
+    },
+    {
+      title: "Conception du livre",
+      description: "Mise en page professionnelle et préparation du livre avec une couverture personnalisée.",
+      icon: (
+        <svg viewBox="0 0 24 24" className="h-8 w-8 fill-mywai">
+          <path d="M18,2 L6,2 C4.9,2 4,2.9 4,4 L4,20 C4,21.1 4.9,22 6,22 L18,22 C19.1,22 20,21.1 20,20 L20,4 C20,2.9 19.1,2 18,2 Z M6,4 L11,4 L11,12 L8.5,10.5 L6,12 L6,4 Z" />
+        </svg>
+      ),
+      number: "05"
+    },
+    {
+      title: "Livraison du livre",
+      description: "Réception d'un livre relié de qualité, prêt à être offert comme un cadeau inoubliable.",
+      icon: (
+        <svg viewBox="0 0 24 24" className="h-8 w-8 fill-mywai">
+          <path d="M20,8 L17,8 L17,4 L3,4 C1.9,4 1,4.9 1,6 L1,17 L3,17 L3,20 C3,21.1 3.9,22 5,22 L19,22 C20.1,22 21,21.1 21,20 L21,9 C21,8.45 20.55,8 20,8 Z M15,8 L5,8 L5,6 L15,6 L15,8 Z M19,20 L5,20 L5,10 L19,10 L19,20 Z M17,14 L7,14 L7,12 L17,12 L17,14 Z M14,18 L7,18 L7,16 L14,16 L14,18 Z" />
+        </svg>
+      ),
+      number: "06"
+    },
+  ];
+
+  return (
+    <section className="section-padding bg-white relative" id="process">
+      <div className="container mx-auto px-4">
+        <h2 className="section-title">Comment ça marche</h2>
+        <p className="section-subtitle">
+          Un processus simple en six étapes pour créer un livre autobiographique unique
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+          {steps.map((step, index) => (
+            <div key={index} className="bg-cream p-6 rounded-xl shadow-md relative card-hover">
+              <div className="absolute -top-4 -right-4 w-12 h-12 rounded-full bg-mywai flex items-center justify-center text-white font-bold">
+                {step.number}
+              </div>
+              <div className="mb-6 w-16 h-16 bg-mywai/10 rounded-full flex items-center justify-center">
+                {step.icon}
+              </div>
+              <h3 className="text-xl font-display font-bold mb-3">{step.title}</h3>
+              <p className="text-muted-foreground">{step.description}</p>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-16 text-center">
+          <a href="#demo" className="btn-demo inline-flex items-center gap-2">
+            <span>Voir une démo</span>
+            <ArrowRight className="h-4 w-4" />
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Process;
