@@ -1,6 +1,8 @@
 
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import Button from './ui/button/Button';
+import Badge from './ui/badge/Badge';
 
 const Process = () => {
   const steps = [
@@ -83,17 +85,30 @@ const Process = () => {
               <div className="mb-6 w-16 h-16 bg-mywai/10 rounded-full flex items-center justify-center">
                 {step.icon}
               </div>
-              <h3 className="text-xl font-display font-bold mb-3">{step.title}</h3>
+              <h3 className="text-xl font-display font-bold mb-3 flex items-center gap-2">
+                {step.title}
+                <Badge variant="light" color="primary" size="sm">
+                  Étape {index + 1}
+                </Badge>
+              </h3>
               <p className="text-muted-foreground">{step.description}</p>
             </div>
           ))}
         </div>
 
         <div className="mt-16 text-center">
-          <a href="#demo" className="btn-demo inline-flex items-center gap-2">
-            <span>Voir une démo</span>
-            <ArrowRight className="h-4 w-4" />
-          </a>
+          <Button
+            variant="primary"
+            size="md"
+            endIcon={<ArrowRight className="h-4 w-4" />}
+            onClick={() => {
+              const demoSection = document.getElementById('demo');
+              demoSection?.scrollIntoView({ behavior: 'smooth' });
+            }}
+            className="!bg-mywai hover:!bg-mywai-dark !text-white"
+          >
+            Voir une démo
+          </Button>
         </div>
       </div>
     </section>

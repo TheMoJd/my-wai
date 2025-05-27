@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { ArrowRight, Mail, Phone, MessageSquare } from 'lucide-react';
+import Button from './ui/button/Button';
 
 const ContactSection = () => {
   return (
@@ -55,13 +56,14 @@ const ContactSection = () => {
               <p className="mb-6 text-white/90">
                 Créez votre livre en quelques clics et commencez à collecter les témoignages dès aujourd'hui.
               </p>
-              <a 
-                href="#" 
-                className="bg-white text-mywai-dark font-medium py-3 px-6 rounded-full inline-flex items-center gap-2 shadow-md hover:shadow-lg transform transition-all duration-300 hover:-translate-y-1"
+              <Button
+                variant="outline"
+                size="md"
+                endIcon={<ArrowRight className="h-4 w-4" />}
+                className="!bg-white !text-mywai-dark !border-white hover:!bg-gray-50"
               >
-                <span>Commencer maintenant</span>
-                <ArrowRight className="h-4 w-4" />
-              </a>
+                Commencer maintenant
+              </Button>
             </div>
           </div>
           
@@ -110,12 +112,13 @@ const ContactSection = () => {
                 ></textarea>
               </div>
               
-              <button 
-                type="submit" 
-                className="btn-demo w-full justify-center"
+              <Button
+                variant="primary"
+                size="md"
+                className="w-full !bg-mywai hover:!bg-mywai-dark !text-white"
               >
                 Envoyer le message
-              </button>
+              </Button>
             </form>
             
             <p className="text-center text-sm text-muted-foreground mt-6">

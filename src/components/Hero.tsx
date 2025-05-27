@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import Button from './ui/button/Button';
 
 const Hero = () => {
   return (
@@ -18,18 +19,30 @@ const Hero = () => {
             <p className="text-lg md:text-xl text-muted-foreground">
               MyWai transforme les témoignages de vos proches en un livre autobiographique
               cohérent et émouvant, créant un cadeau personnalisé et intemporel.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <a href="#demo" className="btn-demo flex items-center justify-center gap-2">
-                <span>Voir une démo</span>
-                <ArrowRight className="h-4 w-4" />
-              </a>
-              <a 
-                href="#process" 
-                className="px-6 py-3 border-2 border-mywai text-mywai font-medium rounded-full hover:bg-mywai/10 transition-colors text-center"
+            </p>            <div className="flex flex-col sm:flex-row gap-4 pt-4">
+              <Button
+                variant="primary"
+                size="md"
+                endIcon={<ArrowRight className="h-4 w-4" />}
+                onClick={() => {
+                  const demoSection = document.getElementById('demo');
+                  demoSection?.scrollIntoView({ behavior: 'smooth' });
+                }}
+                className="!bg-mywai hover:!bg-mywai-dark !text-white"
+              >
+                Voir une démo
+              </Button>
+              <Button
+                variant="outline"
+                size="md"
+                onClick={() => {
+                  const processSection = document.getElementById('process');
+                  processSection?.scrollIntoView({ behavior: 'smooth' });
+                }}
+                className="!border-2 !border-mywai !text-mywai hover:!bg-mywai/10"
               >
                 Comment ça marche
-              </a>
+              </Button>
             </div>
           </div>
           

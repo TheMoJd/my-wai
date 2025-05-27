@@ -1,6 +1,8 @@
 
 import React from 'react';
 import { ArrowRight, Check } from 'lucide-react';
+import Button from './ui/button/Button';
+import Badge from './ui/badge/Badge';
 
 const Pricing = () => {
   const features = [
@@ -21,11 +23,10 @@ const Pricing = () => {
         </p>
 
         <div className="max-w-3xl mx-auto mt-12 bg-gradient-to-br from-mywai-light/30 to-mywai/30 rounded-2xl shadow-xl p-1">
-          <div className="bg-white rounded-xl p-8 md:p-12">
-            <div className="text-center mb-8">
-              <span className="text-sm font-medium text-mywai-dark bg-mywai/20 px-3 py-1 rounded-full">
+          <div className="bg-white rounded-xl p-8 md:p-12">            <div className="text-center mb-8">
+              <Badge variant="light" color="primary" size="md">
                 Offre complète
-              </span>
+              </Badge>
               <div className="mt-6 flex items-center justify-center">
                 <span className="text-5xl font-display font-bold">100€</span>
                 <span className="ml-2 text-muted-foreground">TTC</span>
@@ -46,14 +47,21 @@ const Pricing = () => {
               </div>
 
               <div className="bg-cream rounded-xl p-6">
-                <h3 className="text-xl font-display font-bold mb-4">Comment procéder ?</h3>
-                <p className="text-muted-foreground mb-6">
+                <h3 className="text-xl font-display font-bold mb-4">Comment procéder ?</h3>                <p className="text-muted-foreground mb-6">
                   Lancez votre projet dès aujourd'hui et offrez un cadeau qui restera gravé dans les mémoires.
                 </p>
-                <a href="#contact" className="btn-demo w-full flex items-center justify-center gap-2">
-                  <span>Créer mon livre</span>
-                  <ArrowRight className="h-4 w-4" />
-                </a>
+                <Button
+                  variant="primary"
+                  size="md"
+                  endIcon={<ArrowRight className="h-4 w-4" />}
+                  onClick={() => {
+                    const contactSection = document.getElementById('contact');
+                    contactSection?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                  className="w-full !bg-mywai hover:!bg-mywai-dark !text-white"
+                >
+                  Créer mon livre
+                </Button>
                 <p className="text-sm text-center text-muted-foreground mt-4">
                   Paiement sécurisé - Satisfaction garantie
                 </p>

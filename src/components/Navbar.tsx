@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import Button from './ui/button/Button';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -36,23 +37,33 @@ const Navbar = () => {
           <span className="text-2xl font-display font-bold text-mywai-dark">MyWai</span>
         </a>
 
-        {/* Desktop Menu */}
-        <div className="hidden md:flex items-center gap-8">
+        {/* Desktop Menu */}        <div className="hidden md:flex items-center gap-8">
           <a href="#about" className="text-foreground hover:text-mywai transition-colors">À propos</a>
           <a href="#process" className="text-foreground hover:text-mywai transition-colors">Processus</a>
           <a href="#demo" className="text-foreground hover:text-mywai transition-colors">Démo</a>
           <a href="#pricing" className="text-foreground hover:text-mywai transition-colors">Prix</a>
           <a href="#testimonials" className="text-foreground hover:text-mywai transition-colors">Avis</a>
-          <a href="#contact" className="btn-demo">Essayer</a>
-        </div>
-
-        {/* Mobile Menu Toggle */}
-        <button 
+          <Button
+            variant="primary"
+            size="sm"
+            onClick={() => {
+              const contactSection = document.getElementById('contact');
+              contactSection?.scrollIntoView({ behavior: 'smooth' });
+            }}
+            className="!bg-mywai hover:!bg-mywai-dark !text-white"
+          >
+            Essayer
+          </Button>
+        </div>        {/* Mobile Menu Toggle */}
+        <Button
+          variant="outline"
+          size="sm"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="md:hidden text-foreground p-2"
+          className="md:hidden !border-none !p-2"
+          startIcon={isMenuOpen ? <X /> : <Menu />}
         >
-          {isMenuOpen ? <X /> : <Menu />}
-        </button>
+          <span className="sr-only">Menu</span>
+        </Button>
       </div>
 
       {/* Mobile Menu */}

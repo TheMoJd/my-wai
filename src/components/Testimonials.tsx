@@ -1,6 +1,9 @@
 
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import Button from './ui/button/Button';
+import Avatar from './ui/avatar/Avatar';
+import Badge from './ui/badge/Badge';
 
 const Testimonials = () => {
   const testimonials = [
@@ -58,19 +61,39 @@ const Testimonials = () => {
                 </svg>
               </div>
               <p className="text-gray-700 italic flex-grow">{testimonial.content}</p>
-              <div className="mt-6 pt-4 border-t border-gray-100">
-                <h4 className="font-medium">{testimonial.author}</h4>
-                <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+              <div className="mt-6 pt-4 border-t border-gray-100 flex items-center justify-between">
+                <div className="flex items-center gap-3">
+                  <Avatar
+                    src={`https://api.dicebear.com/7.x/initials/svg?seed=${testimonial.author}`}
+                    alt={testimonial.author}
+                    size="small"
+                  />
+                  <div>
+                    <h4 className="font-medium">{testimonial.author}</h4>
+                    <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                  </div>
+                </div>
+                <Badge variant="light" color="success" size="sm">
+                  Vérifié
+                </Badge>
               </div>
             </div>
           ))}
         </div>
 
         <div className="mt-16 text-center">
-          <a href="#contact" className="btn-demo inline-flex items-center gap-2">
-            <span>Créer mon livre</span>
-            <ArrowRight className="h-4 w-4" />
-          </a>
+          <Button
+            variant="primary"
+            size="md"
+            endIcon={<ArrowRight className="h-4 w-4" />}
+            onClick={() => {
+              const contactSection = document.getElementById('contact');
+              contactSection?.scrollIntoView({ behavior: 'smooth' });
+            }}
+            className="!bg-mywai hover:!bg-mywai-dark !text-white"
+          >
+            Créer mon livre
+          </Button>
         </div>
       </div>
     </section>
