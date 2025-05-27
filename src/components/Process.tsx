@@ -87,9 +87,6 @@ const Process = () => {
               </div>
               <h3 className="text-xl font-display font-bold mb-3 flex items-center gap-2">
                 {step.title}
-                <Badge variant="light" color="primary" size="sm">
-                  Étape {index + 1}
-                </Badge>
               </h3>
               <p className="text-muted-foreground">{step.description}</p>
             </div>

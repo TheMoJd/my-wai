@@ -152,6 +152,7 @@ const BookDemo = () => {
                             variant="solid" 
                             color="primary" 
                             size="sm"
+                            isCircular={true} // Add this prop
                           >
                             {index + 1}
                           </Badge>
@@ -160,11 +161,6 @@ const BookDemo = () => {
                             {chapter.title}
                           </span>
                         </h4>
-                        {activeTab === index && (
-                          <Badge variant="light" color="success" size="sm">
-                            Actif
-                          </Badge>
-                        )}
                       </div>
                       {activeTab === index && (
                         <div className="mt-3 animate-in slide-in-from-top-2 duration-300">

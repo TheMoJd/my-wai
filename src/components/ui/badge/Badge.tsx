@@ -16,6 +16,7 @@ interface BadgeProps {
   startIcon?: React.ReactNode; // Icon at the start
   endIcon?: React.ReactNode; // Icon at the end
   children: React.ReactNode; // Badge content
+  isCircular?: boolean; // New prop for circular shape
 }
 
 const Badge: React.FC<BadgeProps> = ({
@@ -25,21 +26,34 @@ const Badge: React.FC<BadgeProps> = ({
   startIcon,
   endIcon,
   children,
+  isCircular = false, // Default to false
 }) => {
-  const baseStyles =
-    "inline-flex items-center px-2.5 py-0.5 justify-center gap-1 rounded-full font-medium";
+  const commonStyles =
+    "inline-flex items-center justify-center font-medium rounded-full";
 
   // Define size styles
   const sizeStyles = {
-    sm: "text-theme-xs", // Smaller padding and font size
+    sm: "text-theme-xs", // Changed from text-theme-xs to text-xs
     md: "text-sm", // Default padding and font size
   };
+
+  // Define shape-specific styles
+  let shapeAndPaddingStyles = "px-2.5 py-0.5 gap-1"; // Default padding and gap
+
+  if (isCircular) {
+    if (size === "sm") {
+      shapeAndPaddingStyles = "w-6 h-6"; // Fixed width and height for small circular badge
+    } else if (size === "md") {
+      shapeAndPaddingStyles = "w-8 h-8"; // Fixed width and height for medium circular badge
+    }
+    // Icons are typically not used in small circular number badges
+  }
 
   // Define color styles for variants
   const variants = {
     light: {
       primary:
-        "bg-brand-50 text-brand-500 dark:bg-brand-500/15 dark:text-brand-400",
+        "bg-mywai-light/50 text-mywai-dark dark:bg-mywai-dark/15 dark:text-mywai-dark", // Adjusted to use mywai colors
       success:
         "bg-success-50 text-success-600 dark:bg-success-500/15 dark:text-success-500",
       error:
@@ -51,7 +65,7 @@ const Badge: React.FC<BadgeProps> = ({
       dark: "bg-gray-500 text-white dark:bg-white/5 dark:text-white",
     },
     solid: {
-      primary: "bg-brand-500 text-white dark:text-white",
+      primary: "bg-mywai-light text-mywai-dark dark:text-mywai-dark", // Changed bg-brand-500 to bg-mywai-light
       success: "bg-success-500 text-white dark:text-white",
       error: "bg-error-500 text-white dark:text-white",
       warning: "bg-warning-500 text-white dark:text-white",
@@ -63,13 +77,13 @@ const Badge: React.FC<BadgeProps> = ({
 
   // Get styles based on size and color variant
   const sizeClass = sizeStyles[size];
-  const colorStyles = variants[variant][color];
+  const colorClasses = variants[variant][color];
 
   return (
-    <span className={`${baseStyles} ${sizeClass} ${colorStyles}`}>
-      {startIcon && <span className="mr-1">{startIcon}</span>}
+    <span className={`${commonStyles} ${shapeAndPaddingStyles} ${sizeClass} ${colorClasses}`}>
+      {startIcon && !isCircular && <span className="mr-1">{startIcon}</span>}
       {children}
-      {endIcon && <span className="ml-1">{endIcon}</span>}
+      {endIcon && !isCircular && <span className="ml-1">{endIcon}</span>}
     </span>
   );
 };
