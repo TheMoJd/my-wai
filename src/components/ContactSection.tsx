@@ -11,9 +11,9 @@ const ContactSection = () => {
       <div className="absolute top-10 right-0 w-80 h-80 bg-mywai/10 rounded-full blur-3xl"></div>
 
       <div className="container mx-auto px-4">
-        <h2 className="section-title">Commencez votre projet</h2>
+        <h2 className="section-title">Chaque vie mérite d’être racontée.</h2>
         <p className="section-subtitle">
-          Prêt à créer un livre qui touchera le cœur de quelqu'un ? Contactez-nous dès aujourd'hui
+          Les gens ne se souviennent pas de ce que vous leur offrez. Ils se souviennent de ce que vous leur faites <b>ressentir</b>.
         </p>
 
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 mt-12 max-w-6xl mx-auto">

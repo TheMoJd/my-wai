@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { ArrowRight, BookOpen, Heart, Users, Briefcase, Home, Star, Eye, Download } from 'lucide-react';
 import Button from './ui/button/Button';
 import Badge from './ui/badge/Badge';
-import { Modal } from './ui/modal/index';
 import Alert from './ui/alert/Alert';
 
 const BookDemo = () => {
@@ -56,7 +55,8 @@ const BookDemo = () => {
       <div className="absolute bottom-20 left-20 w-80 h-80 bg-mywai-light/20 rounded-full blur-3xl"></div>
 
       <div className="container mx-auto px-4">
-        <h2 className="section-title">Découvrez un extrait d'un livre biographique personnalisé</h2>
+        <h2 className="section-title">Découvrez un extrait d'un livre <br />
+         biographique personnalisé</h2>
         <p className="section-subtitle">
           Un livre composé d'une cinquantaine de pages découpé en plusieurs chapitres thématiques qui retrace une vie à travers les souvenirs et témoignages des proches, amis, collègue et famille.
         </p>
