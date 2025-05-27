@@ -8,6 +8,7 @@ import Pricing from '../components/Pricing';
 import Testimonials from '../components/Testimonials';
 import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
+import FAQ from '@/components/FAQ';
 
 const Index = () => {
   return (
@@ -19,6 +20,7 @@ const Index = () => {
       <Pricing />
       <Testimonials />
       <ContactSection />
+      <FAQ />
       <Footer />
       
       {/* Back to top button */}
