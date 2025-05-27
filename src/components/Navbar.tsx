@@ -38,11 +38,8 @@ const Navbar = () => {
         </a>
 
         {/* Desktop Menu */}        <div className="hidden md:flex items-center gap-8">
-          <a href="#about" className="text-foreground hover:text-mywai transition-colors">À propos</a>
-          <a href="#process" className="text-foreground hover:text-mywai transition-colors">Processus</a>
-          <a href="#demo" className="text-foreground hover:text-mywai transition-colors">Démo</a>
-          <a href="#pricing" className="text-foreground hover:text-mywai transition-colors">Prix</a>
-          <a href="#testimonials" className="text-foreground hover:text-mywai transition-colors">Avis</a>
+          <a href="#about" className="text-foreground hover:text-mywai transition-colors">MyWai, c'est quoi ?</a>
+          <a href="#testimonials" className="text-foreground hover:text-mywai transition-colors">Mon compte</a>
           <Button
             variant="primary"
             size="sm"
@@ -52,7 +49,7 @@ const Navbar = () => {
             }}
             className="!bg-mywai hover:!bg-mywai-dark !text-white"
           >
-            Essayer
+            Essayer gratuitement
           </Button>
         </div>        {/* Mobile Menu Toggle */}
         <Button
