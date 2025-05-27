@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import Button from './ui/button/Button';
@@ -72,43 +71,27 @@ const Navbar = () => {
               className="text-foreground hover:text-mywai py-2 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              À propos
-            </a>
-            <a 
-              href="#process" 
-              className="text-foreground hover:text-mywai py-2 transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Processus
-            </a>
-            <a 
-              href="#demo" 
-              className="text-foreground hover:text-mywai py-2 transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Démo
-            </a>
-            <a 
-              href="#pricing" 
-              className="text-foreground hover:text-mywai py-2 transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Prix
+              MyWai, c'est quoi ?
             </a>
             <a 
               href="#testimonials" 
               className="text-foreground hover:text-mywai py-2 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              Avis
+              Mon compte
             </a>
-            <a 
-              href="#contact"
-              className="btn-demo inline-block text-center mt-2"
-              onClick={() => setIsMenuOpen(false)}
+            <Button
+              variant="primary"
+              size="sm"
+              onClick={() => {
+                const contactSection = document.getElementById('contact');
+                contactSection?.scrollIntoView({ behavior: 'smooth' });
+                setIsMenuOpen(false);
+              }}
+              className="!bg-mywai hover:!bg-mywai-dark !text-white w-full"
             >
-              Essayer
-            </a>
+              Essayer gratuitement
+            </Button>
           </div>
         </div>
       )}

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import Button from './ui/button/Button';
@@ -14,12 +13,15 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight">
-              Transformez des <span className="text-mywai">souvenirs</span> en une histoire de vie
+              Offrez le plus beau <br/>
+              des cadeaux : une <span className="text-mywai">biographie personnalisée</span>.
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground">
-              MyWai transforme les témoignages de vos proches en un livre autobiographique
+              Anniversaire, départ en retraitre, hommage...<br/>
+              Générée par l'IA, nourrie par les souvenirs des proches. Un livre autobiographique
               cohérent et émouvant, créant un cadeau personnalisé et intemporel.
-            </p>            <div className="flex flex-col sm:flex-row gap-4 pt-4">
+            </p>            
+            <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button
                 variant="primary"
                 size="md"
@@ -30,7 +32,7 @@ const Hero = () => {
                 }}
                 className="!bg-mywai hover:!bg-mywai-dark !text-white"
               >
-                Voir une démo
+                Offrir une biographie sur mesure
               </Button>
               <Button
                 variant="outline"
@@ -41,7 +43,7 @@ const Hero = () => {
                 }}
                 className="!border-2 !border-mywai !text-mywai hover:!bg-mywai/10"
               >
-                Comment ça marche
+                Exemple d'un livre
               </Button>
             </div>
           </div>
@@ -84,8 +86,8 @@ const Hero = () => {
                 <path d="M20,4 L20,20 L4,20 L4,4 L20,4 Z M18,8 L6,8 L6,18 L18,18 L18,8 Z M10,10 L14,10 L14,12 L10,12 L10,10 Z M8,14 L16,14 L16,16 L8,16 L8,14 Z" />
               </svg>
             </div>
-            <h3 className="text-xl font-display font-bold mb-2">Un cadeau personnalisé</h3>
-            <p className="text-muted-foreground">Offrez un livre unique qui célèbre une vie à travers les yeux de ceux qui la partagent.</p>
+            <h3 className="text-xl font-display font-bold mb-2">Une idée cadeau personnalisé et intemporel</h3>
+            <p className="text-muted-foreground">Les objets s’oublient. Les souvenirs restent. Avec MyWai, vous offrez un récit sur mesure, intime, qui traverse le temps.</p>
           </div>
           
           <div className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-md">
@@ -94,8 +96,8 @@ const Hero = () => {
                 <path d="M12,2 L12,22 M17,4 L17,20 M7,4 L7,20 M3,8 L21,8 M3,16 L21,16" stroke="currentColor" strokeWidth="2" fill="none" />
               </svg>
             </div>
-            <h3 className="text-xl font-display font-bold mb-2">Processus simple</h3>
-            <p className="text-muted-foreground">Une création sans effort avec un processus guidé pour l'initiateur du projet et les contributeurs.</p>
+            <h3 className="text-xl font-display font-bold mb-2">La puissance de l’IA au service de l’émotion</h3>
+            <p className="text-muted-foreground">Notre intelligence artificielle transforme les témoignages, anecdotes, photos et traits de caractère en une histoire unique, cohérente et profondément humaine.</p>
           </div>
           
           <div className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-md">
@@ -104,8 +106,8 @@ const Hero = () => {
                 <path d="M4,4 L20,4 L20,20 L4,20 L4,4 Z M8,2 L8,6 M16,2 L16,6 M4,9 L20,9" stroke="currentColor" strokeWidth="2" fill="none" />
               </svg>
             </div>
-            <h3 className="text-xl font-display font-bold mb-2">Préservation des souvenirs</h3>
-            <p className="text-muted-foreground">Capturez et conservez des histoires précieuses qui pourraient autrement se perdre avec le temps.</p>
+            <h3 className="text-xl font-display font-bold mb-2">Un vrai livre dans vos mains</h3>
+            <p className="text-muted-foreground">Reliure de qualité, mise en page élégante, couverture personnalisée… Le résultat est digne d’une autobiographie d’éditeur.</p>
           </div>
         </div>
       </div>
