@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react"; // Import useEffect and useState
 
 interface AlertProps {
   variant: "success" | "error" | "warning" | "info"; // Alert type
@@ -7,6 +8,7 @@ interface AlertProps {
   showLink?: boolean; // Whether to show the "Learn More" link
   linkHref?: string; // Link URL
   linkText?: string; // Link text
+  onClose?: () => void; // Optional: Callback when alert is closed
 }
 
 const Alert: React.FC<AlertProps> = ({
@@ -16,27 +18,30 @@ const Alert: React.FC<AlertProps> = ({
   showLink = false,
   linkHref = "#",
   linkText = "Learn more",
+  onClose, // Add onClose to props
 }) => {
+  const [isVisible, setIsVisible] = useState(true); // State to control visibility
+
   // Tailwind classes for each variant
   const variantClasses = {
     success: {
       container:
-        "border-success-500 bg-success-50 dark:border-success-500/30 dark:bg-success-500/15",
+        "border-success-500 bg-white shadow-lg", // Changed background and added shadow
       icon: "text-success-500",
     },
     error: {
       container:
-        "border-error-500 bg-error-50 dark:border-error-500/30 dark:bg-error-500/15",
+        "border-error-500 bg-white shadow-lg", // Changed background and added shadow
       icon: "text-error-500",
     },
     warning: {
       container:
-        "border-warning-500 bg-warning-50 dark:border-warning-500/30 dark:bg-warning-500/15",
+        "border-warning-500 bg-white shadow-lg", // Changed background and added shadow
       icon: "text-warning-500",
     },
     info: {
       container:
-        "border-blue-light-500 bg-blue-light-50 dark:border-blue-light-500/30 dark:bg-blue-light-500/15",
+        "border-blue-light-500 bg-white shadow-lg", // Changed background and added shadow
       icon: "text-blue-light-500",
     },
   };
@@ -111,6 +116,21 @@ const Alert: React.FC<AlertProps> = ({
     ),
   };
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsVisible(false);
+      if (onClose) {
+        onClose();
+      }
+    }, 5000); // 5 seconds
+
+    return () => clearTimeout(timer); // Cleanup timer on component unmount
+  }, [onClose]);
+
+  if (!isVisible) {
+    return null; // Don't render if not visible
+  }
+
   return (
     <div
       className={`rounded-xl border p-4 ${variantClasses[variant].container}`}
@@ -121,16 +141,16 @@ const Alert: React.FC<AlertProps> = ({
         </div>
 
         <div>
-          <h4 className="mb-1 text-sm font-semibold text-gray-800 dark:text-white/90">
+          <h4 className="mb-1 text-sm font-semibold text-gray-800"> {/* Adjusted text color */}
             {title}
           </h4>
 
-          <p className="text-sm text-gray-500 dark:text-gray-400">{message}</p>
+          <p className="text-sm text-gray-600">{message}</p> {/* Adjusted text color */}
 
           {showLink && (
             <Link
               to={linkHref}
-              className="inline-block mt-3 text-sm font-medium text-gray-500 underline dark:text-gray-400"
+              className="inline-block mt-3 text-sm font-medium text-gray-600 underline" /* Adjusted text color */
             >
               {linkText}
             </Link>

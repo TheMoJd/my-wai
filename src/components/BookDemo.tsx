@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { ArrowRight, BookOpen, Heart, Users, Briefcase, Home, Star, Eye, Download } from 'lucide-react';
 import Button from './ui/button/Button';
@@ -230,15 +229,17 @@ const BookDemo = () => {
               showLink={true}
               linkText="Voir mes téléchargements"
               linkHref="#downloads"
+              onClose={() => setShowSuccessAlert(false)} // Add onClose handler
             />
-            <Button
+            {/* Remove the explicit close button as the alert will auto-dismiss */}
+            {/* <Button
               size="sm"
               variant="outline"
               onClick={() => setShowSuccessAlert(false)}
               className="mt-2 w-full"
             >
               Fermer
-            </Button>
+            </Button> */}
           </div>
         )}
 
