@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowRight, Check } from 'lucide-react';
 import Button from './ui/button/Button';
@@ -6,29 +5,28 @@ import Badge from './ui/badge/Badge';
 
 const Pricing = () => {
   const features = [
-    "Livre de 6 chapitres thématiques",
-    "Jusqu'à 20 contributeurs",
+    "Livre composé de plusieurs chapitres",
+    "Pas de limite de contributeurs",
     "Édition professionnelle",
     "Mise en page soignée",
     "Livre relié de qualité",
     "Livraison offerte",
+    "Espace privé pour rééditer"
   ];
 
   return (
     <section className="section-padding bg-white relative" id="pricing">
       <div className="container mx-auto px-4">
-        <h2 className="section-title">Un prix unique et transparent</h2>
+        <h2 className="section-title">Un prix unique et transparent pour ce livre inoubliable</h2>
         <p className="section-subtitle">
-          Une offre complète pour créer un cadeau inestimable
+          Le plus beau cadeau pour un anniversaire, un départ en retraite ou un hommage.
         </p>
 
         <div className="max-w-3xl mx-auto mt-12 bg-gradient-to-br from-mywai-light/30 to-mywai/30 rounded-2xl shadow-xl p-1">
           <div className="bg-white rounded-xl p-8 md:p-12">            <div className="text-center mb-8">
-              <Badge variant="light" color="primary" size="md">
-                Offre complète
-              </Badge>
+              {/* Badge removed as per request */}
               <div className="mt-6 flex items-center justify-center">
-                <span className="text-5xl font-display font-bold">100€</span>
+                <span className="text-5xl font-display font-bold">99€</span>
                 <span className="ml-2 text-muted-foreground">TTC</span>
               </div>
             </div>
@@ -71,18 +69,13 @@ const Pricing = () => {
             <div className="mt-8 pt-6 border-t border-gray-100">
               <h4 className="font-medium mb-2">Besoin d'options supplémentaires ?</h4>
               <p className="text-sm text-muted-foreground">
-                Contactez-nous pour des demandes spéciales comme des exemplaires supplémentaires, une couverture personnalisée premium ou des pages supplémentaires.
+                Contactez-nous pour des demandes spéciales comme des cadeaux d'entreprises, idée cadeau départ en retraite,  des exemplaires supplémentaires, des évolutions...
               </p>
             </div>
           </div>
         </div>
 
-        <div className="mt-16 text-center">
-          <a href="#testimonials" className="btn-demo inline-flex items-center gap-2">
-            <span>Voir les avis clients</span>
-            <ArrowRight className="h-4 w-4" />
-          </a>
-        </div>
+        {/* "Voir les avis clients" link removed as per request */}
       </div>
     </section>
   );

@@ -56,9 +56,9 @@ const BookDemo = () => {
       <div className="absolute bottom-20 left-20 w-80 h-80 bg-mywai-light/20 rounded-full blur-3xl"></div>
 
       <div className="container mx-auto px-4">
-        <h2 className="section-title">Découvrez le livre</h2>
+        <h2 className="section-title">Découvrez un extrait d'un livre biographique personnalisé</h2>
         <p className="section-subtitle">
-          Une structure en six chapitres thématiques qui retrace une vie à travers les souvenirs et témoignages
+          Un livre composé d'une cinquantaine de pages découpé en plusieurs chapitres thématiques qui retrace une vie à travers les souvenirs et témoignages des proches, amis, collègue et famille.
         </p>
 
         <div className="bg-white rounded-2xl shadow-xl overflow-hidden mt-12 max-w-5xl mx-auto">
@@ -211,7 +211,7 @@ const BookDemo = () => {
             }}
             className="!bg-mywai hover:!bg-mywai-dark !text-white shadow-lg transform hover:scale-105 transition-all duration-300"
           >
-            Voir les tarifs
+            Créer une biographie
           </Button>
         </div>
 
