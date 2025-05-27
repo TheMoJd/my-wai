@@ -1,52 +1,53 @@
-import React, { useState } from 'react';
-import { ArrowRight, BookOpen, Heart, Users, Briefcase, Home, Star, Eye, Download } from 'lucide-react';
+import React from 'react'; // Removed useState
+import { ArrowRight, BookOpen } // Removed Heart, Users, Briefcase, Home, Star, Eye, Download
+  from 'lucide-react';
 import Button from './ui/button/Button';
-import Badge from './ui/badge/Badge';
-import Alert from './ui/alert/Alert';
+// import Badge from './ui/badge/Badge'; // Commented out
+// import Alert from './ui/alert/Alert'; // Commented out
 
 const BookDemo = () => {
-  const [activeTab, setActiveTab] = useState(0);
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [showSuccessAlert, setShowSuccessAlert] = useState(false);
+  // const [activeTab, setActiveTab] = useState(0); // Commented out
+  // const [isModalOpen, setIsModalOpen] = useState(false); // Commented out
+  // const [showSuccessAlert, setShowSuccessAlert] = useState(false); // Commented out
   
-  const chapters = [
-    {
-      title: "L'enfance",
-      content: "Les premières années sont souvent les plus formatrices. Ce chapitre explore les souvenirs d'enfance, les moments qui ont façonné la personnalité et les premières passions qui se sont développées.",
-      image: "bg-gradient-to-br from-mywai-light to-mywai",
-      icon: <BookOpen className="h-5 w-5" />
-    },
-    {
-      title: "Les amitiés",
-      content: "Les relations qui ont marqué une vie entière, des amitiés d'école aux rencontres qui ont changé le cours d'une existence. Des témoignages sincères de ceux qui ont partagé les bons et les mauvais moments.",
-      image: "bg-gradient-to-br from-mywai/40 to-mywai",
-      icon: <Heart className="h-5 w-5" />
-    },
-    {
-      title: "Les passions",
-      content: "Qu'il s'agisse d'art, de sport, de voyages ou de cuisine, ce chapitre célèbre les passions qui animent la personne et la rendent unique aux yeux de ses proches.",
-      image: "bg-gradient-to-br from-mywai/60 to-mywai-dark",
-      icon: <Star className="h-5 w-5" />
-    },
-    {
-      title: "La vie professionnelle",
-      content: "Les réussites, les défis et les apprentissages tirés du parcours professionnel, racontés par des collègues, mentors et partenaires qui ont accompagné ce cheminement.",
-      image: "bg-gradient-to-br from-mywai-light/80 to-mywai-dark",
-      icon: <Briefcase className="h-5 w-5" />
-    },
-    {
-      title: "La vie de famille",
-      content: "Les moments précieux passés en famille, les traditions, les vacances mémorables et les liens indéfectibles qui unissent parents et enfants, frères et sœurs.",
-      image: "bg-gradient-to-br from-mywai/30 to-mywai-dark/90",
-      icon: <Home className="h-5 w-5" />
-    },
-    {
-      title: "Les valeurs",
-      content: "Les principes, les convictions et la sagesse que la personne a partagés avec son entourage et qui continueront d'inspirer les générations futures.",
-      image: "bg-gradient-to-br from-mywai-light/70 to-mywai-dark",
-      icon: <Users className="h-5 w-5" />
-    }
-  ];
+  // const chapters = [ // Commented out
+  //   {
+  //     title: "L'enfance",
+  //     content: "Les premières années sont souvent les plus formatrices. Ce chapitre explore les souvenirs d'enfance, les moments qui ont façonné la personnalité et les premières passions qui se sont développées.",
+  //     image: "bg-gradient-to-br from-mywai-light to-mywai",
+  //     icon: <BookOpen className="h-5 w-5" />
+  //   },
+  //   {
+  //     title: "Les amitiés",
+  //     content: "Les relations qui ont marqué une vie entière, des amitiés d'école aux rencontres qui ont changé le cours d'une existence. Des témoignages sincères de ceux qui ont partagé les bons et les mauvais moments.",
+  //     image: "bg-gradient-to-br from-mywai/40 to-mywai",
+  //     icon: <Heart className="h-5 w-5" />
+  //   },
+  //   {
+  //     title: "Les passions",
+  //     content: "Qu'il s'agisse d'art, de sport, de voyages ou de cuisine, ce chapitre célèbre les passions qui animent la personne et la rendent unique aux yeux de ses proches.",
+  //     image: "bg-gradient-to-br from-mywai/60 to-mywai-dark",
+  //     icon: <Star className="h-5 w-5" />
+  //   },
+  //   {
+  //     title: "La vie professionnelle",
+  //     content: "Les réussites, les défis et les apprentissages tirés du parcours professionnel, racontés par des collègues, mentors et partenaires qui ont accompagné ce cheminement.",
+  //     image: "bg-gradient-to-br from-mywai-light/80 to-mywai-dark",
+  //     icon: <Briefcase className="h-5 w-5" />
+  //   },
+  //   {
+  //     title: "La vie de famille",
+  //     content: "Les moments précieux passés en famille, les traditions, les vacances mémorables et les liens indéfectibles qui unissent parents et enfants, frères et sœurs.",
+  //     image: "bg-gradient-to-br from-mywai/30 to-mywai-dark/90",
+  //     icon: <Home className="h-5 w-5" />
+  //   },
+  //   {
+  //     title: "Les valeurs",
+  //     content: "Les principes, les convictions et la sagesse que la personne a partagés avec son entourage et qui continueront d'inspirer les générations futures.",
+  //     image: "bg-gradient-to-br from-mywai-light/70 to-mywai-dark",
+  //     icon: <Users className="h-5 w-5" />
+  //   }
+  // ];
 
   return (
     <section className="section-padding bg-cream relative" id="demo">
@@ -55,150 +56,55 @@ const BookDemo = () => {
       <div className="absolute bottom-20 left-20 w-80 h-80 bg-mywai-light/20 rounded-full blur-3xl"></div>
 
       <div className="container mx-auto px-4">
-        <h2 className="section-title">Découvrez un extrait d'un livre <br />
-         biographique personnalisé</h2>
-        <p className="section-subtitle">
-          Un livre composé d'une cinquantaine de pages découpé en plusieurs chapitres thématiques qui retrace une vie à travers les souvenirs et témoignages des proches, amis, collègue et famille.
-        </p>
-
-        <div className="bg-white rounded-2xl shadow-xl overflow-hidden mt-12 max-w-5xl mx-auto">
-          {/* Progress Indicator */}
-          <div className="bg-gradient-to-r from-mywai-light to-mywai p-4">
-            <div className="flex items-center justify-between text-white">
-              <div className="flex items-center gap-3">
-                <BookOpen className="h-5 w-5" />
-                <span className="font-medium">Chapitre {activeTab + 1} sur {chapters.length}</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="flex gap-1">
-                  {chapters.map((_, index) => (
-                    <div
-                      key={index}
-                      className={`h-2 w-6 rounded-full transition-all duration-300 ${
-                        index <= activeTab ? 'bg-white' : 'bg-white/30'
-                      }`}
-                    />
-                  ))}
-                </div>
-                <Badge variant="solid" color="light" size="sm">
-                  {Math.round(((activeTab + 1) / chapters.length) * 100)}%
-                </Badge>
-              </div>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2">
-            {/* Book Preview */}
-            <div className={`${chapters[activeTab].image} p-8 min-h-[400px] flex items-center justify-center`}>
-              <div className="bg-white/90 backdrop-blur-sm rounded-xl p-6 shadow-lg max-w-sm transform -rotate-3">
-                <h3 className="text-2xl font-display font-bold mb-4 text-mywai-dark">
-                  Chapitre {activeTab + 1}: {chapters[activeTab].title}
-                </h3>
-                <div className="space-y-3">
-                  <div className="h-4 bg-gray-200 rounded-full w-full"></div>
-                  <div className="h-4 bg-gray-200 rounded-full w-5/6"></div>
-                  <div className="h-4 bg-gray-200 rounded-full w-full"></div>
-                  <div className="h-4 bg-gray-200 rounded-full w-4/6"></div>
-                </div>
-                <div className="mt-6 bg-gray-100 p-4 rounded-lg italic text-sm text-gray-600">
-                  "Un témoignage sincère qui capture l'essence de cette période..."
-                </div>
-                <div className="mt-4 flex justify-between items-center">
-                  <div className="h-8 w-8 rounded-full bg-mywai"></div>
-                  <div className="flex gap-2">
-                    <Button
-                      size="sm"
-                      variant="outline"
-                      startIcon={<Eye className="h-4 w-4" />}
-                      onClick={() => setIsModalOpen(true)}
-                      className="!text-mywai hover:!bg-mywai/10"
-                    >
-                      Aperçu
-                    </Button>
-                    <Button
-                      size="sm"
-                      variant="primary"
-                      startIcon={<Download className="h-4 w-4" />}
-                      onClick={() => setShowSuccessAlert(true)}
-                      className="!bg-mywai hover:!bg-mywai-dark"
-                    >
-                      Télécharger
-                    </Button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Chapter Selection */}
-            <div className="p-6">
-              <h3 className="text-2xl font-display font-bold mb-6">Les chapitres</h3>
-
-              <div className="space-y-4">
-                {chapters.map((chapter, index) => (
-                  <Button
-                    key={index}
-                    onClick={() => setActiveTab(index)}
-                    variant={activeTab === index ? "primary" : "outline"}
-                    className={`w-full text-left p-4 rounded-lg transition-all duration-300 transform hover:scale-[1.02] ${
-                      activeTab === index 
-                        ? "!bg-mywai/10 border-l-4 !border-mywai !text-mywai-dark shadow-lg" 
-                        : "!bg-gray-50 hover:!bg-mywai/5 hover:shadow-md"
-                    }`}
-                  >
-                    <div className="w-full">
-                      <div className="flex items-center justify-between">
-                        <h4 className="text-lg font-medium flex items-center">
-                          <Badge 
-                            variant="solid" 
-                            color="primary" 
-                            size="sm"
-                            isCircular={true} // Add this prop
-                          >
-                            {index + 1}
-                          </Badge>
-                          <span className="ml-3 flex items-center gap-2">
-                            {chapter.icon}
-                            {chapter.title}
-                          </span>
-                        </h4>
-                      </div>
-                      {activeTab === index && (
-                        <div className="mt-3 animate-in slide-in-from-top-2 duration-300">
-                          <p className="text-muted-foreground text-sm text-left leading-relaxed">
-                            {chapter.content}
-                          </p>
-                        </div>
-                      )}
-                    </div>
-                  </Button>
-                ))}
-              </div>
-
-              {/* Statistics Section */}
-              {/* <div className="mt-8 pt-6 border-t border-gray-100">
-                <h4 className="text-sm font-medium text-gray-600 mb-4">Aperçu du contenu</h4>
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="text-center p-3 bg-mywai/5 rounded-lg">
-                    <div className="text-2xl font-bold text-mywai-dark">12+</div>
-                    <div className="text-xs text-gray-600">Témoignages</div>
-                  </div>
-                  <div className="text-center p-3 bg-mywai/5 rounded-lg">
-                    <div className="text-2xl font-bold text-mywai-dark">50+</div>
-                    <div className="text-xs text-gray-600">Photos</div>
-                  </div>
-                  <div className="text-center p-3 bg-mywai/5 rounded-lg">
-                    <div className="text-2xl font-bold text-mywai-dark">8</div>
-                    <div className="text-xs text-gray-600">Sections</div>
-                  </div>
-                  <div className="text-center p-3 bg-mywai/5 rounded-lg">
-                    <div className="text-2xl font-bold text-mywai-dark">120</div>
-                    <div className="text-xs text-gray-600">Pages</div>
-                  </div>
-                </div>
-              </div> */}
-            </div>
-          </div>
+        <div className="flex items-center justify-center mb-4">
+          <h2 className="section-title !mb-0 text-center">
+            Découvrez un extrait de livre biographique
+          </h2>
         </div>
+        <p className="section-subtitle text-center">
+          Un livre composé d'une cinquantaine de pages découpé en plusieurs chapitres thématiques qui retrace une vie à travers les souvenirs et témoignages des proches, amis, collègue et famille.        </p>
+
+        {/* Calaméo Embed Integration */}
+        <div className="mt-12 max-w-6xl mx-auto text-center">
+          <div className="my-2">
+            <a 
+              href="https://www.calameo.com/books/007887638a76298bca9cd?authid=BnuMmf5tfguS" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-mywai hover:underline"
+            >
+              May (2)
+            </a>
+          </div>
+          {/* Responsive iframe wrapper */}
+          <div className="relative w-full overflow-hidden rounded-lg shadow-xl aspect-video bg-gray-100">
+            <iframe 
+              src="//v.calameo.com/?bkcode=007887638a76298bca9cd&authid=BnuMmf5tfguS&mode=viewer&bgColor=F3F4F6" 
+              frameBorder="0" 
+              scrolling="no" 
+              allowTransparency 
+              allowFullScreen 
+              className="absolute inset-0 w-full h-full" // Make iframe fill the responsive wrapper
+              title="Extrait de livre MyWai sur Calaméo"
+            ></iframe>
+          </div>
+          {/* Note: For a fully responsive Calaméo embed, you might need to use Calaméo's responsive embed options 
+              or wrap the iframe in a div with padding-bottom trick for aspect ratio, 
+              and set iframe width and height to 100% and position absolute. 
+              The current fixed width/height might not be ideal for all screen sizes. */}
+        </div>
+        
+        {/* Commented out previous book preview structure */}
+        {/* <div className="bg-white rounded-2xl shadow-xl overflow-hidden mt-12 max-w-5xl mx-auto"> */}
+          {/* Progress Indicator */}
+          {/* <div className="bg-gradient-to-r from-mywai-light to-mywai p-4"> ... </div> */}
+          {/* <div className="grid grid-cols-1 lg:grid-cols-2"> */}
+            {/* Book Preview */}
+            {/* <div className={`${chapters[activeTab].image} p-8 min-h-[400px] flex items-center justify-center`}> ... </div> */}
+            {/* Chapter Selection */}
+            {/* <div className="p-6"> ... </div> */}
+          {/* </div> */}
+        {/* </div> */}
 
         <div className="mt-16 text-center">
           <Button
@@ -215,8 +121,8 @@ const BookDemo = () => {
           </Button>
         </div>
 
-        {/* Success Alert */}
-        {showSuccessAlert && (
+        {/* Success Alert - Commented out */}
+        {/* {showSuccessAlert && (
           <div className="fixed top-20 right-4 z-50 animate-in slide-in-from-right duration-300">
             <Alert
               variant="success"
@@ -227,17 +133,8 @@ const BookDemo = () => {
               linkHref="#downloads"
               onClose={() => setShowSuccessAlert(false)} // Add onClose handler
             />
-            {/* Remove the explicit close button as the alert will auto-dismiss */}
-            {/* <Button
-              size="sm"
-              variant="outline"
-              onClick={() => setShowSuccessAlert(false)}
-              className="mt-2 w-full"
-            >
-              Fermer
-            </Button> */}
           </div>
-        )}
+        )} */}
 
       </div>
     </section>
