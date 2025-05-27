@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import Button from './ui/button/Button';
 
@@ -27,13 +27,13 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <a href="#" className="flex items-center gap-2">
-          <div className="relative h-12 w-12">
-            <svg viewBox="0 0 100 100" className="h-full w-full fill-mywai">
-              <path d="M50,10 C60,20 70,25 80,35 C70,45 60,50 50,60 C40,50 30,45 20,35 C30,25 40,20 50,10 Z" />
-              <path d="M30,60 C40,70 50,75 70,85 C60,90 40,90 30,85 C20,80 20,65 30,60 Z" />
-            </svg>
+          <div className="relative h-20 w-20"> {/* Changed from h-12 w-12 to h-16 w-16 */}
+            <img
+              src="/logo_mywai.png"
+              alt="Logo MyWai"
+              className="h-full w-full object-contain"
+            />
           </div>
-          <span className="text-2xl font-display font-bold text-mywai-dark">MyWai</span>
         </a>
 
         {/* Desktop Menu */}        <div className="hidden md:flex items-center gap-8">

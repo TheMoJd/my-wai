@@ -1,12 +1,10 @@
 
-import React from 'react';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import Process from '../components/Process';
 import BookDemo from '../components/BookDemo';
 import Pricing from '../components/Pricing';
 import Testimonials from '../components/Testimonials';
-import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
 import FAQ from '@/components/FAQ';
 
@@ -17,8 +15,8 @@ const Index = () => {
       <Hero />
       <Process />
       <BookDemo />
-      <Pricing />
       <Testimonials />
+      <Pricing />
       {/* <ContactSection /> */}
       <FAQ />
       <Footer />
