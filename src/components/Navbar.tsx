@@ -36,15 +36,16 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <a href="#" className="flex items-center gap-2">
-          <div className="relative h-20 w-20">
+          <div className="relative h-14 w-14">
             <img
-              src="/logo_mywai.png"
+              src="/logo.png"
               alt="Logo MyWai"
               className="h-full w-full object-contain"
             />
           </div>
-        </a>          <div className="hidden md:flex items-center gap-8">
-          
+          <span className="text-2xl font-display font-bold text-mywai-dark">MyWai</span>
+        </a>          
+        <div className="hidden md:flex items-center gap-8">    
           <a href="#about" className="text-foreground hover:text-mywai transition-colors">{t('navbar.about')}</a>
           <a href="#testimonials" className="text-foreground hover:text-mywai transition-colors">{t('navbar.account')}</a>
           <Button

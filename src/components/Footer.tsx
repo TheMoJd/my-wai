@@ -9,16 +9,17 @@ const Footer = () => {
     <footer className="bg-cream border-t border-mywai/10 py-12">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="relative h-10 w-10">
-                <svg viewBox="0 0 100 100" className="h-full w-full fill-mywai">
-                  <path d="M50,10 C60,20 70,25 80,35 C70,45 60,50 50,60 C40,50 30,45 20,35 C30,25 40,20 50,10 Z" />
-                  <path d="M30,60 C40,70 50,75 70,85 C60,90 40,90 30,85 C20,80 20,65 30,60 Z" />
-                </svg>
+          <div className='space-y-4'>
+            <a href="#" className="flex items-center gap-2">
+              <div className="relative h-14 w-14">
+                <img
+                  src="/logo.png"
+                  alt="Logo MyWai"
+                  className="h-full w-full object-contain"
+                />
               </div>
-              <span className="text-xl font-display font-bold text-mywai-dark">MyWai</span>
-            </div>
+              <span className="text-2xl font-display font-bold text-mywai-dark">MyWai</span>
+            </a> 
             <p className="text-muted-foreground">
               {t('footer.brand_description')}
             </p>
