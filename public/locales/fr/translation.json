@@ -116,5 +116,89 @@
       }
     ],
     "cta_button": "Créer une biographie"
+  },
+  "faq_section": {
+    "title": "Questions fréquentes",
+    "subtitle": "Trouvez ici les réponses à vos interrogations les plus courantes sur MyWai et la création de votre livre biographique.",
+    "questions": [
+      {
+        "question": "Pourquoi offrir un livre biographique personnalisé ?",
+        "answer": "Parce que certains souvenirs méritent d'être transmis, partagés, célébrés. MyWai vous aide à créer une biographie sur mesure, à partir des mots de ceux qui connaissent le mieux la personne à célébrer. Famille, amis, collègues : chacun peut y ajouter une anecdote, une photo, un message. Le tout est rédigé avec soin, mis en page comme un véritable livre, puis imprimé et livré chez vous."
+      },
+      {
+        "question": "Puis-je commander d'autres exemplaires du livre ?",
+        "answer": "Oui, bien sûr. Une fois le livre finalisé, vous pouvez commander autant d'exemplaires supplémentaires que vous souhaitez. Tarif dégressif à partir de 2 livres."
+      },
+      {
+        "question": "À qui appartient le contenu final du livre ?",
+        "answer": "Le texte généré par MyWai vous appartient. Vous pouvez l'imprimer, le partager ou le modifier à tout moment. Rien n'est publié sans votre validation finale."
+      },
+      {
+        "question": "Que deviennent les données et contributions collectées ?",
+        "answer": "Tous les contenus partagés (textes, photos, messages) sont confidentiels, sécurisés, et supprimables à tout moment. Ils ne sont jamais utilisés à d'autres fins."
+      },
+      {
+        "question": "Peut-on modifier le livre une fois généré ?",
+        "answer": "Oui. Vous pouvez relire, corriger, enrichir ou réorganiser les chapitres avant impression. C'est votre livre, notre IA est juste là pour vous aider à l'écrire."
+      },
+      {
+        "question": "Et si je veux créer un livre pour quelqu'un d'autre ?",
+        "answer": "C'est tout à fait possible ! Vous pouvez offrir un livre, créer un projet à plusieurs (avec cagnotte ou pas), et inviter les proches à y contribuer facilement."
+      }
+    ]
+  },
+  "contact_section": {
+    "title": "Chaque vie mérite d'être racontée.",
+    "subtitle": "Les gens ne se souviennent pas de ce que vous leur offrez. Ils se souviennent de ce que vous leur faites <b>ressentir</b>.",
+    "help_title": "Besoin d'aide ?",
+    "help_description": "Notre équipe est disponible pour répondre à toutes vos questions et vous guider dans votre projet.",
+    "email": "Email",
+    "phone": "Téléphone",
+    "live_chat": "Chat en direct",
+    "live_chat_hours": "Lun-Ven, 9h-18h",
+    "start_project_title": "Démarrer un projet",
+    "start_project_description": "Créez votre livre en quelques clics et commencez à collecter les témoignages dès aujourd'hui.",
+    "start_project_button": "Commencer maintenant",
+    "contact_form_title": "Contactez-nous",
+    "form_name": "Nom",
+    "form_name_placeholder": "Votre nom",
+    "form_email": "Email",
+    "form_email_placeholder": "votre@email.com",
+    "form_subject": "Sujet",
+    "form_subject_placeholder": "Sujet de votre message",
+    "form_message": "Message",
+    "form_message_placeholder": "Votre message",
+    "form_submit": "Envoyer le message",
+    "privacy_notice": "En soumettant ce formulaire, vous acceptez notre politique de confidentialité."
+  },
+  "footer": {
+    "brand_description": "Créez des livres personnalisés qui capturent l'essence de vos proches grâce à l'intelligence artificielle.",
+    "quick_links": {
+      "title": "Liens rapides",
+      "about": "À propos",
+      "process": "Comment ça marche",
+      "demo": "Démo",
+      "pricing": "Tarifs",
+      "testimonials": "Témoignages",
+      "contact": "Contact"
+    },
+    "information": {
+      "title": "Informations",
+      "faq": "FAQ",
+      "legal": "Mentions légales",
+      "privacy": "Politique de confidentialité",
+      "terms": "Conditions d'utilisation",
+      "delivery": "Livraison et retours"
+    },
+    "contact": {
+      "title": "Contact",
+      "email": "Email",
+      "email_value": "contact@mywai.fr",
+      "phone": "Téléphone",
+      "phone_value": "+33 1 23 45 67 89",
+      "address": "Adresse",
+      "address_value": "Paris, France"
+    },
+    "copyright": "Tous droits réservés."
   }
 }

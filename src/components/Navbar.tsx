@@ -23,9 +23,9 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
+    setIsLanguageDropdownOpen(false);
   };
 
   return (

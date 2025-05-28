@@ -116,5 +116,89 @@
       }
     ],
     "cta_button": "Crear una biografía"
+  },
+  "faq_section": {
+    "title": "Preguntas frecuentes",
+    "subtitle": "Encuentra aquí las respuestas a tus preguntas más comunes sobre MyWai y la creación de tu libro biográfico.",
+    "questions": [
+      {
+        "question": "¿Por qué regalar un libro biográfico personalizado?",
+        "answer": "Porque algunos recuerdos merecen ser transmitidos, compartidos, celebrados. MyWai te ayuda a crear una biografía a medida, a partir de las palabras de quienes mejor conocen a la persona a celebrar. Familia, amigos, colegas: cada uno puede añadir una anécdota, una foto, un mensaje. Todo está cuidadosamente redactado, maquetado como un libro real, luego impreso y entregado en tu casa."
+      },
+      {
+        "question": "¿Puedo pedir otras copias del libro?",
+        "answer": "Sí, por supuesto. Una vez finalizado el libro, puedes pedir tantas copias adicionales como desees. Tarifa degresiva a partir de 2 libros."
+      },
+      {
+        "question": "¿A quién pertenece el contenido final del libro?",
+        "answer": "El texto generado por MyWai te pertenece. Puedes imprimirlo, compartirlo o modificarlo en cualquier momento. Nada se publica sin tu validación final."
+      },
+      {
+        "question": "¿Qué pasa con los datos y contribuciones recolectadas?",
+        "answer": "Todo el contenido compartido (textos, fotos, mensajes) es confidencial, seguro y eliminable en cualquier momento. Nunca se utiliza para otros fines."
+      },
+      {
+        "question": "¿Se puede modificar el libro una vez generado?",
+        "answer": "Sí. Puedes releer, corregir, enriquecer o reorganizar los capítulos antes de la impresión. Es tu libro, nuestra IA solo está ahí para ayudarte a escribirlo."
+      },
+      {
+        "question": "¿Y si quiero crear un libro para otra persona?",
+        "answer": "¡Es totalmente posible! Puedes regalar un libro, crear un proyecto en grupo (con o sin recaudación de fondos), e invitar a los seres queridos a contribuir fácilmente."
+      }
+    ]
+  },
+  "contact_section": {
+    "title": "Cada vida merece ser contada.",
+    "subtitle": "La gente no recuerda lo que les das. Recuerdan lo que les haces <b>sentir</b>.",
+    "help_title": "¿Necesitas ayuda?",
+    "help_description": "Nuestro equipo está disponible para responder todas tus preguntas y guiarte en tu proyecto.",
+    "email": "Correo electrónico",
+    "phone": "Teléfono",
+    "live_chat": "Chat en vivo",
+    "live_chat_hours": "Lun-Vie, 9h-18h",
+    "start_project_title": "Iniciar un proyecto",
+    "start_project_description": "Crea tu libro en pocos clics y comienza a recopilar testimonios hoy.",
+    "start_project_button": "Comenzar ahora",
+    "contact_form_title": "Contáctanos",
+    "form_name": "Nombre",
+    "form_name_placeholder": "Tu nombre",
+    "form_email": "Correo electrónico",
+    "form_email_placeholder": "tu@email.com",
+    "form_subject": "Asunto",
+    "form_subject_placeholder": "Asunto de tu mensaje",
+    "form_message": "Mensaje",
+    "form_message_placeholder": "Tu mensaje",
+    "form_submit": "Enviar mensaje",
+    "privacy_notice": "Al enviar este formulario, aceptas nuestra política de privacidad."
+  },
+  "footer": {
+    "brand_description": "Crea libros personalizados que capturan la esencia de tus seres queridos usando inteligencia artificial.",
+    "quick_links": {
+      "title": "Enlaces rápidos",
+      "about": "Acerca de",
+      "process": "Cómo funciona",
+      "demo": "Demo",
+      "pricing": "Precios",
+      "testimonials": "Testimonios",
+      "contact": "Contacto"
+    },
+    "information": {
+      "title": "Información",
+      "faq": "FAQ",
+      "legal": "Aviso legal",
+      "privacy": "Política de privacidad",
+      "terms": "Términos de uso",
+      "delivery": "Entrega y devoluciones"
+    },
+    "contact": {
+      "title": "Contacto",
+      "email": "Email",
+      "email_value": "contact@mywai.fr",
+      "phone": "Teléfono",
+      "phone_value": "+33 1 23 45 67 89",
+      "address": "Dirección",
+      "address_value": "París, Francia"
+    },
+    "copyright": "Todos los derechos reservados."
   }
 }

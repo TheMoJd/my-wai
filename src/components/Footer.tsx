@@ -1,7 +1,8 @@
-
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+  const { t } = useTranslation();
   const currentYear = new Date().getFullYear();
   
   return (
@@ -19,39 +20,39 @@ const Footer = () => {
               <span className="text-xl font-display font-bold text-mywai-dark">MyWai</span>
             </div>
             <p className="text-muted-foreground">
-              Transformez les témoignages de vos proches en un livre autobiographique cohérent et émouvant.
+              {t('footer.brand_description')}
             </p>
           </div>
           
           <div>
-            <h3 className="font-display font-bold mb-4">Liens rapides</h3>
+            <h3 className="font-display font-bold mb-4">{t('footer.quick_links.title')}</h3>
             <ul className="space-y-2">
-              <li><a href="#about" className="text-muted-foreground hover:text-mywai transition-colors">À propos</a></li>
-              <li><a href="#process" className="text-muted-foreground hover:text-mywai transition-colors">Processus</a></li>
-              <li><a href="#demo" className="text-muted-foreground hover:text-mywai transition-colors">Démo</a></li>
-              <li><a href="#pricing" className="text-muted-foreground hover:text-mywai transition-colors">Prix</a></li>
-              <li><a href="#testimonials" className="text-muted-foreground hover:text-mywai transition-colors">Témoignages</a></li>
-              <li><a href="#contact" className="text-muted-foreground hover:text-mywai transition-colors">Contact</a></li>
+              <li><a href="#about" className="text-muted-foreground hover:text-mywai transition-colors">{t('footer.quick_links.about')}</a></li>
+              <li><a href="#process" className="text-muted-foreground hover:text-mywai transition-colors">{t('footer.quick_links.process')}</a></li>
+              <li><a href="#demo" className="text-muted-foreground hover:text-mywai transition-colors">{t('footer.quick_links.demo')}</a></li>
+              <li><a href="#pricing" className="text-muted-foreground hover:text-mywai transition-colors">{t('footer.quick_links.pricing')}</a></li>
+              <li><a href="#testimonials" className="text-muted-foreground hover:text-mywai transition-colors">{t('footer.quick_links.testimonials')}</a></li>
+              <li><a href="#contact" className="text-muted-foreground hover:text-mywai transition-colors">{t('footer.quick_links.contact')}</a></li>
             </ul>
           </div>
           
           <div>
-            <h3 className="font-display font-bold mb-4">Informations</h3>
+            <h3 className="font-display font-bold mb-4">{t('footer.information.title')}</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-muted-foreground hover:text-mywai transition-colors">FAQ</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-mywai transition-colors">Mentions légales</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-mywai transition-colors">Politique de confidentialité</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-mywai transition-colors">Conditions générales</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-mywai transition-colors">Livraison</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-mywai transition-colors">{t('footer.information.faq')}</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-mywai transition-colors">{t('footer.information.legal')}</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-mywai transition-colors">{t('footer.information.privacy')}</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-mywai transition-colors">{t('footer.information.terms')}</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-mywai transition-colors">{t('footer.information.delivery')}</a></li>
             </ul>
           </div>
           
           <div>
-            <h3 className="font-display font-bold mb-4">Contact</h3>
+            <h3 className="font-display font-bold mb-4">{t('footer.contact.title')}</h3>
             <ul className="space-y-2">
-              <li className="text-muted-foreground">Email: contact@mywai.fr</li>
-              <li className="text-muted-foreground">Téléphone: 01 23 45 67 89</li>
-              <li className="text-muted-foreground">Adresse: 123 Rue de l'Exemple, 75001 Paris</li>
+              <li className="text-muted-foreground">{t('footer.contact.email')}: {t('footer.contact.email_value')}</li>
+              <li className="text-muted-foreground">{t('footer.contact.phone')}: {t('footer.contact.phone_value')}</li>
+              <li className="text-muted-foreground">{t('footer.contact.address')}: {t('footer.contact.address_value')}</li>
             </ul>
             
             <div className="flex gap-4 mt-4">
@@ -81,7 +82,7 @@ const Footer = () => {
         
         <div className="mt-12 pt-8 border-t border-mywai/10 text-center">
           <p className="text-muted-foreground text-sm">
-            © {currentYear} MyWai. Tous droits réservés.
+            © {currentYear} MyWai. {t('footer.copyright')}
           </p>
         </div>
       </div>
