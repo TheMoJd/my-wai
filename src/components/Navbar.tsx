@@ -1,10 +1,15 @@
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
+import { useTranslation } from 'react-i18next';
 import Button from './ui/button/Button';
+import { Dropdown } from './ui/dropdown/Dropdown';
+import { DropdownItem } from './ui/dropdown/DropdownItem';
 
 const Navbar = () => {
+  const { i18n } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,6 +24,10 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const changeLanguage = (lng: string) => {
+    i18n.changeLanguage(lng);
+  };
+
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
@@ -27,16 +36,16 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <a href="#" className="flex items-center gap-2">
-          <div className="relative h-20 w-20"> {/* Changed from h-12 w-12 to h-16 w-16 */}
+          <div className="relative h-20 w-20">
             <img
               src="/logo_mywai.png"
               alt="Logo MyWai"
               className="h-full w-full object-contain"
             />
           </div>
-        </a>
-
-        {/* Desktop Menu */}        <div className="hidden md:flex items-center gap-8">
+        </a>        
+        <div className="hidden md:flex items-center gap-8">
+          
           <a href="#about" className="text-foreground hover:text-mywai transition-colors">MyWai, c'est quoi ?</a>
           <a href="#testimonials" className="text-foreground hover:text-mywai transition-colors">Mon compte</a>
           <Button
@@ -50,7 +59,35 @@ const Navbar = () => {
           >
             Essayer gratuitement
           </Button>
-        </div>        {/* Mobile Menu Toggle */}
+          
+          <div className="relative">
+            <span className="text-foreground text-sm mr-2">Langue</span>
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => setIsLanguageDropdownOpen(!isLanguageDropdownOpen)}
+              className="!border-mywai !text-mywai hover:!bg-mywai hover:!text-white dropdown-toggle"
+              endIcon={<ChevronDown size={16} />}
+            >
+              {i18n.language === 'fr' ? 'FR' : i18n.language === 'en' ? 'EN' : 'ES'}
+            </Button>
+            <Dropdown
+              isOpen={isLanguageDropdownOpen}
+              onClose={() => setIsLanguageDropdownOpen(false)}
+            >
+              <DropdownItem onClick={() => changeLanguage('fr')}>
+                Français
+              </DropdownItem>
+              <DropdownItem onClick={() => changeLanguage('en')}>
+                English
+              </DropdownItem>
+              <DropdownItem onClick={() => changeLanguage('es')}>
+                Español
+              </DropdownItem>
+            </Dropdown>
+          </div>
+          
+        </div>
         <Button
           variant="outline"
           size="sm"
@@ -61,8 +98,6 @@ const Navbar = () => {
           <span className="sr-only">Menu</span>
         </Button>
       </div>
-
-      {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-cream shadow-lg py-4">
           <div className="container mx-auto px-4 flex flex-col gap-4">
@@ -79,8 +114,7 @@ const Navbar = () => {
               onClick={() => setIsMenuOpen(false)}
             >
               Mon compte
-            </a>
-            <Button
+            </a>            <Button
               variant="primary"
               size="sm"
               onClick={() => {
@@ -92,7 +126,52 @@ const Navbar = () => {
             >
               Essayer gratuitement
             </Button>
-          </div>
+            
+            <div className="flex items-center justify-between pt-2">
+              <span className="text-foreground text-sm">Langue</span>
+              <div className="flex gap-2">
+                <button
+                  onClick={() => {
+                    changeLanguage('fr');
+                    setIsMenuOpen(false);
+                  }}
+                  className={`px-2 py-1 text-sm rounded ${
+                    i18n.language === 'fr' 
+                      ? 'bg-mywai text-white' 
+                      : 'border border-mywai text-mywai hover:bg-mywai hover:text-white'
+                  }`}
+                >
+                  FR
+                </button>
+                <button
+                  onClick={() => {
+                    changeLanguage('en');
+                    setIsMenuOpen(false);
+                  }}
+                  className={`px-2 py-1 text-sm rounded ${
+                    i18n.language === 'en' 
+                      ? 'bg-mywai text-white' 
+                      : 'border border-mywai text-mywai hover:bg-mywai hover:text-white'
+                  }`}
+                >
+                  EN
+                </button>
+                <button
+                  onClick={() => {
+                    changeLanguage('es');
+                    setIsMenuOpen(false);
+                  }}
+                  className={`px-2 py-1 text-sm rounded ${
+                    i18n.language === 'es' 
+                      ? 'bg-mywai text-white' 
+                      : 'border border-mywai text-mywai hover:bg-mywai hover:text-white'
+                  }`}
+                >
+                  ES
+                </button>
+              </div>
+            </div>
+            </div>
         </div>
       )}
     </nav>

@@ -82,10 +82,10 @@ const BookDemo = () => {
               src="//v.calameo.com/?bkcode=007887638a76298bca9cd&authid=BnuMmf5tfguS&mode=viewer&bgColor=F3F4F6" 
               frameBorder="0" 
               scrolling="no" 
-              allowTransparency 
               allowFullScreen 
               className="absolute inset-0 w-full h-full" // Make iframe fill the responsive wrapper
               title="Extrait de livre MyWai sur Calaméo"
+              {...({ allowtransparency: "true" } as any)}
             ></iframe>
           </div>
           {/* Note: For a fully responsive Calaméo embed, you might need to use Calaméo's responsive embed options 
