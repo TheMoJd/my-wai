@@ -1,51 +1,27 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import Button from './ui/button/Button';
 import Avatar from './ui/avatar/Avatar';
 import Badge from './ui/badge/Badge';
 
 const Testimonials = () => {
-  const testimonials = [
-    {
-      content: "« Pour ses 45 ans, on voulait faire un truc vraiment différent. On a réuni les souvenirs de ses amis, de ses potes d’école, de ses ex, même de ses collègues ! Le résultat : un livre drôle, tendre, touchant, complètement à son image. Il a ri, il a pleuré, et il l’a relu trois fois dans la semaine. »",
-      author: "Élodie M.",
-      role: "amie de longue date",
-    },
-    {
-      content: "« Le jour de son pot de départ, on lui a remis le livre devant toute l’équipe. Il l’a feuilleté, a reconnu les messages, les anecdotes… et il s’est arrêté net. Il avait les larmes aux yeux. C’est le genre de cadeau qu’on n’oublie pas. Même les collègues les plus sceptiques ont été bluffés par la qualité et la sensibilité du résultat. »",
-      author: "Julien T.",
-      role: "Chef de projet",
-    },
-    {
-      content: "J'ai offert ce livre à ma mère pour ses 70 ans. Elle a versé des larmes de joie en lisant tous les témoignages de ses amis et de sa famille. C'est un cadeau qui l'accompagnera toute sa vie.",
-      author: "Marie L.",
-      role: "Pour l'anniversaire de sa mère"
-    },
-    {
-      content: "Le processus est incroyablement simple. L'équipe de MyWai a fait tout le travail difficile, de la coordination des contributions à l'édition. Le résultat est magnifiquement mis en page et très professionnel.",
-      author: "Thomas B.",
-      role: "Pour la retraite de son père"
-    },
-    {
-      content: "J'hésitais à cause du prix, mais la qualité du livre et les émotions qu'il a suscitées valent chaque centime. Un cadeau vraiment unique que l'argent ne peut normalement pas acheter.",
-      author: "Sophie D.",
-      role: "Pour l'anniversaire de mariage de ses parents"
-    },
-    {
-      content: "Nous avons créé ce livre pour notre professeur qui prenait sa retraite après 30 ans d'enseignement. Voir tous les anciens élèves contribuer avec leurs souvenirs était incroyable, et il était profondément touché.",
-      author: "Lucas M.",
-      role: "Pour un professeur"
-    }
-  ];
+  const { t } = useTranslation();
+  
+  const testimonials = t('testimonials_section.testimonials', { returnObjects: true }) as Array<{
+    content: string;
+    author: string;
+    role: string;
+  }>;
 
   return (
     <section className="section-padding bg-cream relative" id="testimonials">
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNGRkE1NUEiIGZpbGwtb3BhY2l0eT0iMC4xIj48cGF0aCBkPSJNMzYgMzRjMC0yIDEtMyAzLTNzMyAxIDMgMy0xIDMtMyAzLTMtMS0zLTN6bTAtMTBjMC0yIDEtMyAzLTNzMyAxIDMgMy0xIDMtMyAzLTMtMS0zLTN6bTEwIDEwYzAtMiAxLTMgMy0zczMgMSAzIDMtMSAzLTMgMy0zLTEtMy0zem0tMTAgMTBjMC0yIDEtMyAzLTNzMyAxIDMgMy0xIDMtMyAzLTMtMS0zLTN6bS0xMC0yMGMwLTIgMS0zIDMtM3MzIDEgMyAzLTEgMy0zIDMtMy0xLTMtM3ptLTEwIDEwYzAtMiAxLTMgMy0zczMgMSAzIDMtMSAzLTMgMy0zLTEtMy0zem0zMCAxMGMwLTIgMS0zIDMtM3MzIDEgMyAzLTEgMy0zIDMtMy0xLTMtM3pNMTYgMzRjMC0yIDEtMyAzLTNzMyAxIDMgMy0xIDMtMyAzLTMtMS0zLTN6bS0xMC0xMGMwLTIgMS0zIDMtM3MzIDEgMyAzLTEgMy0zIDMtMy0xLTMtM3ptMTAgMTBjMC0yIDEtMyAzLTNzMyAxIDMgMy0xIDMtMyAzLTMtMS0zLTN6TTM2IDE0YzAtMiAxLTMgMy0zczMgMSAzIDMtMSAzLTMgMy0zLTEtMy0zek0xNiAxNGMwLTIgMS0zIDMtM3MzIDEgMyAzLTEgMy0zIDMtMy0xLTMtM3ptMTAgNDBjMC0yIDEtMyAzLTNzMyAxIDMgMy0xIDMtMyAzLTMtMS0zLTN6Ii8+PC9nPjwvZz48L3N2Zz4=')] opacity-30"></div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <h2 className="section-title">Ce qu'en disent nos clients</h2>
+        <h2 className="section-title">{t('testimonials_section.title')}</h2>
         <p className="section-subtitle">
-          Découvrez les témoignages de ceux qui ont offert un livre biographique MyWai
+          {t('testimonials_section.subtitle')}
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
@@ -73,7 +49,7 @@ const Testimonials = () => {
                   </div>
                 </div>
                 <Badge variant="light" color="success" size="sm">
-                  Vérifié
+                  {t('testimonials_section.verified')}
                 </Badge>
               </div>
             </div>
@@ -91,7 +67,7 @@ const Testimonials = () => {
             }}
             className="!bg-mywai hover:!bg-mywai-dark !text-white"
           >
-            Créer une biographie
+            {t('testimonials_section.cta_button')}
           </Button>
         </div>
       </div>

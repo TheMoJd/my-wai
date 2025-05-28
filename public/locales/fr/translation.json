@@ -5,5 +5,116 @@
   "testimonials": "Témoignages",
   "pricing": "Tarifs",
   "faq": "FAQ",
-  "back_to_top": "Retour en haut"
+  "back_to_top": "Retour en haut",
+  "navbar": {
+    "about": "MyWai, c'est quoi ?",
+    "account": "Mon compte",
+    "try_free": "Essayer gratuitement",
+    "language": "Langue"
+  },
+  "hero": {
+    "title": "Offrez le plus beau des cadeaux : une",
+    "title_highlight": "biographie personnalisée",
+    "subtitle": "Anniversaire, départ en retraitre, hommage...",
+    "description": "Générée par l'IA, nourrie par les souvenirs des proches. Un livre autobiographique cohérent et émouvant, créant un cadeau personnalisé et intemporel.",
+    "cta_primary": "Offrir une biographie sur mesure",
+    "cta_secondary": "Exemple d'un livre",
+    "feature1_title": "Une idée cadeau personnalisé et intemporel",
+    "feature1_description": "Les objets s'oublient. Les souvenirs restent. Avec MyWai, vous offrez un récit sur mesure, intime, qui traverse le temps.",
+    "feature2_title": "La puissance de l'IA au service de l'émotion",
+    "feature2_description": "Notre intelligence artificielle transforme les témoignages, anecdotes, photos et traits de caractère en une histoire unique, cohérente et profondément humaine.",
+    "feature3_title": "Un vrai livre dans vos mains",
+    "feature3_description": "Reliure de qualité, mise en page élégante, couverture personnalisée… Le résultat est digne d'une autobiographie d'éditeur."
+  },
+  "pricing_section": {
+    "title": "Un prix unique et transparent pour ce livre inoubliable",
+    "subtitle": "Le plus beau cadeau pour un anniversaire, un départ en retraite ou un hommage.",
+    "price": "99€",
+    "price_suffix": "TTC",
+    "features_title": "Tout ce qui est inclus",
+    "features": [
+      "Livre composé de plusieurs chapitres",
+      "Pas de limite de contributeurs",
+      "Édition professionnelle",
+      "Mise en page soignée",
+      "Livre relié de qualité",
+      "Livraison offerte",
+      "Espace privé pour rééditer"
+    ],
+    "how_to_title": "Comment procéder ?",
+    "how_to_description": "Lancez votre projet dès aujourd'hui et offrez un cadeau qui restera gravé dans les mémoires.",
+    "cta_button": "Créer mon livre",
+    "payment_security": "Paiement sécurisé - Satisfaction garantie",
+    "additional_options_title": "Besoin d'options supplémentaires ?",
+    "additional_options_description": "Contactez-nous pour des demandes spéciales comme des cadeaux d'entreprises, idée cadeau départ en retraite, des exemplaires supplémentaires, des évolutions..."
+  },
+  "process_section": {
+    "title": "Comment ça marche pour créer une biographie unique",
+    "subtitle": "Une création sans effort avec un processus guidé en 6 étapes pour l'initiateur du projet et les contributeurs.",
+    "steps": [
+      {
+        "title": "Création d'un espace pour la personne à célébrer (gratuit)",
+        "description": "Ajoutez son prénom, sa date de naissance, quelques traits de personnalité, le ton du livre…"
+      },
+      {
+        "title": "Invitation des proches à contribuer (sans limitation)",
+        "description": "Famille, amis, collègues peuvent partager des anecdotes, souvenirs, photos..."
+      },
+      {
+        "title": "L'IA construit la biographie (1er chapitre offert)",
+        "description": "En quelques minutes, une première version vous est proposée. Émouvante, bien écrite, fidèle."
+      },
+      {
+        "title": "Vous relisez, corrigez, personnalisez",
+        "description": "Ajoutez des détails, modifiez des chapitres, changez le ton… c'est votre livre."
+      },
+      {
+        "title": "Impression du livre unique",
+        "description": "Mise en page professionnelle, Reliure élégante et contrôle qualité."
+      },
+      {
+        "title": "Livraison du livre",
+        "description": "Recevez le livre directement chez vous, prêt à être offert comme un cadeau inoubliable."
+      }
+    ],
+    "cta_button": "Créer une biographie"
+  },
+  "testimonials_section": {
+    "title": "Ce qu'en disent nos clients",
+    "subtitle": "Découvrez les témoignages de ceux qui ont offert un livre biographique MyWai",
+    "verified": "Vérifié",
+    "testimonials": [
+      {
+        "content": "« Pour ses 45 ans, on voulait faire un truc vraiment différent. On a réuni les souvenirs de ses amis, de ses potes d'école, de ses ex, même de ses collègues ! Le résultat : un livre drôle, tendre, touchant, complètement à son image. Il a ri, il a pleuré, et il l'a relu trois fois dans la semaine. »",
+        "author": "Élodie M.",
+        "role": "amie de longue date"
+      },
+      {
+        "content": "« Le jour de son pot de départ, on lui a remis le livre devant toute l'équipe. Il l'a feuilleté, a reconnu les messages, les anecdotes… et il s'est arrêté net. Il avait les larmes aux yeux. C'est le genre de cadeau qu'on n'oublie pas. Même les collègues les plus sceptiques ont été bluffés par la qualité et la sensibilité du résultat. »",
+        "author": "Julien T.",
+        "role": "Chef de projet"
+      },
+      {
+        "content": "J'ai offert ce livre à ma mère pour ses 70 ans. Elle a versé des larmes de joie en lisant tous les témoignages de ses amis et de sa famille. C'est un cadeau qui l'accompagnera toute sa vie.",
+        "author": "Marie L.",
+        "role": "Pour l'anniversaire de sa mère"
+      },
+      {
+        "content": "Le processus est incroyablement simple. L'équipe de MyWai a fait tout le travail difficile, de la coordination des contributions à l'édition. Le résultat est magnifiquement mis en page et très professionnel.",
+        "author": "Thomas B.",
+        "role": "Pour la retraite de son père"
+      },
+      {
+        "content": "J'hésitais à cause du prix, mais la qualité du livre et les émotions qu'il a suscitées valent chaque centime. Un cadeau vraiment unique que l'argent ne peut normalement pas acheter.",
+        "author": "Sophie D.",
+        "role": "Pour l'anniversaire de mariage de ses parents"
+      },
+      {
+        "content": "Nous avons créé ce livre pour notre professeur qui prenait sa retraite après 30 ans d'enseignement. Voir tous les anciens élèves contribuer avec leurs souvenirs était incroyable, et il était profondément touché.",
+        "author": "Lucas M.",
+        "role": "Pour un professeur"
+      }
+    ],
+    "cta_button": "Créer une biographie"
+  }
 }

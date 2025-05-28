@@ -5,5 +5,116 @@
   "testimonials": "Testimonios",
   "pricing": "Precios",
   "faq": "FAQ",
-  "back_to_top": "Volver arriba"
+  "back_to_top": "Volver arriba",
+  "navbar": {
+    "about": "¿Qué es MyWai?",
+    "account": "Mi cuenta",
+    "try_free": "Prueba gratis",
+    "language": "Idioma"
+  },
+  "hero": {
+    "title": "Regala el más hermoso de los regalos: una",
+    "title_highlight": "biografía personalizada",
+    "subtitle": "Cumpleaños, jubilación, homenaje...",
+    "description": "Generada por IA, nutrida por los recuerdos de los seres queridos. Un libro autobiográfico coherente y emotivo, creando un regalo personalizado y atemporal.",
+    "cta_primary": "Ofrecer una biografía a medida",
+    "cta_secondary": "Ejemplo de un libro",
+    "feature1_title": "Una idea de regalo personalizada y atemporal",
+    "feature1_description": "Los objetos se olvidan. Los recuerdos permanecen. Con MyWai, ofreces una historia a medida, íntima, que trasciende el tiempo.",
+    "feature2_title": "El poder de la IA al servicio de la emoción",
+    "feature2_description": "Nuestra inteligencia artificial transforma testimonios, anécdotas, fotos y rasgos de carácter en una historia única, coherente y profundamente humana.",
+    "feature3_title": "Un libro real en tus manos",
+    "feature3_description": "Encuadernación de calidad, diseño elegante, portada personalizada... El resultado es digno de una autobiografía de editorial."
+  },
+  "pricing_section": {
+    "title": "Un precio único y transparente para este libro inolvidable",
+    "subtitle": "El regalo más hermoso para un cumpleaños, jubilación u homenaje.",
+    "price": "99€",
+    "price_suffix": "IVA incluido",
+    "features_title": "Todo lo que está incluido",
+    "features": [
+      "Libro compuesto de varios capítulos",
+      "Sin límite de colaboradores",
+      "Edición profesional",
+      "Maquetación cuidada",
+      "Libro encuadernado de calidad",
+      "Entrega gratuita",
+      "Espacio privado para reeditar"
+    ],
+    "how_to_title": "¿Cómo proceder?",
+    "how_to_description": "Lanza tu proyecto hoy y ofrece un regalo que quedará grabado en las memorias.",
+    "cta_button": "Crear mi libro",
+    "payment_security": "Pago seguro - Satisfacción garantizada",
+    "additional_options_title": "¿Necesitas opciones adicionales?",
+    "additional_options_description": "Contáctanos para solicitudes especiales como regalos corporativos, ideas de regalo de jubilación, copias adicionales, desarrollos..."
+  },
+  "process_section": {
+    "title": "Cómo funciona para crear una biografía única",
+    "subtitle": "Creación sin esfuerzo con un proceso guiado de 6 pasos para el iniciador del proyecto y los colaboradores.",
+    "steps": [
+      {
+        "title": "Creación de un espacio para la persona a celebrar (gratis)",
+        "description": "Añade su nombre, fecha de nacimiento, algunos rasgos de personalidad, el tono del libro..."
+      },
+      {
+        "title": "Invitación a los seres queridos a contribuir (sin limitación)",
+        "description": "Familia, amigos, colegas pueden compartir anécdotas, recuerdos, fotos..."
+      },
+      {
+        "title": "La IA construye la biografía (1er capítulo ofrecido)",
+        "description": "En pocos minutos, se te propone una primera versión. Emotiva, bien escrita, fiel."
+      },
+      {
+        "title": "Revisas, corriges, personalizas",
+        "description": "Añade detalles, modifica capítulos, cambia el tono... es tu libro."
+      },
+      {
+        "title": "Impresión del libro único",
+        "description": "Maquetación profesional, encuadernación elegante y control de calidad."
+      },
+      {
+        "title": "Entrega del libro",
+        "description": "Recibe el libro directamente en casa, listo para ser ofrecido como un regalo inolvidable."
+      }
+    ],
+    "cta_button": "Crear una biografía"
+  },
+  "testimonials_section": {
+    "title": "Lo que dicen nuestros clientes",
+    "subtitle": "Descubre los testimonios de quienes ofrecieron un libro biográfico MyWai",
+    "verified": "Verificado",
+    "testimonials": [
+      {
+        "content": "« Para sus 45 años, queríamos hacer algo realmente diferente. Reunimos los recuerdos de sus amigos, compañeros de escuela, ex parejas, ¡incluso colegas! El resultado: un libro divertido, tierno, conmovedor, completamente a su imagen. Se rió, lloró, y lo releyó tres veces en la semana. »",
+        "author": "Élodie M.",
+        "role": "amiga de mucho tiempo"
+      },
+      {
+        "content": "« El día de su fiesta de despedida, le entregamos el libro delante de todo el equipo. Lo hojeó, reconoció los mensajes, las anécdotas... y se detuvo en seco. Tenía lágrimas en los ojos. Es el tipo de regalo que no se olvida. Incluso los colegas más escépticos quedaron impresionados por la calidad y sensibilidad del resultado. »",
+        "author": "Julien T.",
+        "role": "Jefe de proyecto"
+      },
+      {
+        "content": "Le regalé este libro a mi madre para sus 70 años. Derramó lágrimas de alegría leyendo todos los testimonios de sus amigos y familia. Es un regalo que la acompañará toda su vida.",
+        "author": "Marie L.",
+        "role": "Para el cumpleaños de su madre"
+      },
+      {
+        "content": "El proceso es increíblemente simple. El equipo de MyWai hizo todo el trabajo difícil, desde coordinar las contribuciones hasta la edición. El resultado está bellamente maquetado y es muy profesional.",
+        "author": "Thomas B.",
+        "role": "Para la jubilación de su padre"
+      },
+      {
+        "content": "Dudé por el precio, pero la calidad del libro y las emociones que despertó valen cada centavo. Un regalo verdaderamente único que el dinero normalmente no puede comprar.",
+        "author": "Sophie D.",
+        "role": "Para el aniversario de bodas de sus padres"
+      },
+      {
+        "content": "Creamos este libro para nuestro profesor que se jubilaba después de 30 años de enseñanza. Ver a todos los antiguos alumnos contribuir con sus recuerdos fue increíble, y él estaba profundamente conmovido.",
+        "author": "Lucas M.",
+        "role": "Para un profesor"
+      }
+    ],
+    "cta_button": "Crear una biografía"
+  }
 }

@@ -6,7 +6,7 @@ import { Dropdown } from './ui/dropdown/Dropdown';
 import { DropdownItem } from './ui/dropdown/DropdownItem';
 
 const Navbar = () => {
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false);
@@ -43,11 +43,10 @@ const Navbar = () => {
               className="h-full w-full object-contain"
             />
           </div>
-        </a>        
-        <div className="hidden md:flex items-center gap-8">
+        </a>          <div className="hidden md:flex items-center gap-8">
           
-          <a href="#about" className="text-foreground hover:text-mywai transition-colors">MyWai, c'est quoi ?</a>
-          <a href="#testimonials" className="text-foreground hover:text-mywai transition-colors">Mon compte</a>
+          <a href="#about" className="text-foreground hover:text-mywai transition-colors">{t('navbar.about')}</a>
+          <a href="#testimonials" className="text-foreground hover:text-mywai transition-colors">{t('navbar.account')}</a>
           <Button
             variant="primary"
             size="sm"
@@ -57,11 +56,9 @@ const Navbar = () => {
             }}
             className="!bg-mywai hover:!bg-mywai-dark !text-white"
           >
-            Essayer gratuitement
+            {t('navbar.try_free')}
           </Button>
-          
-          <div className="relative">
-            <span className="text-foreground text-sm mr-2">Langue</span>
+            <div className="relative">
             <Button
               variant="outline"
               size="sm"
@@ -100,21 +97,21 @@ const Navbar = () => {
       </div>
       {isMenuOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-cream shadow-lg py-4">
-          <div className="container mx-auto px-4 flex flex-col gap-4">
-            <a 
+          <div className="container mx-auto px-4 flex flex-col gap-4">            <a 
               href="#about" 
               className="text-foreground hover:text-mywai py-2 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              MyWai, c'est quoi ?
+              {t('navbar.about')}
             </a>
             <a 
               href="#testimonials" 
               className="text-foreground hover:text-mywai py-2 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              Mon compte
-            </a>            <Button
+              {t('navbar.account')}
+            </a>            
+            <Button
               variant="primary"
               size="sm"
               onClick={() => {
@@ -124,11 +121,10 @@ const Navbar = () => {
               }}
               className="!bg-mywai hover:!bg-mywai-dark !text-white w-full"
             >
-              Essayer gratuitement
+              {t('navbar.try_free')}
             </Button>
             
             <div className="flex items-center justify-between pt-2">
-              <span className="text-foreground text-sm">Langue</span>
               <div className="flex gap-2">
                 <button
                   onClick={() => {
