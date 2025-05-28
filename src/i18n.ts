@@ -9,12 +9,17 @@ i18n
   .use(initReactI18next)
   .init({
     debug: true,
-    fallbackLng: 'en',
+    lng: 'fr', // Set French as default language
+    fallbackLng: 'fr', // Also set French as fallback
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default
     },
     backend: {
       loadPath: '/locales/{{lng}}/{{ns}}.json',
+    },
+    detection: {
+      order: ['localStorage', 'navigator'], // Check localStorage first, then browser language
+      caches: ['localStorage'], // Store language preference in localStorage
     }
   });
 
