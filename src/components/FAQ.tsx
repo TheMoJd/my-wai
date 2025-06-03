@@ -2,7 +2,16 @@ import React, { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
-const FAQItem = ({ item, isOpen, onClick }) => {
+type FAQItemProps = {
+	item: {
+		question: string;
+		answer: string;
+	};
+	isOpen: boolean;
+	onClick: () => void;
+};
+
+const FAQItem: React.FC<FAQItemProps> = ({ item, isOpen, onClick }) => {
 	return (
 		<div className="border-b border-gray-200 py-6 transition-all duration-300 ease-in-out">
 			<button

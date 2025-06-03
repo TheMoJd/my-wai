@@ -1,13 +1,18 @@
+import { lazy } from 'react';
+import { useTranslation } from 'react-i18next';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
-import Process from '../components/Process';
-import BookDemo from '../components/BookDemo';
-import Pricing from '../components/Pricing';
-import Testimonials from '../components/Testimonials';
-import Footer from '../components/Footer';
-import FAQ from '@/components/FAQ';
-import { useTranslation } from 'react-i18next';
+import LazyWrapper from '../components/ui/loading/LazyWrapper';
+import LoadingSpinner from '../components/ui/loading/LoadingSpinner';
 import Button from '../components/ui/button/Button';
+
+// Lazy load des composants lourds
+const Process = lazy(() => import('../components/Process'));
+const BookDemo = lazy(() => import('../components/BookDemo'));
+const Pricing = lazy(() => import('../components/Pricing'));
+const Testimonials = lazy(() => import('../components/Testimonials'));
+const FAQ = lazy(() => import('@/components/FAQ'));
+const Footer = lazy(() => import('../components/Footer'));
 
 const Index = () => {
   const { t, i18n } = useTranslation();
@@ -20,12 +25,73 @@ const Index = () => {
     <div className="min-h-screen">
       <Navbar />
       <Hero />
-      <Process />
-      <BookDemo />
-      <Testimonials />
-      <Pricing />
-      <FAQ />
-      <Footer />
+      
+      <LazyWrapper 
+        minHeight="400px"
+        fallback={
+          <div className="section-padding bg-white flex items-center justify-center">
+            <LoadingSpinner size="lg" text="Chargement du processus..." />
+          </div>
+        }
+      >
+        <Process />
+      </LazyWrapper>
+      
+      <LazyWrapper 
+        minHeight="600px"
+        fallback={
+          <div className="section-padding bg-cream flex items-center justify-center">
+            <LoadingSpinner size="lg" text="Chargement de la démonstration..." />
+          </div>
+        }
+      >
+        <BookDemo />
+      </LazyWrapper>
+      
+      <LazyWrapper 
+        minHeight="400px"
+        fallback={
+          <div className="section-padding bg-white flex items-center justify-center">
+            <LoadingSpinner size="lg" text="Chargement des témoignages..." />
+          </div>
+        }
+      >
+        <Testimonials />
+      </LazyWrapper>
+      
+      <LazyWrapper 
+        minHeight="500px"
+        fallback={
+          <div className="section-padding bg-cream flex items-center justify-center">
+            <LoadingSpinner size="lg" text="Chargement des tarifs..." />
+          </div>
+        }
+      >
+        <Pricing />
+      </LazyWrapper>
+      
+      <LazyWrapper 
+        minHeight="400px"
+        fallback={
+          <div className="section-padding bg-white flex items-center justify-center">
+            <LoadingSpinner size="lg" text="Chargement des questions fréquentes..." />
+          </div>
+        }
+      >
+        <FAQ />
+      </LazyWrapper>
+      
+      <LazyWrapper 
+        minHeight="300px"
+        fallback={
+          <div className="bg-mywai-dark text-white flex items-center justify-center" style={{ minHeight: '300px' }}>
+            <LoadingSpinner size="lg" text="Chargement du pied de page..." />
+          </div>
+        }
+      >
+        <Footer />
+      </LazyWrapper>
+      
       <button
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         className="fixed bottom-6 right-6 w-12 h-12 bg-mywai text-white rounded-full flex items-center justify-center shadow-lg hover:bg-mywai-dark transition-colors z-50"
