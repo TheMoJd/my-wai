@@ -43,7 +43,6 @@ const Footer = () => {
               <li><a href="#" className="text-muted-foreground hover:text-mywai transition-colors">{t('footer.information.faq')}</a></li>
               <li><a href="/mentions-legales" className="text-muted-foreground hover:text-mywai transition-colors">{t('footer.information.legal')}</a></li>
               <li><a href="/cgu" className="text-muted-foreground hover:text-mywai transition-colors">{t('footer.information.terms')}</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-mywai transition-colors">{t('footer.information.delivery')}</a></li>
             </ul>
           </div>
           

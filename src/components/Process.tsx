@@ -74,10 +74,7 @@ const Process = () => {
             variant="primary"
             size="md"
             endIcon={<ArrowRight className="h-4 w-4" />}
-            onClick={() => {
-              const contactSection = document.getElementById('contact');
-              contactSection?.scrollIntoView({ behavior: 'smooth' });
-            }}
+            onClick={() => window.location.href = 'https://mywai.softwarexnihilo.com/session/new'}
             className="!bg-mywai hover:!bg-mywai-dark !text-white"
           >
             {t('process_section.cta_button')}

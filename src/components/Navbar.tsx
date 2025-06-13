@@ -35,7 +35,7 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <a href="#" className="flex items-center gap-2">
+        <a href="/" className="flex items-center gap-2">
           <div className="relative h-14 w-14">
             <img
               src="/logo.png"
@@ -58,10 +58,7 @@ const Navbar = () => {
           <Button
             variant="primary"
             size="sm"
-            onClick={() => {
-              const contactSection = document.getElementById('contact');
-              contactSection?.scrollIntoView({ behavior: 'smooth' });
-            }}
+            onClick={() => window.location.href = 'https://mywai.softwarexnihilo.com/session/new'}
             className="!bg-mywai hover:!bg-mywai-dark !text-white"
           >
             {t('navbar.try_free')}

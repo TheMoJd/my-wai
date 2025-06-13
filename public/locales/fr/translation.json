@@ -200,5 +200,99 @@
       "address_value": "Paris, France"
     },
     "copyright": "Tous droits réservés."
+  },
+  "cgu": {
+    "title": "📋 Conditions Générales d'Utilisation – MyWai",
+    "last_updated": "Dernière mise à jour :",
+    "effective_date": "Date d'entrée en vigueur :",
+    "sections": {
+      "introduction": {
+        "title": "1. Objet",
+        "content": "Les présentes Conditions Générales d'Utilisation ont pour objet de définir les modalités d'utilisation du service MyWai, accessible via le site https://my-w.ai, et de préciser les droits et obligations des utilisateurs et de l'éditeur.\n\nMyWai est un service en ligne permettant de créer une biographie personnalisée à partir des contributions de proches, générée avec l'aide d'une intelligence artificielle, et pouvant être imprimée sous forme de livre."
+      },
+      "service_description": {
+        "title": "2. Acceptation des conditions",
+        "content": "L'utilisation du service implique l'acceptation pleine et entière des présentes CGU. En accédant à la plateforme, en créant un projet ou en contribuant à un livre, vous reconnaissez avoir lu, compris et accepté ces conditions."
+      },
+      "user_obligations": {
+        "title": "3. Accès au service",
+        "content": "L'accès à la plateforme est ouvert à tout utilisateur disposant d'un accès à Internet. Certaines fonctionnalités sont soumises à la création d'un compte ou au paiement d'un projet (achat direct ou cagnotte).\n\nMyWai se réserve le droit de suspendre temporairement ou définitivement l'accès à ses services, sans préavis, notamment pour maintenance ou mise à jour."
+      },
+      "content_creation": {
+        "title": "4. Création de contenu",
+        "content": "Les utilisateurs peuvent :\n\n• Créer un espace projet pour une personne à célébrer\n\n• Inviter des proches à contribuer via des messages, anecdotes, photos, fichiers audio\n\n• Modifier, relire et valider le contenu avant impression\n\nLe contenu généré par l'IA s'appuie exclusivement sur les éléments fournis. L'utilisateur final reste responsable de la vérification et de la validation des textes avant impression."
+      },
+      "intellectual_property": {
+        "title": "5. Propriété intellectuelle",
+        "content": "L'ensemble des textes générés dans le cadre d'un projet MyWai est la propriété de l'utilisateur final une fois le paiement effectué.\n\nMyWai ne revendique aucun droit de diffusion ou d'exploitation commerciale sur les contenus finalisés, sauf accord explicite.\n\nL'utilisateur garantit disposer des droits nécessaires sur les contenus (textes, images, témoignages) qu'il téléverse ou invite à partager."
+      },
+      "data_privacy": {
+        "title": "6. Protection des données personnelles",
+        "content": "MyWai s'engage à respecter la confidentialité des données collectées :\n\n• Les contributions sont privées, non indexées, et accessibles uniquement aux personnes invitées\n\n• Aucune donnée n'est cédée à des tiers\n\n• L'utilisateur peut à tout moment demander la suppression de ses données via contact@mywai.com\n\nLes données sont stockées de manière sécurisée sur des serveurs hébergés en Europe, conformément au RGPD."
+      },
+      "payment_delivery": {
+        "title": "7. Tarification",
+        "content": "Les tarifs des services (livre imprimé, options supplémentaires, versions numériques, etc.) sont indiqués sur le site. MyWai se réserve le droit de modifier ses prix à tout moment.\n\nLes projets financés par cagnotte sont débloqués uniquement si le montant total est atteint. En cas d'échec, les contributeurs peuvent être remboursés ou invités à compléter le montant."
+      },
+      "cancellation": {
+        "title": "8. Droit de rétractation",
+        "content": "Pour tout achat de livre imprimé, l'utilisateur dispose d'un délai légal de rétractation tant que le contenu n'a pas été validé pour impression. Une fois la validation confirmée, le livre entre en production et ne peut être annulé ni remboursé, sauf défaut manifeste."
+      },
+      "liability": {
+        "title": "9. Responsabilité",
+        "content": "MyWai ne saurait être tenu responsable :\n\n• Des propos partagés par les contributeurs\n\n• Des erreurs ou omissions dans le contenu validé par l'utilisateur\n\n• Des retards liés aux prestataires d'impression ou livraison\n\nL'utilisateur s'engage à utiliser le service de manière respectueuse, sans propos haineux, diffamatoires ou discriminants."
+      },
+      "modifications": {
+        "title": "10. Modification des CGU",
+        "content": "Les présentes conditions peuvent être modifiées à tout moment. Les utilisateurs seront informés des modifications importantes. L'utilisation continue du service après modification vaut acceptation."
+      },
+      "applicable_law": {
+        "title": "11. Droit applicable",
+        "content": "Les présentes conditions sont régies par le droit français. En cas de litige, compétence est attribuée aux tribunaux français compétents."
+      },
+      "contact": {
+        "title": "12. Contact",
+        "content": "Pour toute question concernant ces conditions ou l'utilisation de MyWai :\n\n📧 contact@my-w.ai"
+      }
+    }
+  },
+  "mentions_legales": {
+    "title": "📄 Mentions légales – MyWai",
+    "sections": {
+      "editor": {
+        "title": "Éditeur du site",
+        "content": "Le site https://www.my-w.ai est édité par :",
+        "company_name": "GLAZH",
+        "siret": "SIRET : 497693309",
+        "address": "Siège social : 11 résidence la Chesnaie - 29290 Saint-Renan",
+        "contact": "Contact : contact@mywai.com"
+      },
+      "director": {
+        "title": "Directeur de la publication",
+        "content": "[Nom Prénom du fondateur ou CEO]"
+      },
+      "hosting": {
+        "title": "Hébergement",
+        "content": "Ce site est hébergé par :",
+        "host_name": "[Nom de l'hébergeur, ex. OVHcloud]",
+        "host_address": "[Adresse légale ou pays de l'hébergeur]",
+        "host_support": "support : [email si disponible]"
+      },
+      "intellectual_property": {
+        "title": "Propriété intellectuelle",
+        "content_1": "Tous les contenus présents sur ce site (textes, visuels, structure, logo) sont la propriété exclusive de MyWai ou de ses contributeurs.",
+        "content_2": "Toute reproduction partielle ou totale sans autorisation est interdite."
+      },
+      "personal_data": {
+        "title": "Données personnelles",
+        "content_1": "Les informations recueillies via le site sont utilisées uniquement pour la création et la gestion des biographies.",
+        "content_2": "Elles ne sont jamais revendues.",
+        "content_3": "Vous pouvez demander leur suppression à tout moment par e-mail à : contact@my-w.ai"
+      },
+      "cookies": {
+        "title": "Cookies",
+        "content": "Le site utilise des cookies pour améliorer la navigation et mesurer l'audience. Vous pouvez les refuser dans les paramètres de votre navigateur."
+      }
+    }
   }
 }

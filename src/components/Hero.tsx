@@ -24,18 +24,15 @@ const Hero = () => {
               {t('hero.description')}
             </p>            
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button
+                <Button
                 variant="primary"
                 size="md"
                 endIcon={<ArrowRight className="h-4 w-4" />}
-                onClick={() => {
-                  const demoSection = document.getElementById('demo');
-                  demoSection?.scrollIntoView({ behavior: 'smooth' });
-                }}
+                onClick={() => window.location.href = 'https://mywai.softwarexnihilo.com/session/new'}
                 className="!bg-mywai hover:!bg-mywai-dark !text-white"
-              >
+                >
                 {t('hero.cta_primary')}
-              </Button>
+                </Button>
               <Button
                 variant="outline"
                 size="md"

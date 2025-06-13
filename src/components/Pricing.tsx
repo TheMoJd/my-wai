@@ -45,10 +45,8 @@ const Pricing = () => {
                   variant="primary"
                   size="md"
                   endIcon={<ArrowRight className="h-4 w-4" />}
-                  onClick={() => {
-                    const contactSection = document.getElementById('contact');
-                    contactSection?.scrollIntoView({ behavior: 'smooth' });
-                  }}                  className="w-full !bg-mywai hover:!bg-mywai-dark !text-white"
+                  onClick={() => window.location.href = 'https://mywai.softwarexnihilo.com/session/new'}
+                  className="w-full !bg-mywai hover:!bg-mywai-dark !text-white"
                 >
                   {t('pricing_section.cta_button')}
                 </Button>
@@ -56,7 +54,8 @@ const Pricing = () => {
                   {t('pricing_section.payment_security')}
                 </p>
               </div>
-            </div>            <div className="mt-8 pt-6 border-t border-gray-100">
+            </div>
+            <div className="mt-8 pt-6 border-t border-gray-100">
               <h4 className="font-medium mb-2">{t('pricing_section.additional_options_title')}</h4>
               <p className="text-sm text-muted-foreground">
                 {t('pricing_section.additional_options_description')}
