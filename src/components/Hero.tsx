@@ -50,10 +50,17 @@ const Hero = () => {
             </div>
           </div>
           
-          <div className="relative">
+          <div className="relative">            
             <div className="relative z-10 animate-float">
               <div className="bg-white rounded-xl shadow-xl p-6 transform rotate-3 max-w-md mx-auto">
-                <div className="w-full aspect-[4/5] bg-gradient-to-br from-mywai-light to-mywai rounded-lg mb-4"></div>
+                <div className="relative w-full aspect-[4/5] bg-gradient-to-br from-mywai-light to-mywai rounded-lg mb-4 overflow-hidden">
+                  <img 
+                    src="/famille.png" 
+                    alt="Famille heureuse avec des souvenirs" 
+                    className="absolute inset-0 w-full h-full object-cover rounded-lg opacity-90 hover:opacity-100 transition-opacity duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-br from-mywai-light/20 to-mywai/20 rounded-lg"></div>
+                </div>
                 <div className="space-y-2">
                   <div className="h-6 bg-mywai/20 rounded-full w-3/4"></div>
                   <div className="h-4 bg-mywai/10 rounded-full"></div>
@@ -71,8 +78,7 @@ const Hero = () => {
               
               <div className="absolute -bottom-10 -right-10 bg-white rounded-lg shadow-lg p-3 transform rotate-12">
                 <div className="h-20 w-32 rounded-md bg-mywai/10 flex items-center justify-center">
-                  <div className="h-3 w-20 bg-mywai/30 rounded-full mb-2"></div>
-                  <div className="h-3 w-16 bg-mywai/30 rounded-full"></div>
+                  <img src="/envoyer_selfie.png" alt="envoyer_selfie" className="w-full h-full object-cover rounded-md" />
                 </div>
               </div>
             </div>

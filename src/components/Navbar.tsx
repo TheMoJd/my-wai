@@ -47,7 +47,14 @@ const Navbar = () => {
         </a>          
         <div className="hidden md:flex items-center gap-8">    
           <a href="#about" className="text-foreground hover:text-mywai transition-colors">{t('navbar.about')}</a>
-          <a href="#testimonials" className="text-foreground hover:text-mywai transition-colors">{t('navbar.account')}</a>
+          <a
+            href="https://mywai.softwarexnihilo.com/session/new"
+            className="text-foreground hover:text-mywai transition-colors"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {t('navbar.account')}
+          </a>
           <Button
             variant="primary"
             size="sm"

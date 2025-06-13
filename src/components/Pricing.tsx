@@ -1,10 +1,9 @@
-import React from 'react';
 import { ArrowRight, Check } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import Button from './ui/button/Button';
-import Badge from './ui/badge/Badge';
 
-const Pricing = () => {  const { t } = useTranslation();
+const Pricing = () => {  
+  const { t } = useTranslation();
   
   const features = t('pricing_section.features', { returnObjects: true }) as string[];
 
@@ -16,14 +15,17 @@ const Pricing = () => {  const { t } = useTranslation();
         </p>
 
         <div className="max-w-3xl mx-auto mt-12 bg-gradient-to-br from-mywai-light/30 to-mywai/30 rounded-2xl shadow-xl p-1">
-          <div className="bg-white rounded-xl p-8 md:p-12">            <div className="text-center mb-8">
-              {/* Badge removed as per request */}              <div className="mt-6 flex items-center justify-center">
+          <div className="bg-white rounded-xl p-8 md:p-12">            
+            <div className="text-center mb-8">
+              {/* Badge removed as per request */}              
+              <div className="mt-6 flex items-center justify-center">
                 <span className="text-5xl font-display font-bold">{t('pricing_section.price')}</span>
                 <span className="ml-2 text-muted-foreground">{t('pricing_section.price_suffix')}</span>
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">              <div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div>
                 <h3 className="text-xl font-display font-bold mb-4">{t('pricing_section.features_title')}</h3>
                 <ul className="space-y-3">
                   {features.map((feature, index) => (
@@ -33,8 +35,10 @@ const Pricing = () => {  const { t } = useTranslation();
                     </li>
                   ))}
                 </ul>
-              </div>              <div className="bg-cream rounded-xl p-6">
-                <h3 className="text-xl font-display font-bold mb-4">{t('pricing_section.how_to_title')}</h3>                <p className="text-muted-foreground mb-6">
+              </div>
+              <div className="bg-cream rounded-xl p-6">
+                <h3 className="text-xl font-display font-bold mb-4">{t('pricing_section.how_to_title')}</h3>
+                <p className="text-muted-foreground mb-6">
                   {t('pricing_section.how_to_description')}
                 </p>
                 <Button
