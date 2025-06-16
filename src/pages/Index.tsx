@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import LazyWrapper from '../components/ui/loading/LazyWrapper';
 import LoadingSpinner from '../components/ui/loading/LoadingSpinner';
+import Footer from '../components/Footer';
 
 // Lazy load des composants lourds
 const Process = lazy(() => import('../components/Process'));
@@ -11,7 +12,6 @@ const ExampleCalameo = lazy(() => import('../components/ExampleCalameo'));
 const Pricing = lazy(() => import('../components/Pricing'));
 const Testimonials = lazy(() => import('../components/Testimonials'));
 const FAQ = lazy(() => import('@/components/FAQ'));
-const Footer = lazy(() => import('../components/Footer'));
 
 const Index = () => {
   const { t, i18n } = useTranslation();
@@ -80,16 +80,7 @@ const Index = () => {
         <FAQ />
       </LazyWrapper>
       
-      <LazyWrapper 
-        minHeight="300px"
-        fallback={
-          <div className="bg-mywai-dark text-white flex items-center justify-center" style={{ minHeight: '300px' }}>
-            <LoadingSpinner size="lg" text="Chargement du pied de page..." />
-          </div>
-        }
-      >
-        <Footer />
-      </LazyWrapper>
+      <Footer />
       
       <button
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
