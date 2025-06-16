@@ -12,9 +12,9 @@ const Hero = () => {
       <div className="absolute -top-10 right-0 w-64 h-64 bg-mywai/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-10 left-10 w-72 h-72 bg-mywai-light/20 rounded-full blur-3xl"></div>
 
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-6 sm:px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
+          <div className="space-y-6 text-center lg:text-left">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight">
               {t('hero.title')} <br/>
               <span className="text-mywai">{t('hero.title_highlight')}</span>.
@@ -23,7 +23,7 @@ const Hero = () => {
               {t('hero.subtitle')}<br/>
               {t('hero.description')}
             </p>            
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
+            <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center lg:justify-start">
                 <Button
                 variant="primary"
                 size="md"
@@ -47,7 +47,7 @@ const Hero = () => {
             </div>
           </div>
           
-          <div className="relative">            
+          <div className="relative hidden lg:block">            
             <div className="relative z-10 animate-float">
               <div className="bg-white rounded-xl shadow-xl p-6 transform rotate-3 max-w-md mx-auto">
                 <div className="relative w-full aspect-[4/5] bg-gradient-to-br from-mywai-light to-mywai rounded-lg mb-4 overflow-hidden">
@@ -65,17 +65,15 @@ const Hero = () => {
                 </div>
               </div>
               
-              <div className="absolute top-1/4 -left-16 bg-white rounded-lg shadow-lg p-3 transform -rotate-6">
-                <div className="h-24 w-24 rounded-md bg-mywai/20 flex items-center justify-center">
-                  <svg viewBox="0 0 100 100" className="h-12 w-12 fill-mywai">
-                    <path d="M30,30 C40,20 60,20 70,30 C80,40 80,60 70,70 C60,80 40,80 30,70 C20,60 20,40 30,30 Z" />
-                  </svg>
+              <div className="absolute top-1/4 -left-14 bg-white rounded-lg shadow-lg p-3 transform -rotate-6">
+                <div className="h-24 w-28 rounded-md bg-mywai/20 flex items-center justify-center">
+                  <img src="/premier-offert.png" alt="Premier chapitre offert" className="w-full h-full object-cover rounded-md" />
                 </div>
               </div>
               
               <div className="absolute -bottom-10 -right-10 bg-white rounded-lg shadow-lg p-3 transform rotate-12">
                 <div className="h-20 w-32 rounded-md bg-mywai/10 flex items-center justify-center">
-                  <img src="/envoyer_selfie.png" alt="envoyer_selfie" className="w-full h-full object-cover rounded-md" />
+                  <img src="/envoyer_selfie.png" alt="Envoyer un selfie" className="w-full h-full object-cover rounded-md" />
                 </div>
               </div>
             </div>

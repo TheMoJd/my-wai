@@ -26,6 +26,15 @@
     "feature3_title": "Un vrai livre dans vos mains",
     "feature3_description": "Reliure de qualité, mise en page élégante, couverture personnalisée… Le résultat est digne d'une autobiographie d'éditeur."
   },
+  "calameo": {
+    "title": "Découvrez un extrait de livre biographique",
+    "subtitle": "Un livre composé d'une cinquantaine de pages découpé en plusieurs chapitres thématiques qui retrace une vie à travers les souvenirs et témoignages des proches, amis, collègue et famille.",
+    "alt": "Cliquez pour ouvrir le livre feuilletable",
+    "button": "Voir un exemple de biographie",
+    "modal_title": "Extrait de livre biographique MyWai",
+    "iframe_title": "Extrait de livre MyWai sur Calaméo",
+    "fullscreen": "Ouvrir en plein écran sur Calaméo"
+  },
   "pricing_section": {
     "title": "Un prix unique et transparent pour ce livre inoubliable",
     "subtitle": "Le plus beau cadeau pour un anniversaire, un départ en retraite ou un hommage.",

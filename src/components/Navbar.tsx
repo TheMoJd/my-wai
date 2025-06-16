@@ -34,7 +34,7 @@ const Navbar = () => {
         isScrolled ? "bg-cream/95 backdrop-blur-sm shadow-md py-2" : "bg-transparent py-4"
       }`}
     >
-      <div className="container mx-auto px-4 flex justify-between items-center">
+      <div className="container mx-auto px-6 sm:px-4 flex justify-between items-center">
         <a href="/" className="flex items-center gap-2">
           <div className="relative h-14 w-14">
             <img
@@ -102,7 +102,7 @@ const Navbar = () => {
       </div>
       {isMenuOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-cream shadow-lg py-4">
-          <div className="container mx-auto px-4 flex flex-col gap-4">            <a 
+          <div className="container mx-auto px-6 sm:px-4 flex flex-col gap-4">            <a 
               href="#about" 
               className="text-foreground hover:text-mywai py-2 transition-colors"
               onClick={() => setIsMenuOpen(false)}

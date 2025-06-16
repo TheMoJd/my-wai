@@ -26,6 +26,15 @@
     "feature3_title": "A real book in your hands",
     "feature3_description": "Quality binding, elegant layout, personalized cover... The result is worthy of a publisher's autobiography."
   },
+  "calameo": {
+    "title": "Discover a biographical book excerpt",
+    "subtitle": "A book of about fifty pages divided into several thematic chapters that traces a life through the memories and testimonies of relatives, friends, colleagues and family.",
+    "alt": "Click to open the flipbook",
+    "button": "See a biography example",
+    "modal_title": "MyWai Biographical Book Excerpt",
+    "iframe_title": "MyWai Book Excerpt on Calaméo",
+    "fullscreen": "Open in full screen on Calaméo"
+  },
   "pricing_section": {
     "title": "A unique and transparent price for this unforgettable book",
     "subtitle": "The most beautiful gift for a birthday, retirement or tribute.",
