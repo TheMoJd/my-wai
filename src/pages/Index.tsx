@@ -4,11 +4,10 @@ import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import LazyWrapper from '../components/ui/loading/LazyWrapper';
 import LoadingSpinner from '../components/ui/loading/LoadingSpinner';
-import Button from '../components/ui/button/Button';
 
 // Lazy load des composants lourds
 const Process = lazy(() => import('../components/Process'));
-const BookDemo = lazy(() => import('../components/BookDemo'));
+const ExampleCalameo = lazy(() => import('../components/ExampleCalameo'));
 const Pricing = lazy(() => import('../components/Pricing'));
 const Testimonials = lazy(() => import('../components/Testimonials'));
 const FAQ = lazy(() => import('@/components/FAQ'));
@@ -45,7 +44,7 @@ const Index = () => {
           </div>
         }
       >
-        <BookDemo />
+        <ExampleCalameo />
       </LazyWrapper>
       
       <LazyWrapper 

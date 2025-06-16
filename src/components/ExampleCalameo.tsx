@@ -1,10 +1,18 @@
 import { ArrowRight } from 'lucide-react';
+import { useState } from 'react';
 import Button from './ui/button/Button';
+import { Modal } from './ui/modal';
 
-const BookDemo = () => {
-  // const [activeTab, setActiveTab] = useState(0); // Commented out
-  // const [isModalOpen, setIsModalOpen] = useState(false); // Commented out
-  // const [showSuccessAlert, setShowSuccessAlert] = useState(false); // Commented out
+const ExampleCalameo = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleImageClick = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
   
   // const chapters = [ // Commented out
   //   {
@@ -51,39 +59,21 @@ const BookDemo = () => {
       <div className="absolute top-20 right-20 w-72 h-72 bg-mywai/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 left-20 w-80 h-80 bg-mywai-light/20 rounded-full blur-3xl"></div>
 
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-center mb-4">
+      <div className="container mx-auto">
+        <div className="flex items-center justify-center">
           <h2 className="section-title !mb-0 text-center">
             Découvrez un extrait de livre biographique
           </h2>
         </div>
         <p className="section-subtitle text-center">
-          Un livre composé d'une cinquantaine de pages découpé en plusieurs chapitres thématiques qui retrace une vie à travers les souvenirs et témoignages des proches, amis, collègue et famille.        </p>
-
-        {/* Calaméo Embed Integration */}
+          Un livre composé d'une cinquantaine de pages découpé en plusieurs chapitres thématiques qui retrace une vie à travers les souvenirs et témoignages des proches, amis, collègue et famille.        </p>        {/* Calaméo Embed Integration */}
         <div className="mt-12 max-w-6xl mx-auto text-center">
-          <div className="my-2">
-            <a 
-              href="https://www.calameo.com/books/007887638a76298bca9cd?authid=BnuMmf5tfguS" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-mywai hover:underline"
-            >
-              May (2)
-            </a>
-          </div>
-          {/* Responsive iframe wrapper */}
-          <div className="relative w-full overflow-hidden rounded-lg shadow-xl aspect-video bg-gray-100">
-            <iframe 
-              src="//v.calameo.com/?bkcode=007887638a76298bca9cd&authid=BnuMmf5tfguS&mode=viewer&bgColor=F3F4F6" 
-              frameBorder="0" 
-              scrolling="no" 
-              allowFullScreen 
-              className="absolute inset-0 w-full h-full" // Make iframe fill the responsive wrapper
-              title="Extrait de livre MyWai sur Calaméo"
-              {...({ allowtransparency: "true" } as any)}
-            ></iframe>
-          </div>
+          <img 
+            src="/calameo-popup.png" 
+            alt="Cliquez pour ouvrir le livre feuilletable" 
+            className="mx-auto cursor-pointer hover:opacity-80 transition-opacity duration-300" 
+            onClick={handleImageClick}
+          />
         </div>
         <div className="mt-16 text-center">
           <Button
@@ -94,11 +84,46 @@ const BookDemo = () => {
             className="!bg-mywai hover:!bg-mywai-dark !text-white shadow-lg transform hover:scale-105 transition-all duration-300"
           >
             Créer une biographie
-          </Button>
+          </Button>        
         </div>
       </div>
+
+      {/* Modal avec Calaméo feuilletable */}
+      <Modal 
+        isOpen={isModalOpen} 
+        onClose={handleCloseModal}
+        className="max-w-7xl mx-4"
+        isFullscreen={false}
+      >
+        <div className="p-6">
+          <h3 className="text-2xl font-bold text-center mb-6 text-mywai">
+            Extrait de livre biographique MyWai
+          </h3>
+          <div className="relative w-full overflow-hidden rounded-lg shadow-xl aspect-video bg-gray-100">
+            <iframe 
+              src="//v.calameo.com/?bkcode=007887638a76298bca9cd&authid=BnuMmf5tfguS&mode=viewer&bgColor=F3F4F6" 
+              frameBorder="0" 
+              scrolling="no" 
+              allowFullScreen 
+              className="absolute inset-0 w-full h-full"
+              title="Extrait de livre MyWai sur Calaméo"
+              {...({ allowtransparency: "true" } as any)}
+            />
+          </div>
+          <div className="mt-4 text-center">
+            <a 
+              href="https://www.calameo.com/books/007887638a76298bca9cd?authid=BnuMmf5tfguS" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-mywai hover:underline text-sm"
+            >
+              Ouvrir en plein écran sur Calaméo
+            </a>
+          </div>
+        </div>
+      </Modal>
     </section>
   );
 };
 
-export default BookDemo;
+export default ExampleCalameo;
