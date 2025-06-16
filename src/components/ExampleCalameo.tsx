@@ -75,11 +75,11 @@ const ExampleCalameo = () => {
           <img 
             src="/calameo-popup.png" 
             alt={t('calameo.alt')} 
-            className="mx-auto cursor-pointer hover:opacity-80 transition-opacity duration-300" 
+            className="mx-auto cursor-pointer rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300" 
             onClick={handleImageClick}
           />
         </div>
-        <div className="text-center">
+        <div className="mt-8 text-center">
           <Button
             variant="primary"
             size="md"
@@ -96,11 +96,11 @@ const ExampleCalameo = () => {
       <Modal 
         isOpen={isModalOpen} 
         onClose={handleCloseModal}
-        className="max-w-7xl mx-4"
+        className="max-w-5xl w-full mx-4"
         isFullscreen={false}
       >
-        <div className="p-6">
-          <h3 className="text-2xl font-bold text-center mb-6 text-mywai">
+        <div className="p-4 sm:p-6">
+          <h3 className="text-2xl font-bold text-center mb-4 text-mywai">
             {t('calameo.modal_title')}
           </h3>
           <div className="relative w-full overflow-hidden rounded-lg shadow-xl aspect-video bg-gray-100">
