@@ -71,9 +71,9 @@ const ExampleCalameo = () => {
           {t('calameo.subtitle')}
         </p>        
         {/* Calaméo Embed Integration */}
-        <div className="mt-12 max-w-6xl mx-auto text-center">
+        <div className="mt-8 max-w-6xl mx-auto text-center">
           <img 
-            src="/calameo-popup.png" 
+            src="/pop-up.png" 
             alt={t('calameo.alt')} 
             className="mx-auto cursor-pointer rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300" 
             onClick={handleImageClick}
