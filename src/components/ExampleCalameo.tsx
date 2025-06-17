@@ -79,7 +79,7 @@ const ExampleCalameo = () => {
             onClick={handleImageClick}
           />
         </div>
-        <div className="mt-8 text-center">
+        <div className="mt-16 text-center">
           <Button
             variant="primary"
             size="md"
