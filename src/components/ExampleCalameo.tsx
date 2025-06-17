@@ -73,7 +73,7 @@ const ExampleCalameo = () => {
         {/* Calaméo Embed Integration */}
         <div className="mt-8 max-w-6xl mx-auto text-center">
           <img 
-            src="/pop-up.png" 
+            src="/pop-up2.png" 
             alt={t('calameo.alt')} 
             className="mx-auto cursor-pointer rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300" 
             onClick={handleImageClick}
