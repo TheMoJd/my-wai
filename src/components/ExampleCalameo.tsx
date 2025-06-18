@@ -75,7 +75,7 @@ const ExampleCalameo = () => {
           <img 
             src="/pop-up2.png" 
             alt={t('calameo.alt')} 
-            className="mx-auto cursor-pointer rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300" 
+            className="mx-auto cursor-pointer" 
             onClick={handleImageClick}
           />
         </div>
@@ -103,16 +103,17 @@ const ExampleCalameo = () => {
           <h3 className="text-2xl font-bold text-center mb-4 text-mywai">
             {t('calameo.modal_title')}
           </h3>
-          <div className="relative w-full overflow-hidden rounded-lg shadow-xl aspect-video bg-gray-100">
-            <iframe 
-              src="//v.calameo.com/?bkcode=007887638a76298bca9cd&authid=BnuMmf5tfguS&mode=viewer&bgColor=F3F4F6" 
-              frameBorder="0" 
-              scrolling="no" 
-              allowFullScreen 
-              className="absolute inset-0 w-full h-full"
-              title={t('calameo.iframe_title')}
-              {...({ allowtransparency: "true" } as any)}
-            />
+          <div style={{ textAlign: 'center' }}>
+            <iframe
+              src="//v.calameo.com/?bkcode=00788763825ecd11b92c2&mode=mini&view=book&showsharemenu=false&authid=u5OZBo62jDhu"
+              width="900"
+              height="600"
+              frameBorder={0}
+              allowTransparency
+              allowFullScreen
+              style={{ margin: '0 auto', maxWidth: '100%', display: 'block' }}
+              title="Calameo Preview"
+            ></iframe>
           </div>
           <div className="mt-4 text-center">
             <a 
