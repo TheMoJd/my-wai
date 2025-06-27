@@ -57,7 +57,7 @@ const Navbar = () => {
             {t("navbar.about")}
           </a>
           <a
-            href="https://my-w.ai/new"
+            href="https://my-w.ai/books"
             className="text-foreground hover:text-mywai transition-colors"
             target="_blank"
             rel="noopener noreferrer"
@@ -67,9 +67,7 @@ const Navbar = () => {
           <Button
             variant="primary"
             size="sm"
-            onClick={() =>
-              (window.location.href = "https://my-w.ai/session/new")
-            }
+            onClick={() => (window.location.href = "https://my-w.ai/books/new")}
             className="!bg-mywai hover:!bg-mywai-dark !text-white"
           >
             {t("navbar.try_free")}

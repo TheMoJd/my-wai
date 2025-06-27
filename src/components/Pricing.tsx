@@ -56,8 +56,7 @@ const Pricing = () => {
                   size="md"
                   endIcon={<ArrowRight className="h-4 w-4" />}
                   onClick={() =>
-                    (window.location.href =
-                      "https://mywai.softwarexnihilo.com/books/new")
+                    (window.location.href = "https://my-w.ai/books/new")
                   }
                   className="w-full !bg-mywai hover:!bg-mywai-dark !text-white"
                 >
