@@ -18,8 +18,9 @@ const Pricing = () => {
           <div className="bg-white rounded-xl p-8 md:p-12">            
             <div className="text-center mb-8">
               {/* Badge removed as per request */}              
-              <div className="mt-6 flex items-center justify-center">
-                <span className="text-5xl font-display font-bold">{t('pricing_section.price')}</span>
+              <div className="mt-6 flex items-center justify-center gap-4">
+                <span className="text-3xl font-display font-bold text-muted-foreground line-through">99€</span>
+                <span className="text-5xl font-display font-bold text-mywai">89€</span>
                 <span className="ml-2 text-muted-foreground">{t('pricing_section.price_suffix')}</span>
               </div>
             </div>
