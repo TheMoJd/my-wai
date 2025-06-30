@@ -30,17 +30,15 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><a href="#about" className="text-muted-foreground hover:text-mywai transition-colors">{t('footer.quick_links.about')}</a></li>
               <li><a href="#process" className="text-muted-foreground hover:text-mywai transition-colors">{t('footer.quick_links.process')}</a></li>
-              <li><a href="#demo" className="text-muted-foreground hover:text-mywai transition-colors">{t('footer.quick_links.demo')}</a></li>
               <li><a href="#pricing" className="text-muted-foreground hover:text-mywai transition-colors">{t('footer.quick_links.pricing')}</a></li>
               <li><a href="#testimonials" className="text-muted-foreground hover:text-mywai transition-colors">{t('footer.quick_links.testimonials')}</a></li>
-              <li><a href="#contact" className="text-muted-foreground hover:text-mywai transition-colors">{t('footer.quick_links.contact')}</a></li>
             </ul>
           </div>
           
           <div>
             <h3 className="font-display font-bold mb-4">{t('footer.information.title')}</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-muted-foreground hover:text-mywai transition-colors">{t('footer.information.faq')}</a></li>
+              <li><a href="#faq" className="text-muted-foreground hover:text-mywai transition-colors">{t('footer.information.faq')}</a></li>
               <li><a href="/mentions-legales" className="text-muted-foreground hover:text-mywai transition-colors">{t('footer.information.legal')}</a></li>
               <li><a href="/cgu" className="text-muted-foreground hover:text-mywai transition-colors">{t('footer.information.terms')}</a></li>
             </ul>
