@@ -202,7 +202,7 @@
     "contact": {
       "title": "Contact",
       "email": "Email",
-      "email_value": "alia@mywai.fr",
+      "email_value": "Alia@my-w.ai",
       "phone": "Téléphone",
       "phone_value": "+33 6 83 89 06 5",
       "address": "Adresse",
@@ -237,7 +237,7 @@
       },
       "data_privacy": {
         "title": "6. Protection des données personnelles",
-        "content": "MyWai s'engage à respecter la confidentialité des données collectées :\n\n• Les contributions sont privées, non indexées, et accessibles uniquement aux personnes invitées\n\n• Aucune donnée n'est cédée à des tiers\n\n• L'utilisateur peut à tout moment demander la suppression de ses données via alia@mywai.fr\n\nLes données sont stockées de manière sécurisée sur des serveurs hébergés en Europe, conformément au RGPD."
+        "content": "MyWai s'engage à respecter la confidentialité des données collectées :\n\n• Les contributions sont privées, non indexées, et accessibles uniquement aux personnes invitées\n\n• Aucune donnée n'est cédée à des tiers\n\n• L'utilisateur peut à tout moment demander la suppression de ses données via Alia@my-w.ai\n\nLes données sont stockées de manière sécurisée sur des serveurs hébergés en Europe, conformément au RGPD."
       },
       "payment_delivery": {
         "title": "7. Tarification",
@@ -274,7 +274,7 @@
         "company_name": "GLAZH",
         "siret": "SIRET : 497693309",
         "address": "Siège social : 11 résidence la Chesnaie - 29290 Saint-Renan",
-        "contact": "Contact : alia@mywai.fr"
+        "contact": "Contact : Alia@my-w.ai"
       },
       "director": {
         "title": "Directeur de la publication",
@@ -295,7 +295,7 @@
         "title": "Données personnelles",
         "content_1": "Les informations recueillies via le site sont utilisées uniquement pour la création et la gestion des biographies.",
         "content_2": "Elles ne sont jamais revendues.",
-        "content_3": "Vous pouvez demander leur suppression à tout moment par e-mail à : alia@mywai.fr"
+        "content_3": "Vous pouvez demander leur suppression à tout moment par e-mail à : Alia@my-w.ai"
       },
       "cookies": {
         "title": "Cookies",

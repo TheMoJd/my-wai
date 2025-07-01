@@ -202,7 +202,7 @@
     "contact": {
       "title": "Contacto",
       "email": "Email",
-      "email_value": "alia@mywai.fr",
+      "email_value": "Alia@my-w.ai",
       "phone": "Teléfono",
       "phone_value": "+33668389065",
       "address": "Dirección",
@@ -237,7 +237,7 @@
       },
       "data_privacy": {
         "title": "6. Protección de datos personales",
-        "content": "MyWai se compromete a respetar la confidencialidad de los datos recopilados:\n\n• Las contribuciones son privadas, no indexadas, y accesibles únicamente a las personas invitadas\n\n• Ningún dato se cede a terceros\n\n• El usuario puede solicitar en cualquier momento la eliminación de sus datos a través de alia@mywai.fr\n\nLos datos se almacenan de forma segura en servidores alojados en Europa, conforme al RGPD."
+        "content": "MyWai se compromete a respetar la confidencialidad de los datos recopilados:\n\n• Las contribuciones son privadas, no indexadas, y accesibles únicamente a las personas invitadas\n\n• Ningún dato se cede a terceros\n\n• El usuario puede solicitar en cualquier momento la eliminación de sus datos a través de Alia@my-w.ai\n\nLos datos se almacenan de forma segura en servidores alojados en Europa, conforme al RGPD."
       },
       "payment_delivery": {
         "title": "7. Tarifas",
@@ -274,7 +274,7 @@
         "company_name": "GLAZH",
         "siret": "SIRET: 497693309",
         "address": "Sede social: 11 résidence la Chesnaie - 29290 Saint-Renan",
-        "contact": "Contacto: alia@mywai.fr"
+        "contact": "Contacto: Alia@my-w.ai"
       },
       "director": {
         "title": "Director de publicación",
@@ -295,7 +295,7 @@
         "title": "Datos personales",
         "content_1": "La información recopilada a través del sitio se usa únicamente para crear y gestionar biografías.",
         "content_2": "Nunca se revende.",
-        "content_3": "Puedes solicitar su eliminación en cualquier momento por email a: alia@mywai.fr"
+        "content_3": "Puedes solicitar su eliminación en cualquier momento por email a: Alia@my-w.ai"
       },
       "cookies": {
         "title": "Cookies",
