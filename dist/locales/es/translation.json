@@ -1,0 +1,306 @@
+{
+  "welcome": "Bienvenido a My Way Memories Crafted",
+  "process": "Nuestro Proceso",
+  "book_demo": "Reservar una Demo",
+  "testimonials": "Testimonios",
+  "pricing": "Precios",
+  "faq": "FAQ",
+  "back_to_top": "Volver arriba",
+  "navbar": {
+    "about": "¿Qué es MyWai?",
+    "account": "Mi cuenta",
+    "try_free": "Prueba gratis",
+    "language": "Idioma"
+  },
+  "hero": {
+    "title": "Regala el más hermoso de los regalos: una",
+    "title_highlight": "biografía personalizada",
+    "subtitle": "Cumpleaños, jubilación, homenaje...",
+    "description": "Generada por IA, nutrida por los recuerdos de los seres queridos. Un libro autobiográfico coherente y emotivo, creando un regalo personalizado y atemporal.",
+    "cta_primary": "Ofrecer una biografía a medida",
+    "cta_secondary": "Ejemplo de un libro",
+    "feature1_title": "Una idea de regalo personalizada y atemporal",
+    "feature1_description": "Los objetos se olvidan. Los recuerdos permanecen. Con MyWai, ofreces una historia a medida, íntima, que trasciende el tiempo.",
+    "feature2_title": "El poder de la IA al servicio de la emoción",
+    "feature2_description": "Nuestra inteligencia artificial transforma testimonios, anécdotas, fotos y rasgos de carácter en una historia única, coherente y profundamente humana.",
+    "feature3_title": "Un libro real en tus manos",
+    "feature3_description": "Encuadernación de calidad, diseño elegante, portada personalizada... El resultado es digno de una autobiografía de editorial."
+  },
+  "calameo": {
+    "title": "Descubra un extracto de libro biográfico",
+    "subtitle": "Un libro de unas cincuenta páginas dividido en varios capítulos temáticos que recorre una vida a través de los recuerdos y testimonios de familiares, amigos, compañeros y familia.",
+    "alt": "Haga clic para abrir el libro animado",
+    "button": "Ver un ejemplo de biografía",
+    "modal_title": "Extracto del libro biográfico de MyWai",
+    "iframe_title": "Extracto del libro de MyWai en Calaméo",
+    "fullscreen": "Abrir en pantalla completa en Calaméo"
+  },
+  "pricing_section": {
+    "title": "Un precio único y transparente para este libro inolvidable",
+    "subtitle": "El regalo más hermoso para un cumpleaños, jubilación u homenaje.",
+    "price": "99€",
+    "price_suffix": "IVA incluido",
+    "features_title": "Todo lo que está incluido",
+    "features": [
+      "Libro compuesto de varios capítulos",
+      "Sin límite de colaboradores",
+      "Edición profesional",
+      "Maquetación cuidada",
+      "Libro encuadernado de calidad",
+      "Entrega gratuita",
+      "Espacio privado para reeditar"
+    ],
+    "how_to_title": "¿Cómo proceder?",
+    "how_to_description": "Lanza tu proyecto hoy y ofrece un regalo que quedará grabado en las memorias.",
+    "cta_button": "Crear mi libro",
+    "payment_security": "Pago seguro - Satisfacción garantizada",
+    "additional_options_title": "¿Necesitas opciones adicionales?",
+    "additional_options_description": "Contáctanos para solicitudes especiales como regalos corporativos, ideas de regalo de jubilación, copias adicionales, desarrollos..."
+  },
+  "process_section": {
+    "title": "Cómo funciona para crear una biografía única",
+    "subtitle": "Creación sin esfuerzo con un proceso guiado de 6 pasos para el iniciador del proyecto y los colaboradores.",
+    "steps": [
+      {
+        "title": "Creación de un espacio para la persona a celebrar (gratis)",
+        "description": "Añade su nombre, fecha de nacimiento, algunos rasgos de personalidad, el tono del libro..."
+      },
+      {
+        "title": "Invitación a los seres queridos a contribuir (sin limitación)",
+        "description": "Familia, amigos, colegas pueden compartir anécdotas, recuerdos, fotos..."
+      },
+      {
+        "title": "La IA construye la biografía (1er capítulo ofrecido)",
+        "description": "En pocos minutos, se te propone una primera versión. Emotiva, bien escrita, fiel."
+      },
+      {
+        "title": "Revisas, corriges, personalizas",
+        "description": "Añade detalles, modifica capítulos, cambia el tono... es tu libro."
+      },
+      {
+        "title": "Impresión del libro único",
+        "description": "Maquetación profesional, encuadernación elegante y control de calidad."
+      },
+      {
+        "title": "Entrega del libro",
+        "description": "Recibe el libro directamente en casa, listo para ser ofrecido como un regalo inolvidable."
+      }
+    ],
+    "cta_button": "Crear una biografía"
+  },
+  "testimonials_section": {
+    "title": "Lo que dicen nuestros clientes",
+    "subtitle": "Descubre los testimonios de quienes ofrecieron un libro biográfico MyWai",
+    "verified": "Verificado",
+    "testimonials": [
+      {
+        "content": "« Para sus 45 años, queríamos hacer algo realmente diferente. Reunimos los recuerdos de sus amigos, compañeros de escuela, ex parejas, ¡incluso colegas! El resultado: un libro divertido, tierno, conmovedor, completamente a su imagen. Se rió, lloró, y lo releyó tres veces en la semana. »",
+        "author": "Élodie M.",
+        "role": "amiga de mucho tiempo"
+      },
+      {
+        "content": "« El día de su fiesta de despedida, le entregamos el libro delante de todo el equipo. Lo hojeó, reconoció los mensajes, las anécdotas... y se detuvo en seco. Tenía lágrimas en los ojos. Es el tipo de regalo que no se olvida. Incluso los colegas más escépticos quedaron impresionados por la calidad y sensibilidad del resultado. »",
+        "author": "Julien T.",
+        "role": "Jefe de proyecto"
+      },
+      {
+        "content": "Le regalé este libro a mi madre para sus 70 años. Derramó lágrimas de alegría leyendo todos los testimonios de sus amigos y familia. Es un regalo que la acompañará toda su vida.",
+        "author": "Marie L.",
+        "role": "Para el cumpleaños de su madre"
+      },
+      {
+        "content": "El proceso es increíblemente simple. El equipo de MyWai hizo todo el trabajo difícil, desde coordinar las contribuciones hasta la edición. El resultado está bellamente maquetado y es muy profesional.",
+        "author": "Thomas B.",
+        "role": "Para la jubilación de su padre"
+      },
+      {
+        "content": "Dudé por el precio, pero la calidad del libro y las emociones que despertó valen cada centavo. Un regalo verdaderamente único que el dinero normalmente no puede comprar.",
+        "author": "Sophie D.",
+        "role": "Para el aniversario de bodas de sus padres"
+      },
+      {
+        "content": "Creamos este libro para nuestro profesor que se jubilaba después de 30 años de enseñanza. Ver a todos los antiguos alumnos contribuir con sus recuerdos fue increíble, y él estaba profundamente conmovido.",
+        "author": "Lucas M.",
+        "role": "Para un profesor"
+      }
+    ],
+    "cta_button": "Crear una biografía"
+  },
+  "faq_section": {
+    "title": "Preguntas frecuentes",
+    "subtitle": "Encuentra aquí las respuestas a tus preguntas más comunes sobre MyWai y la creación de tu libro biográfico.",
+    "questions": [
+      {
+        "question": "¿Por qué regalar un libro biográfico personalizado?",
+        "answer": "Porque algunos recuerdos merecen ser transmitidos, compartidos, celebrados. MyWai te ayuda a crear una biografía a medida, a partir de las palabras de quienes mejor conocen a la persona a celebrar. Familia, amigos, colegas: cada uno puede añadir una anécdota, una foto, un mensaje. Todo está cuidadosamente redactado, maquetado como un libro real, luego impreso y entregado en tu casa."
+      },
+      {
+        "question": "¿Puedo pedir otras copias del libro?",
+        "answer": "Sí, por supuesto. Una vez finalizado el libro, puedes pedir tantas copias adicionales como desees. Tarifa degresiva a partir de 2 libros."
+      },
+      {
+        "question": "¿A quién pertenece el contenido final del libro?",
+        "answer": "El texto generado por MyWai te pertenece. Puedes imprimirlo, compartirlo o modificarlo en cualquier momento. Nada se publica sin tu validación final."
+      },
+      {
+        "question": "¿Qué pasa con los datos y contribuciones recolectadas?",
+        "answer": "Todo el contenido compartido (textos, fotos, mensajes) es confidencial, seguro y eliminable en cualquier momento. Nunca se utiliza para otros fines."
+      },
+      {
+        "question": "¿Se puede modificar el libro una vez generado?",
+        "answer": "Sí. Puedes releer, corregir, enriquecer o reorganizar los capítulos antes de la impresión. Es tu libro, nuestra IA solo está ahí para ayudarte a escribirlo."
+      },
+      {
+        "question": "¿Y si quiero crear un libro para otra persona?",
+        "answer": "¡Es totalmente posible! Puedes regalar un libro, crear un proyecto en grupo (con o sin recaudación de fondos), e invitar a los seres queridos a contribuir fácilmente."
+      }
+    ]
+  },
+  "contact_section": {
+    "title": "Cada vida merece ser contada.",
+    "subtitle": "La gente no recuerda lo que les das. Recuerdan lo que les haces <b>sentir</b>.",
+    "help_title": "¿Necesitas ayuda?",
+    "help_description": "Nuestro equipo está disponible para responder todas tus preguntas y guiarte en tu proyecto.",
+    "email": "Correo electrónico",
+    "phone": "Teléfono",
+    "live_chat": "Chat en vivo",
+    "live_chat_hours": "Lun-Vie, 9h-18h",
+    "start_project_title": "Iniciar un proyecto",
+    "start_project_description": "Crea tu libro en pocos clics y comienza a recopilar testimonios hoy.",
+    "start_project_button": "Comenzar ahora",
+    "contact_form_title": "Contáctanos",
+    "form_name": "Nombre",
+    "form_name_placeholder": "Tu nombre",
+    "form_email": "Correo electrónico",
+    "form_email_placeholder": "tu@email.com",
+    "form_subject": "Asunto",
+    "form_subject_placeholder": "Asunto de tu mensaje",
+    "form_message": "Mensaje",
+    "form_message_placeholder": "Tu mensaje",
+    "form_submit": "Enviar mensaje",
+    "privacy_notice": "Al enviar este formulario, aceptas nuestra política de privacidad."
+  },
+  "footer": {
+    "brand_description": "Crea libros personalizados que capturan la esencia de tus seres queridos usando inteligencia artificial.",
+    "quick_links": {
+      "title": "Enlaces rápidos",
+      "about": "Acerca de",
+      "process": "Cómo funciona",
+      "demo": "Demo",
+      "pricing": "Precios",
+      "testimonials": "Testimonios",
+      "contact": "Contacto"
+    },
+    "information": {
+      "title": "Información",
+      "faq": "FAQ",
+      "legal": "Aviso legal",
+      "privacy": "Política de privacidad",
+      "terms": "Términos de uso",
+      "delivery": "Entrega y devoluciones"
+    },
+    "contact": {
+      "title": "Contacto",
+      "email": "Email",
+      "email_value": "alia@mywai.fr",
+      "phone": "Teléfono",
+      "phone_value": "+33668389065",
+      "address": "Dirección",
+      "address_value": "Brest, Francia"
+    },
+    "copyright": "Todos los derechos reservados."
+  },
+  "cgu": {
+    "title": "📋 Términos y Condiciones de Uso – MyWai",
+    "last_updated": "Última actualización:",
+    "effective_date": "Fecha de entrada en vigor:",
+    "sections": {
+      "introduction": {
+        "title": "1. Objeto",
+        "content": "Los presentes Términos y Condiciones de Uso tienen por objeto definir las modalidades de uso del servicio MyWai, accesible a través del sitio https://my-w.ai, y precisar los derechos y obligaciones de los usuarios y del editor.\n\nMyWai es un servicio en línea que permite crear una biografía personalizada a partir de las contribuciones de seres queridos, generada con la ayuda de inteligencia artificial, y que puede imprimirse en forma de libro."
+      },
+      "service_description": {
+        "title": "2. Aceptación de las condiciones",
+        "content": "El uso del servicio implica la aceptación plena y completa de los presentes Términos y Condiciones. Al acceder a la plataforma, crear un proyecto o contribuir a un libro, reconoces haber leído, comprendido y aceptado estas condiciones."
+      },
+      "user_obligations": {
+        "title": "3. Acceso al servicio",
+        "content": "El acceso a la plataforma está abierto a cualquier usuario que disponga de acceso a Internet. Ciertas funcionalidades están sujetas a la creación de una cuenta o al pago de un proyecto (compra directa o crowdfunding).\n\nMyWai se reserva el derecho de suspender temporal o definitivamente el acceso a sus servicios, sin previo aviso, especialmente para mantenimiento o actualización."
+      },
+      "content_creation": {
+        "title": "4. Creación de contenido",
+        "content": "Los usuarios pueden:\n\n• Crear un espacio de proyecto para una persona a celebrar\n\n• Invitar a seres queridos a contribuir a través de mensajes, anécdotas, fotos, archivos de audio\n\n• Modificar, revisar y validar el contenido antes de la impresión\n\nEl contenido generado por la IA se basa exclusivamente en los elementos proporcionados. El usuario final sigue siendo responsable de la verificación y validación de los textos antes de la impresión."
+      },
+      "intellectual_property": {
+        "title": "5. Propiedad intelectual",
+        "content": "Todos los textos generados en el marco de un proyecto MyWai son propiedad del usuario final una vez efectuado el pago.\n\nMyWai no reivindica ningún derecho de difusión o explotación comercial sobre los contenidos finalizados, salvo acuerdo explícito.\n\nEl usuario garantiza disponer de los derechos necesarios sobre los contenidos (textos, imágenes, testimonios) que sube o invita a compartir."
+      },
+      "data_privacy": {
+        "title": "6. Protección de datos personales",
+        "content": "MyWai se compromete a respetar la confidencialidad de los datos recopilados:\n\n• Las contribuciones son privadas, no indexadas, y accesibles únicamente a las personas invitadas\n\n• Ningún dato se cede a terceros\n\n• El usuario puede solicitar en cualquier momento la eliminación de sus datos a través de alia@mywai.fr\n\nLos datos se almacenan de forma segura en servidores alojados en Europa, conforme al RGPD."
+      },
+      "payment_delivery": {
+        "title": "7. Tarifas",
+        "content": "Las tarifas de los servicios (libro impreso, opciones adicionales, versiones digitales, etc.) se indican en el sitio. MyWai se reserva el derecho de modificar sus precios en cualquier momento.\n\nLos proyectos financiados por crowdfunding se desbloquean únicamente si se alcanza el monto total. En caso de fracaso, los contribuyentes pueden ser reembolsados o invitados a completar el monto."
+      },
+      "cancellation": {
+        "title": "8. Derecho de desistimiento",
+        "content": "Para cualquier compra de libro impreso, el usuario dispone de un plazo legal de desistimiento mientras el contenido no haya sido validado para impresión. Una vez confirmada la validación, el libro entra en producción y no puede ser cancelado ni reembolsado, salvo defecto manifiesto."
+      },
+      "liability": {
+        "title": "9. Responsabilidad",
+        "content": "MyWai no puede ser considerado responsable:\n\n• De los comentarios compartidos por los contribuyentes\n\n• De errores u omisiones en el contenido validado por el usuario\n\n• De retrasos relacionados con proveedores de impresión o entrega\n\nEl usuario se compromete a usar el servicio de manera respetuosa, sin comentarios de odio, difamatorios o discriminatorios."
+      },
+      "modifications": {
+        "title": "10. Modificación de los Términos",
+        "content": "Las presentes condiciones pueden ser modificadas en cualquier momento. Los usuarios serán informados de las modificaciones importantes. El uso continuo del servicio después de la modificación equivale a la aceptación."
+      },
+      "applicable_law": {
+        "title": "11. Derecho aplicable",
+        "content": "Las presentes condiciones se rigen por el derecho francés. En caso de litigio, la competencia se atribuye a los tribunales franceses competentes."
+      },
+      "contact": {
+        "title": "12. Contacto",
+        "content": "Para cualquier pregunta sobre estas condiciones o el uso de MyWai:\n\n📧 contact@my-w.ai"
+      }
+    }
+  },
+  "mentions_legales": {
+    "title": "📄 Aviso Legal – MyWai",
+    "sections": {
+      "editor": {
+        "title": "Editor del sitio",
+        "content": "El sitio https://www.my-w.ai es editado por:",
+        "company_name": "GLAZH",
+        "siret": "SIRET: 497693309",
+        "address": "Sede social: 11 résidence la Chesnaie - 29290 Saint-Renan",
+        "contact": "Contacto: alia@mywai.fr"
+      },
+      "director": {
+        "title": "Director de publicación",
+        "content": "[Nombre del fundador o CEO]"
+      },
+      "hosting": {
+        "title": "Alojamiento",
+        "content": "Este sitio está alojado por:",
+        "host_name": "SCALEWAY",
+        "host_address": "8 rue de la Ville l’Evêque, 75008 Paris"
+      },
+      "intellectual_property": {
+        "title": "Propiedad intelectual",
+        "content_1": "Todo el contenido de este sitio (textos, visuales, estructura, logo) es propiedad exclusiva de MyWai o sus contribuyentes.",
+        "content_2": "Cualquier reproducción parcial o total sin autorización está prohibida."
+      },
+      "personal_data": {
+        "title": "Datos personales",
+        "content_1": "La información recopilada a través del sitio se usa únicamente para crear y gestionar biografías.",
+        "content_2": "Nunca se revende.",
+        "content_3": "Puedes solicitar su eliminación en cualquier momento por email a: alia@mywai.fr"
+      },
+      "cookies": {
+        "title": "Cookies",
+        "content": "El sitio usa cookies para mejorar la navegación y medir la audiencia. Puedes rechazarlas en la configuración de tu navegador."
+      }
+    }
+  }
+}
