@@ -47,7 +47,15 @@ const Footer = () => {
           <div>
               <h3 className="font-display font-bold mb-4">{t('footer.contact.title')}</h3>
               <ul className="space-y-2">
-              <li className="text-muted-foreground">{t('footer.contact.email')}: {t('footer.contact.email_value')}</li>
+              <li className="text-muted-foreground">
+                {t('footer.contact.email')}: 
+                <a 
+                  href={`mailto:${t('footer.contact.email_value')}`}
+                  className="text-mywai hover:text-mywai-dark transition-colors ml-1"
+                >
+                  {t('footer.contact.email_value')}
+                </a>
+              </li>
               </ul>
 
               Imprimé avec ❤️ en Bretagne
