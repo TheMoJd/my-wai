@@ -44,7 +44,12 @@ const Footer = () => {
             </ul>
           </div>
           
-          <div className='flex justify-center items-start flex-col'>
+          <div>
+              <h3 className="font-display font-bold mb-4">{t('footer.contact.title')}</h3>
+              <ul className="space-y-2">
+              <li className="text-muted-foreground">{t('footer.contact.email')}: {t('footer.contact.email_value')}</li>
+              </ul>
+
               Imprimé avec ❤️ en Bretagne
           </div>
         </div>

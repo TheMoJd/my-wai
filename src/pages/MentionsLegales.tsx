@@ -40,7 +40,6 @@ const MentionsLegales = () => {
                 <div className="bg-gray-50 p-4 rounded-lg mb-4">
                   <p><strong>{t('mentions_legales.sections.hosting.host_name')}</strong></p>
                   <p>{t('mentions_legales.sections.hosting.host_address')}</p>
-                  <p>📧 <strong>{t('mentions_legales.sections.hosting.host_support')}</strong></p>
                 </div>
               </section>
 

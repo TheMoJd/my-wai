@@ -202,11 +202,11 @@
     "contact": {
       "title": "Contact",
       "email": "Email",
-      "email_value": "contact@mywai.fr",
+      "email_value": "alia@mywai.fr",
       "phone": "Phone",
-      "phone_value": "+33 1 23 45 67 89",
+      "phone_value": "+33668389065",
       "address": "Address",
-      "address_value": "Paris, France"
+      "address_value": "Brest, France"
     },
     "copyright": "All rights reserved."
   },
@@ -237,7 +237,7 @@
       },
       "data_privacy": {
         "title": "6. Personal data protection",
-        "content": "MyWai undertakes to respect the confidentiality of collected data:\n\n• Contributions are private, not indexed, and accessible only to invited persons\n\n• No data is transferred to third parties\n\n• The user can request deletion of their data at any time via contact@mywai.com\n\nData is stored securely on servers hosted in Europe, in accordance with GDPR."
+        "content": "MyWai undertakes to respect the confidentiality of collected data:\n\n• Contributions are private, not indexed, and accessible only to invited persons\n\n• No data is transferred to third parties\n\n• The user can request deletion of their data at any time via alia@mywai.fr\n\nData is stored securely on servers hosted in Europe, in accordance with GDPR."
       },
       "payment_delivery": {
         "title": "7. Pricing",
@@ -274,7 +274,7 @@
         "company_name": "GLAZH",
         "siret": "SIRET: 497693309",
         "address": "Headquarters: 11 résidence la Chesnaie - 29290 Saint-Renan",
-        "contact": "Contact: contact@mywai.com"
+        "contact": "Contact: alia@mywai.fr"
       },
       "director": {
         "title": "Publication director",
@@ -283,9 +283,8 @@
       "hosting": {
         "title": "Hosting",
         "content": "This site is hosted by:",
-        "host_name": "[Host name, e.g. OVHcloud]",
-        "host_address": "[Legal address or host country]",
-        "host_support": "support: [email if available]"
+        "host_name": "SCALEWAY",
+        "host_address": "8 rue de la Ville l’Evêque, 75008 Paris"
       },
       "intellectual_property": {
         "title": "Intellectual property",
@@ -296,7 +295,7 @@
         "title": "Personal data",
         "content_1": "Information collected via the site is used only for creating and managing biographies.",
         "content_2": "It is never resold.",
-        "content_3": "You can request deletion at any time by email to: contact@my-w.ai"
+        "content_3": "You can request deletion at any time by email to: alia@mywai.fr"
       },
       "cookies": {
         "title": "Cookies",

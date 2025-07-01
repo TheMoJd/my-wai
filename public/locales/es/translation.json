@@ -202,11 +202,11 @@
     "contact": {
       "title": "Contacto",
       "email": "Email",
-      "email_value": "contact@mywai.fr",
+      "email_value": "alia@mywai.fr",
       "phone": "Teléfono",
-      "phone_value": "+33 1 23 45 67 89",
+      "phone_value": "+33668389065",
       "address": "Dirección",
-      "address_value": "París, Francia"
+      "address_value": "Brest, Francia"
     },
     "copyright": "Todos los derechos reservados."
   },
@@ -237,7 +237,7 @@
       },
       "data_privacy": {
         "title": "6. Protección de datos personales",
-        "content": "MyWai se compromete a respetar la confidencialidad de los datos recopilados:\n\n• Las contribuciones son privadas, no indexadas, y accesibles únicamente a las personas invitadas\n\n• Ningún dato se cede a terceros\n\n• El usuario puede solicitar en cualquier momento la eliminación de sus datos a través de contact@mywai.com\n\nLos datos se almacenan de forma segura en servidores alojados en Europa, conforme al RGPD."
+        "content": "MyWai se compromete a respetar la confidencialidad de los datos recopilados:\n\n• Las contribuciones son privadas, no indexadas, y accesibles únicamente a las personas invitadas\n\n• Ningún dato se cede a terceros\n\n• El usuario puede solicitar en cualquier momento la eliminación de sus datos a través de alia@mywai.fr\n\nLos datos se almacenan de forma segura en servidores alojados en Europa, conforme al RGPD."
       },
       "payment_delivery": {
         "title": "7. Tarifas",
@@ -274,7 +274,7 @@
         "company_name": "GLAZH",
         "siret": "SIRET: 497693309",
         "address": "Sede social: 11 résidence la Chesnaie - 29290 Saint-Renan",
-        "contact": "Contacto: contact@mywai.com"
+        "contact": "Contacto: alia@mywai.fr"
       },
       "director": {
         "title": "Director de publicación",
@@ -283,9 +283,8 @@
       "hosting": {
         "title": "Alojamiento",
         "content": "Este sitio está alojado por:",
-        "host_name": "[Nombre del proveedor, ej. OVHcloud]",
-        "host_address": "[Dirección legal o país del proveedor]",
-        "host_support": "soporte: [email si está disponible]"
+        "host_name": "SCALEWAY",
+        "host_address": "8 rue de la Ville l’Evêque, 75008 Paris"
       },
       "intellectual_property": {
         "title": "Propiedad intelectual",
@@ -296,7 +295,7 @@
         "title": "Datos personales",
         "content_1": "La información recopilada a través del sitio se usa únicamente para crear y gestionar biografías.",
         "content_2": "Nunca se revende.",
-        "content_3": "Puedes solicitar su eliminación en cualquier momento por email a: contact@my-w.ai"
+        "content_3": "Puedes solicitar su eliminación en cualquier momento por email a: alia@mywai.fr"
       },
       "cookies": {
         "title": "Cookies",

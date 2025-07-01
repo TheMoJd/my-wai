@@ -202,11 +202,11 @@
     "contact": {
       "title": "Contact",
       "email": "Email",
-      "email_value": "contact@mywai.fr",
+      "email_value": "alia@mywai.fr",
       "phone": "Téléphone",
-      "phone_value": "+33 1 23 45 67 89",
+      "phone_value": "+33 6 83 89 06 5",
       "address": "Adresse",
-      "address_value": "Paris, France"
+      "address_value": "Brest, France"
     },
     "copyright": "Tous droits réservés."
   },
@@ -237,7 +237,7 @@
       },
       "data_privacy": {
         "title": "6. Protection des données personnelles",
-        "content": "MyWai s'engage à respecter la confidentialité des données collectées :\n\n• Les contributions sont privées, non indexées, et accessibles uniquement aux personnes invitées\n\n• Aucune donnée n'est cédée à des tiers\n\n• L'utilisateur peut à tout moment demander la suppression de ses données via contact@mywai.com\n\nLes données sont stockées de manière sécurisée sur des serveurs hébergés en Europe, conformément au RGPD."
+        "content": "MyWai s'engage à respecter la confidentialité des données collectées :\n\n• Les contributions sont privées, non indexées, et accessibles uniquement aux personnes invitées\n\n• Aucune donnée n'est cédée à des tiers\n\n• L'utilisateur peut à tout moment demander la suppression de ses données via alia@mywai.fr\n\nLes données sont stockées de manière sécurisée sur des serveurs hébergés en Europe, conformément au RGPD."
       },
       "payment_delivery": {
         "title": "7. Tarification",
@@ -274,18 +274,17 @@
         "company_name": "GLAZH",
         "siret": "SIRET : 497693309",
         "address": "Siège social : 11 résidence la Chesnaie - 29290 Saint-Renan",
-        "contact": "Contact : contact@mywai.com"
+        "contact": "Contact : alia@mywai.fr"
       },
       "director": {
         "title": "Directeur de la publication",
-        "content": "[Nom Prénom du fondateur ou CEO]"
+        "content": "Cyril De Sousa Cardoso"
       },
       "hosting": {
         "title": "Hébergement",
         "content": "Ce site est hébergé par :",
-        "host_name": "[Nom de l'hébergeur, ex. OVHcloud]",
-        "host_address": "[Adresse légale ou pays de l'hébergeur]",
-        "host_support": "support : [email si disponible]"
+        "host_name": "SCALEWAY",
+        "host_address": "8 rue de la Ville l’Evêque, 75008 Paris"
       },
       "intellectual_property": {
         "title": "Propriété intellectuelle",
@@ -296,7 +295,7 @@
         "title": "Données personnelles",
         "content_1": "Les informations recueillies via le site sont utilisées uniquement pour la création et la gestion des biographies.",
         "content_2": "Elles ne sont jamais revendues.",
-        "content_3": "Vous pouvez demander leur suppression à tout moment par e-mail à : contact@my-w.ai"
+        "content_3": "Vous pouvez demander leur suppression à tout moment par e-mail à : alia@mywai.fr"
       },
       "cookies": {
         "title": "Cookies",
