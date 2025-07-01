@@ -22,11 +22,6 @@ Ce projet génère maintenant des fichiers HTML statiques pour chaque page, faci
 npm run build
 ```
 
-### Build avec génération des pages statiques
-```bash
-npm run build:static
-```
-
 ### Test du déploiement
 ```bash
 npm run test:deployment

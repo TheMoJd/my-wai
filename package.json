@@ -5,9 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && node generate-static-pages.js",
     "build:dev": "vite build --mode development",
-    "build:static": "./build-static.sh",
     "test:deployment": "./test-deployment.sh",
     "lint": "eslint .",
     "preview": "vite preview"
