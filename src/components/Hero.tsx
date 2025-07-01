@@ -17,7 +17,7 @@ const Hero = () => {
           <div className="space-y-6 text-center lg:text-left">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight">
               {t('hero.title')} <br/>
-              <span className="text-mywai">{t('hero.title_highlight')}</span>.
+              <span className="text-mywai">{t('hero.title_highlight')}</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground">
               {t('hero.subtitle')}<br/>
