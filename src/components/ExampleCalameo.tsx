@@ -56,7 +56,7 @@ const ExampleCalameo = () => {
   // ];
 
   return (
-    <section className="section-padding bg-cream relative">
+    <section className="section-padding bg-cream relative" id="calameo">
       {/* Background Elements */}
       <div className="absolute top-20 right-20 w-72 h-72 bg-mywai/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 left-20 w-80 h-80 bg-mywai-light/20 rounded-full blur-3xl"></div>

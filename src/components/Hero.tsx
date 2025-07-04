@@ -37,8 +37,8 @@ const Hero = () => {
                 variant="outline"
                 size="md"
                 onClick={() => {
-                  const processSection = document.getElementById('process');
-                  processSection?.scrollIntoView({ behavior: 'smooth' });
+                  const calameoSection = document.getElementById('calameo');
+                  calameoSection?.scrollIntoView({ behavior: 'smooth' });
                 }}
                 className="!border-2 !border-mywai !text-mywai hover:!bg-mywai/10"
               >
