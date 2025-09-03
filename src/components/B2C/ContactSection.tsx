@@ -1,7 +1,7 @@
 import React from 'react';
 import { ArrowRight, Mail, Phone, MessageSquare } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import Button from './ui/button/Button';
+import Button from '../ui/button/Button';
 
 const ContactSection = () => {
   const { t } = useTranslation();

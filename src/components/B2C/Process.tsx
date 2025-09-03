@@ -1,8 +1,8 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import Button from './ui/button/Button';
-import Badge from './ui/badge/Badge';
+import Button from '../ui/button/Button';
+import Badge from '../ui/badge/Badge';
 
 const Process = () => {
   const { t } = useTranslation();

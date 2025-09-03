@@ -1,16 +1,16 @@
 import { lazy } from 'react';
 import { useTranslation } from 'react-i18next';
 import Navbar from '../components/Navbar';
-import Hero from '../components/Hero';
+import Hero from '../components/B2C/Hero';
 import LazyWrapper from '../components/ui/loading/LazyWrapper';
 import LoadingSpinner from '../components/ui/loading/LoadingSpinner';
 import Footer from '../components/Footer';
 
 // Lazy load des composants lourds
-const Process = lazy(() => import('../components/Process'));
-const ExampleCalameo = lazy(() => import('../components/ExampleCalameo'));
-const Pricing = lazy(() => import('../components/Pricing'));
-const Testimonials = lazy(() => import('../components/Testimonials'));
+const Process = lazy(() => import('../components/B2C/Process'));
+const ExampleCalameo = lazy(() => import('../components/B2C/ExampleCalameo'));
+const Pricing = lazy(() => import('../components/B2C/Pricing'));
+const Testimonials = lazy(() => import('../components/B2C/Testimonials'));
 const FAQ = lazy(() => import('@/components/FAQ'));
 
 const Index = () => {

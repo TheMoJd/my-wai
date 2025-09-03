@@ -1,6 +1,6 @@
 import { ArrowRight, Check } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import Button from './ui/button/Button';
+import Button from '../ui/button/Button';
 
 const Pricing = () => {  
   const { t } = useTranslation();

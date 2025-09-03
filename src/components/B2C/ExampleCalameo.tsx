@@ -1,8 +1,8 @@
 import { ArrowRight } from 'lucide-react';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import Button from './ui/button/Button';
-import { Modal } from './ui/modal';
+import Button from '../ui/button/Button';
+import { Modal } from '../ui/modal';
 
 const ExampleCalameo = () => {
   const { t } = useTranslation();
