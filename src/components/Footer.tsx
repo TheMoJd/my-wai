@@ -13,7 +13,7 @@ const Footer = () => {
             <a href="#" className="flex items-center gap-2">
               <div className="relative h-14 w-14">
                 <img
-                  src="/logo.png"
+                  src="/landing/logo.png"
                   alt="Logo MyWai"
                   className="h-full w-full object-contain"
                 />
