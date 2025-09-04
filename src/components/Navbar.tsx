@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { useTranslation } from 'react-i18next';
 import Button from './ui/button/Button';
@@ -8,6 +8,13 @@ import { DropdownItem } from './ui/dropdown/DropdownItem';
 
 const Navbar = () => {
   const { i18n, t } = useTranslation();
+  const location = useLocation();
+  const isEntreprise = location.pathname.startsWith('/entreprise');
+  const isHome = location.pathname === '/' || location.pathname === '/index';
+
+  const baseNavLink = 'relative px-1 transition-colors after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:rounded-full after:transition-all after:duration-300';
+  const activeClasses = 'text-mywai font-semibold after:w-full after:bg-mywai';
+  const inactiveClasses = 'text-foreground hover:text-mywai after:w-0 hover:after:w-full after:bg-mywai/60';
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false);
@@ -47,7 +54,22 @@ const Navbar = () => {
           <span className="text-2xl font-display font-bold text-mywai-dark">MyWai</span>
         </a>          
         <div className="hidden md:flex items-center gap-8">    
-          <a href="#about" className="text-foreground hover:text-mywai transition-colors">{t('navbar.about')}</a>
+          <Link
+            to="/#about"
+            className={`${baseNavLink} ${isHome ? activeClasses : inactiveClasses}`}
+            aria-current={isHome ? 'page' : undefined}
+            onClick={() => setIsMenuOpen(false)}
+          >
+            {t('navbar.about')}
+          </Link>
+          <Link
+            to="/entreprise" 
+            className={`${baseNavLink} ${isEntreprise ? activeClasses : inactiveClasses}`}
+            aria-current={isEntreprise ? 'page' : undefined}
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Entreprise
+          </Link>
           <a
             href="https://mywai.softwarexnihilo.com/session/new"
             className="text-foreground hover:text-mywai transition-colors"
@@ -56,13 +78,7 @@ const Navbar = () => {
           >
             {t('navbar.account')}
           </a>
-          <Link
-            to="/entreprise" 
-            className="text-foreground hover:text-mywai transition-colors"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Entreprise
-          </Link>
+          
           <Button
             variant="primary"
             size="sm"
@@ -110,20 +126,32 @@ const Navbar = () => {
       </div>
       {isMenuOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-cream shadow-lg py-4">
-          <div className="container mx-auto px-6 sm:px-4 flex flex-col gap-4">            <a 
-              href="#about" 
-              className="text-foreground hover:text-mywai py-2 transition-colors"
+          <div className="container mx-auto px-6 sm:px-4 flex flex-col gap-4">
+            <Link
+              to="/#about"
+              className={`py-2 ${baseNavLink} ${isHome ? activeClasses : inactiveClasses}`}
+              aria-current={isHome ? 'page' : undefined}
               onClick={() => setIsMenuOpen(false)}
             >
               {t('navbar.about')}
-            </a>
+            </Link>
+            <Link
+              to="/entreprise"
+              className={`py-2 ${baseNavLink} ${isEntreprise ? activeClasses : inactiveClasses}`}
+              aria-current={isEntreprise ? 'page' : undefined}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Entreprise
+            </Link>
             <a 
-              href="#testimonials" 
+              href="https://mywai.softwarexnihilo.com/session/new" 
               className="text-foreground hover:text-mywai py-2 transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setIsMenuOpen(false)}
             >
               {t('navbar.account')}
-            </a>            
+            </a>
             <Button
               variant="primary"
               size="sm"

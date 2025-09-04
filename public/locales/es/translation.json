@@ -302,5 +302,87 @@
         "content": "El sitio usa cookies para mejorar la navegación y medir la audiencia. Puedes rechazarlas en la configuración de tu navegador."
       }
     }
+  },
+  "b2b": {
+    "hero": {
+      "title": "Cuenta la <strong>historia</strong> de tu <strong>empresa</strong> con IA",
+      "paragraph": "Ofrece a tus colaboradores un recuerdo inolvidable para un hito (5/10/50/100 años) o una salida. Transforma archivos, testimonios y momentos clave en un relato potente: un libro corporativo coescrito por tus equipos y estructurado por IA.",
+      "cta_quote": "Solicitar presupuesto (desde 490€)",
+      "cta_consumer": "Crear una biografía para un ser querido",
+      "features": [
+        {"title": "A medida y auténtico", "description": "Un relato estructurado que refleja el ADN y el impacto de tu empresa."},
+        {"title": "Coescritura sencilla", "description": "Equipos, clientes y socios contribuyen fácilmente en un espacio dedicado."},
+        {"title": "Patrimonio duradero", "description": "Un soporte elegante que transmite historia, valores y visión a las futuras generaciones."}
+      ]
+    },
+    "process": {
+      "title": "Cómo crear un libro corporativo",
+      "subtitle": "Un proceso guiado de 6 pasos, simple y colaborativo",
+      "cta": "Contactarnos",
+      "steps": [
+        {"title": "Creación del espacio de la empresa (gratis)", "description": "Añade nombre, fecha de creación, web, enfoque del libro: fundador, marca, oficios, impacto, aniversario…"},
+        {"title": "Invitación de colaboradores (sin límite)", "description": "Empleados, clientes, socios, antiguos miembros comparten anécdotas, mensajes y fotos mediante un formulario simple."},
+        {"title": "La IA construye la biografía corporativa", "description": "Con vuestras contribuciones redactamos una biografía emotiva y estructurada. Nada se imprime sin vuestra validación."},
+        {"title": "Revisión y ajustes", "description": "Relees el manuscrito, sugieres cambios y validas el tono final."},
+        {"title": "Maquetación y diseño de portada", "description": "Maquetamos un libro elegante (formato, tipografías, estructura) y creamos una portada personalizada."},
+        {"title": "Impresión y entrega", "description": "Tu libro corporativo se imprime en Francia con calidad premium y se entrega según vuestras necesidades."}
+      ]
+    },
+    "pricing": {
+      "title": "Precio de los Packs ‘Biografía empresa’",
+      "subtitle": "El mejor regalo corporativo para un aniversario, jubilación u homenaje.",
+      "pricing_title": "Tarifa e incluye",
+      "from": "Desde",
+      "starting_price": "490€",
+      "pay_later": "Pago por factura tras validación.",
+      "cta_quote": "Solicitar presupuesto",
+      "chapters_title": "Ejemplo de capítulos",
+      "chapters_disclaimer": "Cada proyecto es único: adaptamos enfoque, estructura y tono según tus objetivos (cultura, employer branding, transmisión, comunicación, evento...).",
+      "cta_discuss": "Hablar de tu proyecto",
+      "features": [
+        "Libro compuesto de varios capítulos",
+        "Sin límite de colaboradores",
+        "Edición profesional",
+        "Maquetación cuidada",
+        "Libro encuadernado de calidad",
+        "Entrega gratuita",
+        "Espacio privado para reeditar"
+      ],
+      "chapters": [
+        "La génesis",
+        "Los primeros 100 clientes",
+        "Los giros",
+        "Los oficios",
+        "Innovación",
+        "Impacto y territorio",
+        "Mañana"
+      ]
+    },
+    "testimonials": {
+      "title": "Lo que dicen las empresas",
+      "subtitle": "Descubre testimonios de quienes crearon un libro corporativo MyWai",
+      "verified": "Verificado",
+      "cta": "Contactarnos",
+      "items": [
+        {"content": "« Buscábamos una idea original para marcar las jubilaciones. Con MyWai encontramos un formato simple y profundamente humano. El libro supera con creces el regalo clásico. »", "author": "Nathalie D.", "role": "RRHH, Grupo agroalimentario"},
+        {"content": "« Usamos MyWai para contar los 50 años de la empresa. Antiguos, empleados actuales e incluso clientes contribuyeron. Resultado: una obra magnífica que retrata cultura y valores de forma viva. »", "author": "Pierre M.", "role": "Director Comunicación"},
+        {"content": "« En su despedida le entregamos el libro. Lo hojeó, reconoció mensajes y anécdotas y se detuvo con lágrimas. Incluso los escépticos quedaron impresionados. »", "author": "Julien T.", "role": "Jefe de proyecto"}
+      ]
+    },
+    "contact": {
+      "title": "Contacto / Solicitud de presupuesto",
+      "subtitle": "Explícanos tu proyecto: tipo de evento, objetivos, número de copias...",
+      "thank_you": "¡Gracias!",
+      "thank_you_msg": "Te contactaremos pronto para hablar del proyecto.",
+      "fields": {
+        "name": "Nombre / Apellido",
+        "email": "Email profesional",
+        "company": "Empresa",
+        "website": "Sitio web",
+        "phone": "Teléfono",
+        "message": "Mensaje"
+      },
+      "submit": "Enviar solicitud"
+    }
   }
 }

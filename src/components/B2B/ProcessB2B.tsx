@@ -1,33 +1,10 @@
 import Button from '../ui/button/Button';
 import { ArrowRight } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const ProcessB2B = () => {
-  const steps = [
-    {
-      title: "Création d'un espace pour l'entreprise (gratuit)",
-      description: "Ajoutez le nom, la date de création, le site web, l'angle du livre : fondateur, marque, métiers, impact, anniversaire…"
-    },
-    {
-      title: 'Invitation des collaborateurs à contribuer (sans limitation)',
-      description: 'Collaborateurs, clients, partenaires, anciens partagent anecdotes, messages et photos via un formulaire simple.'
-    },
-    {
-      title: "L'IA construit la biographie d'entreprise",
-      description: "Grâce à l’IA et à vos contributions, nous rédigeons une biographie émouvante et structurée. Rien n’est imprimé sans votre validation."
-    },
-    {
-      title: 'Relecture & ajustements',
-      description: 'Vous relisez le manuscrit, suggérez des modifications et validez le ton final.'
-    },
-    {
-      title: 'Mise en page & création de la couverture',
-      description: 'Nous maquettions un livre élégant (format, typographies, structure) et réalisons une couverture personnalisée.'
-    },
-    {
-      title: 'Impression & livraison',
-      description: 'Votre livre d’entreprise est imprimé en France avec une qualité premium et livré selon vos besoins.'
-    }
-  ];
+  const { t } = useTranslation();
+  const steps = (t('b2b.process.steps', { returnObjects: true }) as Array<{ title: string; description: string }>);
 
   const stepIcons = [
     <path d="M4 4h16v4H4zM4 10h10v10H4zM16 10h4v10h-4z" key="p1" />, // espace
@@ -42,8 +19,8 @@ const ProcessB2B = () => {
   return (
     <section className="section-padding bg-white relative" id="process-b2b">
       <div className="container mx-auto px-4">
-        <h2 className="section-title">Comment ça marche pour créer un livre d'entreprise</h2>
-        <p className="section-subtitle">Un processus guidé en 6 étapes, simple et collaboratif.</p>
+  <h2 className="section-title">{t('b2b.process.title')}</h2>
+  <p className="section-subtitle">{t('b2b.process.subtitle')}</p>
         {/* Stepper horizontal desktop + scrollable on petits écrans */}
         <div className="mt-14">
           {/* Horizontal (md+) */}
@@ -58,7 +35,7 @@ const ProcessB2B = () => {
                       <span className="relative z-10 inline-flex w-16 h-16 rounded-3xl bg-white/80 backdrop-blur ring-2 ring-mywai/30 group-hover:ring-mywai transition shadow-sm items-center justify-center">
                         <svg viewBox="0 0 24 24" className="h-8 w-8 fill-mywai">{stepIcons[i]}</svg>
                       </span>
-                      <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 text-xs font-semibold text-mywai/80 tracking-wide">Étape {stepNumbers[i]}</span>
+                      <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 text-xs font-semibold text-mywai/80 tracking-wide">{t('common.step', 'Étape')} {stepNumbers[i]}</span>
                     </div>
                     <h3 className="text-sm font-display font-semibold leading-snug mb-2 px-2">{step.title}</h3>
                     <p className="text-xs text-muted-foreground leading-relaxed px-2">{step.description}</p>
@@ -97,7 +74,7 @@ const ProcessB2B = () => {
             }}
             className="!bg-mywai hover:!bg-mywai-dark !text-white"
           >
-            Nous contacter
+            {t('b2b.process.cta')}
           </Button>
         </div>
       </div>

@@ -302,5 +302,87 @@
         "content": "Le site utilise des cookies pour améliorer la navigation et mesurer l'audience. Vous pouvez les refuser dans les paramètres de votre navigateur."
       }
     }
+  },
+  "b2b": {
+    "hero": {
+      "title": "Racontez <strong>l’histoire</strong> de votre <strong>entreprise</strong> avec l’IA",
+      "paragraph": "Offrez à vos collaborateurs un souvenir impérissable pour leur départ ou un moment marquant (5/10/50/100 ans...). Transformez archives, témoignages et moments-clés en un récit puissant : un livre d’entreprise coécrit par vos équipes et structuré par l’IA.",
+      "cta_quote": "Demander un devis (à partir de 490€)",
+      "cta_consumer": "Créer une biographie pour un proche",
+      "features": [
+        {"title": "Sur-mesure & authentique", "description": "Un récit fidèle et structuré qui reflète l’ADN et l’impact de votre entreprise."},
+        {"title": "Coécriture facilitée", "description": "Vos équipes, clients et partenaires contribuent simplement via un espace dédié."},
+        {"title": "Patrimoine durable", "description": "Un support élégant qui transmet histoire, valeurs et vision aux générations futures."}
+      ]
+    },
+    "process": {
+      "title": "Comment ça marche pour créer un livre d'entreprise",
+      "subtitle": "Un processus guidé en 6 étapes, simple et collaboratif",
+      "cta": "Nous contacter",
+      "steps": [
+        {"title": "Création d'un espace pour l'entreprise (gratuit)", "description": "Ajoutez le nom, la date de création, le site web, l'angle du livre : fondateur, marque, métiers, impact, anniversaire…"},
+        {"title": "Invitation des collaborateurs à contribuer (sans limitation)", "description": "Collaborateurs, clients, partenaires, anciens partagent anecdotes, messages et photos via un formulaire simple."},
+        {"title": "L'IA construit la biographie d'entreprise", "description": "Grâce à l’IA et à vos contributions, nous rédigeons une biographie émouvante et structurée. Rien n’est imprimé sans votre validation."},
+        {"title": "Relecture & ajustements", "description": "Vous relisez le manuscrit, suggérez des modifications et validez le ton final."},
+        {"title": "Mise en page & création de la couverture", "description": "Nous maquettions un livre élégant (format, typographies, structure) et réalisons une couverture personnalisée."},
+        {"title": "Impression & livraison", "description": "Votre livre d’entreprise est imprimé en France avec une qualité premium et livré selon vos besoins."}
+      ]
+    },
+    "pricing": {
+      "title": "Le prix des Packs “Biographie entreprise”",
+      "subtitle": "Le plus beau cadeau d'entreprise pour un anniversaire, un départ en retraite ou un hommage.",
+      "pricing_title": "Tarification & inclus",
+      "from": "À partir de",
+      "starting_price": "490€",
+      "pay_later": "Paiement sur facture après validation.",
+      "cta_quote": "Demander un devis",
+      "chapters_title": "Exemple de chapitres",
+      "chapters_disclaimer": "Chaque projet est unique : nous adaptons l’angle, la structure et le ton selon vos enjeux (culture, marque employeur, transmission, communication, événement...).",
+      "cta_discuss": "Discuter de votre projet",
+      "features": [
+        "Livre composé de plusieurs chapitres",
+        "Pas de limite de contributeurs",
+        "Édition professionnelle",
+        "Mise en page soignée",
+        "Livre relié de qualité",
+        "Livraison offerte",
+        "Espace privé pour rééditer"
+      ],
+      "chapters": [
+        "La genèse",
+        "Les premiers 100 clients",
+        "Les virages",
+        "Les métiers",
+        "Innovation",
+        "Impact & territoire",
+        "Demain"
+      ]
+    },
+    "testimonials": {
+      "title": "Ce qu'en disent les entreprises",
+      "subtitle": "Découvrez les témoignages de ceux qui ont offert un livre biographique MyWai",
+      "verified": "Vérifié",
+      "cta": "Nous contacter",
+      "items": [
+        {"content": "« Nous cherchions une idée originale pour marquer les départs en retraite de nos collaborateurs. Avec MyWai, nous avons trouvé un format à la fois simple et profondément humain. Le livre remis à chaque départ dépasse largement le cadeau classique : c’est un récit de vie, nourri par ses collègues et magnifié par l’IA. Les émotions étaient au rendez-vous, et nos collaborateurs ont senti toute la reconnaissance de l’entreprise. »", "author": "Nathalie D.", "role": "Responsable RH, Groupe agroalimentaire"},
+        {"content": "« Nous avons utilisé MyWai pour raconter les 50 ans de notre société. Les anciens, les salariés actuels et même quelques clients ont contribué. Résultat : un ouvrage magnifique, qui retrace notre culture et nos valeurs de manière vivante. C’est devenu un outil précieux pour notre communication interne et pour l’onboarding des nouvelles recrues. »", "author": "Pierre M.", "role": "Directeur Communication"},
+        {"content": "« Le jour de son pot de départ, on lui a remis le livre devant toute l'équipe. Il l'a feuilleté, a reconnu les messages, les anecdotes… et il s'est arrêté net. Il avait les larmes aux yeux. C'est le genre de cadeau qu'on n'oublie pas. Même les collègues les plus sceptiques ont été bluffés par la qualité et la sensibilité du résultat. »", "author": "Julien T.", "role": "Chef de projet"}
+      ]
+    },
+    "contact": {
+      "title": "Contact / Demande de devis",
+      "subtitle": "Expliquez-nous votre projet : type d'événement, objectifs, nombre d'exemplaires souhaités...",
+      "thank_you": "Merci !",
+      "thank_you_msg": "Nous revenons vers vous très vite pour échanger sur votre projet.",
+      "fields": {
+        "name": "Nom / Prénom",
+        "email": "Email professionnel",
+        "company": "Société",
+        "website": "Site internet",
+        "phone": "Téléphone",
+        "message": "Message"
+      },
+      "submit": "Envoyer la demande"
+    }
   }
 }
