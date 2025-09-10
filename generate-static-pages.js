@@ -7,6 +7,9 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+// Get asset prefix from environment variable
+const assetPrefix = process.env.VITE_ASSET_PREFIX || '/';
+
 // Lire le fichier index.html pour extraire les vrais noms des assets
 const indexPath = path.join(__dirname, 'dist', 'index.html');
 const indexContent = fs.readFileSync(indexPath, 'utf8');
@@ -20,8 +23,9 @@ if (!cssMatch || !jsMatch) {
   process.exit(1);
 }
 
-const cssFile = cssMatch[1];
-const jsFile = jsMatch[1];
+// Apply asset prefix to the file paths
+const cssFile = assetPrefix === '/' ? cssMatch[1] : assetPrefix + cssMatch[1].substring(1);
+const jsFile = assetPrefix === '/' ? jsMatch[1] : assetPrefix + jsMatch[1].substring(1);
 
 console.log('📄 Generating static HTML pages...');
 console.log(`🎨 CSS: ${cssFile}`);
@@ -40,13 +44,13 @@ const createHtmlTemplate = (title, description, ogTitle, routePath) => `<!DOCTYP
     <meta property="og:title" content="${ogTitle}" />
     <meta property="og:description" content="${description}" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="/logo.png" />
+    <meta property="og:image" content="${assetPrefix === '/' ? '/logo.png' : assetPrefix + 'logo.png'}" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@mywai_officiel" />
-    <meta name="twitter:image" content="/logo.png" />
+    <meta name="twitter:image" content="${assetPrefix === '/' ? '/logo.png' : assetPrefix + 'logo.png'}" />
     
-    <link rel="icon" type="image/png" href="/logo.png" />
+    <link rel="icon" type="image/png" href="${assetPrefix === '/' ? '/logo.png' : assetPrefix + 'logo.png'}" />
     <script type="module" crossorigin src="${jsFile}"></script>
     <link rel="stylesheet" crossorigin href="${cssFile}">
     

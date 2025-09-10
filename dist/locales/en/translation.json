@@ -302,5 +302,87 @@
         "content": "The site uses cookies to improve navigation and measure audience. You can refuse them in your browser settings."
       }
     }
+  },
+  "b2b": {
+    "hero": {
+      "title": "Tell your <strong>company story</strong> with AI",
+      "paragraph": "Offer employees a memorable gift for a milestone (5/10/50/100 years...) or a departure. Turn archives, testimonials and key moments into a powerful narrative: a company book co-written by your teams and structured by AI.",
+      "cta_quote": "Request a quote (from €490)",
+      "cta_consumer": "Create a biography for a loved one",
+      "features": [
+        {"title": "Tailor‑made & authentic", "description": "A structured narrative that reflects your company DNA and impact."},
+        {"title": "Easy co‑writing", "description": "Teams, clients and partners contribute seamlessly in a dedicated space."},
+        {"title": "Lasting legacy", "description": "An elegant medium that transmits history, values and vision for the future."}
+      ]
+    },
+    "process": {
+      "title": "How it works to create a company book",
+      "subtitle": "A guided 6‑step, simple & collaborative workflow",
+      "cta": "Contact us",
+      "steps": [
+        {"title": "Create your company space (free)", "description": "Add name, founding date, website, narrative angle: founder, brand, jobs, impact, anniversary…"},
+        {"title": "Invite contributors (unlimited)", "description": "Employees, clients, partners, alumni share anecdotes, messages & photos via a simple form."},
+        {"title": "AI builds the company biography", "description": "Using your contributions, we craft an emotional, structured manuscript. Nothing prints without your validation."},
+        {"title": "Review & refine", "description": "You proofread, suggest edits and validate the final tone."},
+        {"title": "Layout & cover design", "description": "We typeset a refined book (format, typography, structure) and design a custom cover."},
+        {"title": "Print & delivery", "description": "Your company book is printed in France with premium quality and delivered to your needs."}
+      ]
+    },
+    "pricing": {
+      "title": "Pricing for Company Biography Packs",
+      "subtitle": "The finest corporate gift for an anniversary, retirement or tribute.",
+      "pricing_title": "Pricing & included",
+      "from": "From",
+      "starting_price": "€490",
+      "pay_later": "Invoice payment after approval.",
+      "cta_quote": "Request a quote",
+      "chapters_title": "Example chapters",
+      "chapters_disclaimer": "Each project is unique: we adapt angle, structure & tone to your objectives (culture, employer brand, transmission, communication, event...).",
+      "cta_discuss": "Discuss your project",
+      "features": [
+        "Book composed of several chapters",
+        "No contributor limit",
+        "Professional editing",
+        "Refined layout",
+        "Quality hardbound book",
+        "Free delivery",
+        "Private space for future edits"
+      ],
+      "chapters": [
+        "Genesis",
+        "First 100 customers",
+        "Strategic shifts",
+        "Roles & crafts",
+        "Innovation",
+        "Impact & territory",
+        "Tomorrow"
+      ]
+    },
+    "testimonials": {
+      "title": "What companies say",
+      "subtitle": "Discover feedback from those who created a MyWai company biography",
+      "verified": "Verified",
+      "cta": "Contact us",
+      "items": [
+        {"content": "“We needed an original idea to mark retirements. MyWai gave us a format both simple and deeply human. The book we hand over goes far beyond a classic gift: it’s a life story enriched by peers and elevated by AI.”", "author": "Nathalie D.", "role": "HR Manager, Food Group"},
+        {"content": "“We used MyWai to tell our company’s 50‑year history. Alumni, current staff and even clients contributed. Result: a beautiful work that vividly retraces our culture and values.”", "author": "Pierre M.", "role": "Communications Director"},
+        {"content": "“At his farewell we presented the book. He skimmed, recognized messages, anecdotes… and froze—eyes watering. Even skeptical colleagues were impressed by the sensitivity and quality.”", "author": "Julien T.", "role": "Project Lead"}
+      ]
+    },
+    "contact": {
+      "title": "Contact / Quote request",
+      "subtitle": "Tell us about your project: event type, objectives, number of copies desired...",
+      "thank_you": "Thank you!",
+      "thank_you_msg": "We’ll get back to you shortly to discuss your project.",
+      "fields": {
+        "name": "Name",
+        "email": "Business email",
+        "company": "Company",
+        "website": "Website",
+        "phone": "Phone",
+        "message": "Message"
+      },
+      "submit": "Send request"
+    }
   }
 }

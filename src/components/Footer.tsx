@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { getAssetPath } from '../lib/utils';
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -13,7 +14,7 @@ const Footer = () => {
             <a href="#" className="flex items-center gap-2">
               <div className="relative h-14 w-14">
                 <img
-                  src="/landing/logo.png"
+                  src={getAssetPath("logo.png")}
                   alt="Logo MyWai"
                   className="h-full w-full object-contain"
                 />

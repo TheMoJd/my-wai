@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import Button from '../ui/button/Button';
 import { Modal } from '../ui/modal';
+import { getAssetPath } from '../../lib/utils';
 
 const ExampleCalameo = () => {
   const { t } = useTranslation();
@@ -73,7 +74,7 @@ const ExampleCalameo = () => {
         {/* Calaméo Embed Integration */}
         <div className="mt-8 max-w-6xl mx-auto text-center">
           <img 
-            src="/landing/pop-up2.png" 
+            src={getAssetPath("pop-up2.png")} 
             alt={t('calameo.alt')} 
             className="mx-auto cursor-pointer" 
             onClick={handleImageClick}

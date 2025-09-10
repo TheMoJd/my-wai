@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import Button from './ui/button/Button';
 import { Dropdown } from './ui/dropdown/Dropdown';
 import { DropdownItem } from './ui/dropdown/DropdownItem';
+import { getAssetPath } from '../lib/utils';
 
 const Navbar = () => {
   const { i18n, t } = useTranslation();
@@ -46,7 +47,7 @@ const Navbar = () => {
         <a href="/" className="flex items-center gap-2">
           <div className="relative h-14 w-14">
             <img
-              src="/landing/logo.png"
+              src={getAssetPath("logo.png")}
               alt="Logo MyWai"
               className="h-full w-full object-contain"
             />
