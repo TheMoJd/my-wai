@@ -100,6 +100,13 @@ const pages = [
     routePath: '/mentions-legales'
   },
   {
+    filename: 'entreprise.html',
+    title: 'Solutions Entreprise - MyWai',
+    description: 'Découvrez les solutions MyWai pour les entreprises : biographies personnalisées et services sur mesure pour vos équipes.',
+    ogTitle: 'Solutions Entreprise - MyWai',
+    routePath: '/entreprise'
+  },
+  {
     filename: '404.html',
     title: 'Page non trouvée - MyWai',
     description: 'La page que vous recherchez n\'existe pas. Retournez à l\'accueil de MyWai pour créer votre biographie personnalisée.',
@@ -120,6 +127,7 @@ pages.forEach(page => {
 const redirectsContent = `/*    /index.html   200
 /cgu              /cgu.html           200
 /mentions-legales /mentions-legales.html 200
+/entreprise       /entreprise.html    200
 /404              /404.html           200
 `;
 
@@ -133,8 +141,12 @@ const vercelConfig = {
       "dest": "/cgu.html"
     },
     {
-      "src": "/mentions-legales", 
+      "src": "/mentions-legales",
       "dest": "/mentions-legales.html"
+    },
+    {
+      "src": "/entreprise",
+      "dest": "/entreprise.html"
     },
     {
       "src": "/(.*)",
@@ -150,6 +162,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 
 RewriteRule ^cgu$ /cgu.html [L]
 RewriteRule ^mentions-legales$ /mentions-legales.html [L]
+RewriteRule ^entreprise$ /entreprise.html [L]
 
 RewriteRule ^(.*)$ /index.html [L]
 
