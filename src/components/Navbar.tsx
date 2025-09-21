@@ -70,7 +70,7 @@ const Navbar = () => {
             {t("navbar.about")}
           </Link>
           <Link
-            to="/entreprise"
+            to="/p/enterprise"
             className={`${baseNavLink} ${isEntreprise ? activeClasses : inactiveClasses}`}
             aria-current={isEntreprise ? "page" : undefined}
             onClick={() => setIsMenuOpen(false)}
@@ -148,7 +148,7 @@ const Navbar = () => {
               {t("navbar.about")}
             </Link>
             <Link
-              to="/entreprise"
+              to="/p/enterprise"
               className={`py-2 ${baseNavLink} ${isEntreprise ? activeClasses : inactiveClasses}`}
               aria-current={isEntreprise ? "page" : undefined}
               onClick={() => setIsMenuOpen(false)}
