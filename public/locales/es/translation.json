@@ -197,7 +197,8 @@
       "legal": "Aviso legal",
       "privacy": "Política de privacidad",
       "terms": "Términos de uso",
-      "delivery": "Entrega y devoluciones"
+      "delivery": "Entrega y devoluciones",
+      "cookies": "Cookies"
     },
     "contact": {
       "title": "Contacto",
@@ -299,7 +300,9 @@
       },
       "cookies": {
         "title": "Cookies",
-        "content": "El sitio usa cookies para mejorar la navegación y medir la audiencia. Puedes rechazarlas en la configuración de tu navegador."
+        "content": "My Wai participa y cumple con todas las Especificaciones y Políticas del Transparency & Consent Framework de IAB Europe. My Wai utiliza la Plataforma de Gestión de Consentimiento n.º 92.",
+        "edit": "Puede modificar sus elecciones en cualquier momento haciendo ",
+        "click_here": "clic aquí"
       }
     }
   },
@@ -310,9 +313,18 @@
       "cta_quote": "Solicitar presupuesto (desde 490€)",
       "cta_consumer": "Crear una biografía para un ser querido",
       "features": [
-        {"title": "A medida y auténtico", "description": "Un relato estructurado que refleja el ADN y el impacto de tu empresa."},
-        {"title": "Coescritura sencilla", "description": "Equipos, clientes y socios contribuyen fácilmente en un espacio dedicado."},
-        {"title": "Patrimonio duradero", "description": "Un soporte elegante que transmite historia, valores y visión a las futuras generaciones."}
+        {
+          "title": "A medida y auténtico",
+          "description": "Un relato estructurado que refleja el ADN y el impacto de tu empresa."
+        },
+        {
+          "title": "Coescritura sencilla",
+          "description": "Equipos, clientes y socios contribuyen fácilmente en un espacio dedicado."
+        },
+        {
+          "title": "Patrimonio duradero",
+          "description": "Un soporte elegante que transmite historia, valores y visión a las futuras generaciones."
+        }
       ]
     },
     "process": {
@@ -320,12 +332,30 @@
       "subtitle": "Un proceso guiado de 6 pasos, simple y colaborativo",
       "cta": "Contactarnos",
       "steps": [
-        {"title": "Creación del espacio de la empresa (gratis)", "description": "Añade nombre, fecha de creación, web, enfoque del libro: fundador, marca, oficios, impacto, aniversario…"},
-        {"title": "Invitación de colaboradores (sin límite)", "description": "Empleados, clientes, socios, antiguos miembros comparten anécdotas, mensajes y fotos mediante un formulario simple."},
-        {"title": "La IA construye la biografía corporativa", "description": "Con vuestras contribuciones redactamos una biografía emotiva y estructurada. Nada se imprime sin vuestra validación."},
-        {"title": "Revisión y ajustes", "description": "Relees el manuscrito, sugieres cambios y validas el tono final."},
-        {"title": "Maquetación y diseño de portada", "description": "Maquetamos un libro elegante (formato, tipografías, estructura) y creamos una portada personalizada."},
-        {"title": "Impresión y entrega", "description": "Tu libro corporativo se imprime en Francia con calidad premium y se entrega según vuestras necesidades."}
+        {
+          "title": "Creación del espacio de la empresa (gratis)",
+          "description": "Añade nombre, fecha de creación, web, enfoque del libro: fundador, marca, oficios, impacto, aniversario…"
+        },
+        {
+          "title": "Invitación de colaboradores (sin límite)",
+          "description": "Empleados, clientes, socios, antiguos miembros comparten anécdotas, mensajes y fotos mediante un formulario simple."
+        },
+        {
+          "title": "La IA construye la biografía corporativa",
+          "description": "Con vuestras contribuciones redactamos una biografía emotiva y estructurada. Nada se imprime sin vuestra validación."
+        },
+        {
+          "title": "Revisión y ajustes",
+          "description": "Relees el manuscrito, sugieres cambios y validas el tono final."
+        },
+        {
+          "title": "Maquetación y diseño de portada",
+          "description": "Maquetamos un libro elegante (formato, tipografías, estructura) y creamos una portada personalizada."
+        },
+        {
+          "title": "Impresión y entrega",
+          "description": "Tu libro corporativo se imprime en Francia con calidad premium y se entrega según vuestras necesidades."
+        }
       ]
     },
     "pricing": {
@@ -364,9 +394,21 @@
       "verified": "Verificado",
       "cta": "Contactarnos",
       "items": [
-        {"content": "« Buscábamos una idea original para marcar las jubilaciones. Con MyWai encontramos un formato simple y profundamente humano. El libro supera con creces el regalo clásico. »", "author": "Nathalie D.", "role": "RRHH, Grupo agroalimentario"},
-        {"content": "« Usamos MyWai para contar los 50 años de la empresa. Antiguos, empleados actuales e incluso clientes contribuyeron. Resultado: una obra magnífica que retrata cultura y valores de forma viva. »", "author": "Pierre M.", "role": "Director Comunicación"},
-        {"content": "« En su despedida le entregamos el libro. Lo hojeó, reconoció mensajes y anécdotas y se detuvo con lágrimas. Incluso los escépticos quedaron impresionados. »", "author": "Julien T.", "role": "Jefe de proyecto"}
+        {
+          "content": "« Buscábamos una idea original para marcar las jubilaciones. Con MyWai encontramos un formato simple y profundamente humano. El libro supera con creces el regalo clásico. »",
+          "author": "Nathalie D.",
+          "role": "RRHH, Grupo agroalimentario"
+        },
+        {
+          "content": "« Usamos MyWai para contar los 50 años de la empresa. Antiguos, empleados actuales e incluso clientes contribuyeron. Resultado: una obra magnífica que retrata cultura y valores de forma viva. »",
+          "author": "Pierre M.",
+          "role": "Director Comunicación"
+        },
+        {
+          "content": "« En su despedida le entregamos el libro. Lo hojeó, reconoció mensajes y anécdotas y se detuvo con lágrimas. Incluso los escépticos quedaron impresionados. »",
+          "author": "Julien T.",
+          "role": "Jefe de proyecto"
+        }
       ]
     },
     "contact": {
