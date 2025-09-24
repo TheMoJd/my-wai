@@ -197,7 +197,8 @@
       "legal": "Mentions légales",
       "privacy": "Politique de confidentialité",
       "terms": "Conditions d'utilisation",
-      "delivery": "Livraison et retours"
+      "delivery": "Livraison et retours",
+      "cookies": "Cookies"
     },
     "contact": {
       "title": "Contact",
@@ -299,7 +300,9 @@
       },
       "cookies": {
         "title": "Cookies",
-        "content": "Le site utilise des cookies pour améliorer la navigation et mesurer l'audience. Vous pouvez les refuser dans les paramètres de votre navigateur."
+        "content": "My Wai participe et est conforme à l'ensemble des Spécifications et Politiques du Transparency & Consent Framework de l'IAB Europe. My Wai utilise la Consent Management Platform n°92.",
+        "edit": "Vous pouvez modifier vos choix à tout moment en ",
+        "click_here": "cliquant ici"
       }
     }
   },

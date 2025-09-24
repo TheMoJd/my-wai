@@ -97,6 +97,14 @@ const Footer = () => {
                   {t("footer.information.terms")}
                 </a>
               </li>
+              <li>
+                <a
+                  href="javascript:Sddan.cmp.displayUI();"
+                  className="text-muted-foreground hover:text-mywai transition-colors"
+                >
+                  {t("footer.information.cookies")}
+                </a>
+              </li>
             </ul>
           </div>
 

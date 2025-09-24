@@ -197,7 +197,8 @@
       "legal": "Legal notice",
       "privacy": "Privacy policy",
       "terms": "Terms of use",
-      "delivery": "Delivery and returns"
+      "delivery": "Delivery and returns",
+      "cookies": "Cookies"
     },
     "contact": {
       "title": "Contact",
@@ -299,7 +300,9 @@
       },
       "cookies": {
         "title": "Cookies",
-        "content": "The site uses cookies to improve navigation and measure audience. You can refuse them in your browser settings."
+        "content": "My Wai participates in and complies with all the Specifications and Policies of the IAB Europe Transparency & Consent Framework. My Wai uses Consent Management Platform No. 92.",
+        "edit": "You can change your choices at any time by ",
+        "click_here": "clicking here"
       }
     }
   },
@@ -310,9 +313,18 @@
       "cta_quote": "Request a quote (from €490)",
       "cta_consumer": "Create a biography for a loved one",
       "features": [
-        {"title": "Tailor‑made & authentic", "description": "A structured narrative that reflects your company DNA and impact."},
-        {"title": "Easy co‑writing", "description": "Teams, clients and partners contribute seamlessly in a dedicated space."},
-        {"title": "Lasting legacy", "description": "An elegant medium that transmits history, values and vision for the future."}
+        {
+          "title": "Tailor‑made & authentic",
+          "description": "A structured narrative that reflects your company DNA and impact."
+        },
+        {
+          "title": "Easy co‑writing",
+          "description": "Teams, clients and partners contribute seamlessly in a dedicated space."
+        },
+        {
+          "title": "Lasting legacy",
+          "description": "An elegant medium that transmits history, values and vision for the future."
+        }
       ]
     },
     "process": {
@@ -320,12 +332,30 @@
       "subtitle": "A guided 6‑step, simple & collaborative workflow",
       "cta": "Contact us",
       "steps": [
-        {"title": "Create your company space (free)", "description": "Add name, founding date, website, narrative angle: founder, brand, jobs, impact, anniversary…"},
-        {"title": "Invite contributors (unlimited)", "description": "Employees, clients, partners, alumni share anecdotes, messages & photos via a simple form."},
-        {"title": "AI builds the company biography", "description": "Using your contributions, we craft an emotional, structured manuscript. Nothing prints without your validation."},
-        {"title": "Review & refine", "description": "You proofread, suggest edits and validate the final tone."},
-        {"title": "Layout & cover design", "description": "We typeset a refined book (format, typography, structure) and design a custom cover."},
-        {"title": "Print & delivery", "description": "Your company book is printed in France with premium quality and delivered to your needs."}
+        {
+          "title": "Create your company space (free)",
+          "description": "Add name, founding date, website, narrative angle: founder, brand, jobs, impact, anniversary…"
+        },
+        {
+          "title": "Invite contributors (unlimited)",
+          "description": "Employees, clients, partners, alumni share anecdotes, messages & photos via a simple form."
+        },
+        {
+          "title": "AI builds the company biography",
+          "description": "Using your contributions, we craft an emotional, structured manuscript. Nothing prints without your validation."
+        },
+        {
+          "title": "Review & refine",
+          "description": "You proofread, suggest edits and validate the final tone."
+        },
+        {
+          "title": "Layout & cover design",
+          "description": "We typeset a refined book (format, typography, structure) and design a custom cover."
+        },
+        {
+          "title": "Print & delivery",
+          "description": "Your company book is printed in France with premium quality and delivered to your needs."
+        }
       ]
     },
     "pricing": {
@@ -364,9 +394,21 @@
       "verified": "Verified",
       "cta": "Contact us",
       "items": [
-        {"content": "“We needed an original idea to mark retirements. MyWai gave us a format both simple and deeply human. The book we hand over goes far beyond a classic gift: it’s a life story enriched by peers and elevated by AI.”", "author": "Nathalie D.", "role": "HR Manager, Food Group"},
-        {"content": "“We used MyWai to tell our company’s 50‑year history. Alumni, current staff and even clients contributed. Result: a beautiful work that vividly retraces our culture and values.”", "author": "Pierre M.", "role": "Communications Director"},
-        {"content": "“At his farewell we presented the book. He skimmed, recognized messages, anecdotes… and froze—eyes watering. Even skeptical colleagues were impressed by the sensitivity and quality.”", "author": "Julien T.", "role": "Project Lead"}
+        {
+          "content": "“We needed an original idea to mark retirements. MyWai gave us a format both simple and deeply human. The book we hand over goes far beyond a classic gift: it’s a life story enriched by peers and elevated by AI.”",
+          "author": "Nathalie D.",
+          "role": "HR Manager, Food Group"
+        },
+        {
+          "content": "“We used MyWai to tell our company’s 50‑year history. Alumni, current staff and even clients contributed. Result: a beautiful work that vividly retraces our culture and values.”",
+          "author": "Pierre M.",
+          "role": "Communications Director"
+        },
+        {
+          "content": "“At his farewell we presented the book. He skimmed, recognized messages, anecdotes… and froze—eyes watering. Even skeptical colleagues were impressed by the sensitivity and quality.”",
+          "author": "Julien T.",
+          "role": "Project Lead"
+        }
       ]
     },
     "contact": {
