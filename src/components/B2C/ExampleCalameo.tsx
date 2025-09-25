@@ -1,9 +1,9 @@
-import { ArrowRight } from 'lucide-react';
-import { useState } from 'react';
-import { useTranslation } from 'react-i18next';
-import Button from '../ui/button/Button';
-import { Modal } from '../ui/modal';
-import { getAssetPath } from '../../lib/utils';
+import { ArrowRight } from "lucide-react";
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
+import Button from "../ui/button/Button";
+import { Modal } from "../ui/modal";
+import { getAssetPath } from "../../lib/utils";
 
 const ExampleCalameo = () => {
   const { t } = useTranslation();
@@ -16,7 +16,7 @@ const ExampleCalameo = () => {
   const handleCloseModal = () => {
     setIsModalOpen(false);
   };
-  
+
   // const chapters = [ // Commented out
   //   {
   //     title: "L'enfance",
@@ -65,18 +65,16 @@ const ExampleCalameo = () => {
       <div className="container mx-auto">
         <div className="flex items-center justify-center">
           <h2 className="section-title !mb-0 text-center">
-            {t('calameo.title')}
+            {t("calameo.title")}
           </h2>
         </div>
-        <p className="section-subtitle text-center">
-          {t('calameo.subtitle')}
-        </p>        
+        <p className="section-subtitle text-center">{t("calameo.subtitle")}</p>
         {/* Calaméo Embed Integration */}
         <div className="mt-8 max-w-6xl mx-auto text-center">
-          <img 
-            src={getAssetPath("pop-up2.png")} 
-            alt={t('calameo.alt')} 
-            className="mx-auto cursor-pointer" 
+          <img
+            src={getAssetPath("pop-up2.png")}
+            alt={t("calameo.alt")}
+            className="mx-auto cursor-pointer"
             onClick={handleImageClick}
           />
         </div>
@@ -88,23 +86,23 @@ const ExampleCalameo = () => {
             className="!bg-mywai hover:!bg-mywai-dark !text-white shadow-lg transform hover:scale-105 transition-all duration-300"
             onClick={handleImageClick}
           >
-            {t('calameo.button')}
-           </Button>        
+            {t("calameo.button")}
+          </Button>
         </div>
       </div>
 
       {/* Modal avec Calaméo feuilletable */}
-      <Modal 
-        isOpen={isModalOpen} 
+      <Modal
+        isOpen={isModalOpen}
         onClose={handleCloseModal}
         className="max-w-5xl w-full mx-4"
         isFullscreen={false}
       >
         <div className="p-4 sm:p-6">
           <h3 className="text-2xl font-bold text-center mb-4 text-mywai">
-            {t('calameo.modal_title')}
+            {t("calameo.modal_title")}
           </h3>
-          <div style={{ textAlign: 'center' }}>
+          <div style={{ textAlign: "center" }}>
             <iframe
               src="//v.calameo.com/?bkcode=00788763825ecd11b92c2&mode=mini&view=book&showsharemenu=false&authid=u5OZBo62jDhu"
               width="900"
@@ -112,18 +110,18 @@ const ExampleCalameo = () => {
               frameBorder={0}
               allowTransparency
               allowFullScreen
-              style={{ margin: '0 auto', maxWidth: '100%', display: 'block' }}
+              style={{ margin: "0 auto", maxWidth: "100%", display: "block" }}
               title="Calameo Preview"
             ></iframe>
           </div>
           <div className="mt-4 text-center">
-            <a 
-              href="https://www.calameo.com/books/007887638a76298bca9cd?authid=BnuMmf5tfguS" 
+            <a
+              href="https://www.calameo.com/books/00788763825ecd11b92c2?authid=u5OZBo62jDhu"
               target="_blank"
               rel="noopener noreferrer"
               className="text-mywai hover:underline text-sm"
             >
-              {t('calameo.fullscreen')}
+              {t("calameo.fullscreen")}
             </a>
           </div>
         </div>
