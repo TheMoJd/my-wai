@@ -94,6 +94,7 @@ const ContactSection = () => {
             <form
               className="space-y-5"
               action="https://formspree.io/f/xanpygdo"
+              method="POST"
             >
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                 <div>

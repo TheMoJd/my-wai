@@ -32,6 +32,7 @@ const ContactB2B = () => {
             <form
               className="space-y-6"
               action="https://formspree.io/f/xanpygdo"
+              method="POST"
             >
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
