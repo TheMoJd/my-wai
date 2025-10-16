@@ -57,16 +57,7 @@ const HeroB2B = () => {
                   <div className="h-4 bg-mywai/10 rounded-full w-5/6"></div>
                 </div>
               </div>
-              <div className="absolute top-1/4 -left-14 bg-white rounded-lg shadow-lg p-3 transform -rotate-6">
-                <div className="h-24 w-28 rounded-md bg-mywai/20 flex items-center justify-center">
-                  <img src={getAssetPath("premier-offert.png")} alt="Livre entreprise" className="w-full h-full object-cover rounded-md" />
-                </div>
-              </div>
-              <div className="absolute -bottom-10 -right-10 bg-white rounded-lg shadow-lg p-3 transform rotate-12">
-                <div className="h-20 w-32 rounded-md bg-mywai/10 flex items-center justify-center">
-                  <img src={getAssetPath("envoyer_selfie.png")} alt="Illustration" className="w-full h-full object-cover rounded-md" />
-                </div>
-              </div>
+              
             </div>
             <div className="absolute bottom-0 right-0 w-64 h-64 bg-gradient-radial from-mywai-light/40 to-transparent blur-2xl"></div>
           </div>

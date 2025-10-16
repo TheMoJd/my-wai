@@ -64,11 +64,12 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				mywai: {
-					light: '#FFD9B8',
-					DEFAULT: '#FF8C5A',
-					dark: '#E56A45'
+					light: '#FFA8C7',
+					DEFAULT: '#F31E85',
+					dark: '#C91870'
 				},
-				cream: '#FFF8E7'
+				cream: '#F8F3F0',
+				'text-accent': '#FBF5F1'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

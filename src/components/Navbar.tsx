@@ -51,7 +51,7 @@ const Navbar = () => {
         <a href="/" className="flex items-center gap-2">
           <div className="relative h-14 w-14">
             <img
-              src={getAssetPath("logo.png")}
+              src={getAssetPath("logo-mywai-rose.png")}
               alt="Logo MyWai"
               className="h-full w-full object-contain"
             />
@@ -62,7 +62,7 @@ const Navbar = () => {
         </a>
         <div className="hidden md:flex items-center gap-8">
           <Link
-            to="/#about"
+            to="/"
             className={`${baseNavLink} ${isHome ? activeClasses : inactiveClasses}`}
             aria-current={isHome ? "page" : undefined}
             onClick={() => setIsMenuOpen(false)}

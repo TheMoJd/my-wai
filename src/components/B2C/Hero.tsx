@@ -1,4 +1,3 @@
-import React from "react";
 import { ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import Button from "../ui/button/Button";
@@ -72,7 +71,7 @@ const Hero = () => {
                 </div>
               </div>
 
-              <div className="absolute top-1/4 -left-14 bg-white rounded-lg shadow-lg p-3 transform -rotate-6">
+              {/* <div className="absolute top-1/4 -left-14 bg-white rounded-lg shadow-lg p-3 transform -rotate-6">
                 <div className="h-24 w-28 rounded-md bg-mywai/20 flex items-center justify-center">
                   <img
                     src={getAssetPath("premier-offert.png")}
@@ -90,7 +89,7 @@ const Hero = () => {
                     className="w-full h-full object-cover rounded-md"
                   />
                 </div>
-              </div>
+              </div> */}
             </div>
 
             <div className="absolute bottom-0 right-0 w-64 h-64 bg-gradient-radial from-mywai-light/40 to-transparent blur-2xl"></div>

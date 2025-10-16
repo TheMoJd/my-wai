@@ -7,14 +7,14 @@
   "faq": "FAQ",
   "back_to_top": "Retour en haut",
   "navbar": {
-    "about": "MyWai, c'est quoi ?",
+    "about": "Particulier",
     "account": "Mon compte",
     "try_free": "Essayer gratuitement",
     "language": "Langue"
   },
   "hero": {
     "title": "Offrez le plus beau des cadeaux : une",
-    "title_highlight": "biographie personnalisée",
+    "title_highlight": " personnalisée",
     "subtitle": "Anniversaire, départ à la retraite, hommage...",
     "description": "Généré par l’IA et enrichi des souvenirs des proches, ce livre autobiographique, à la fois structuré et profondément émouvant, devient un cadeau personnalisé, chargé de sens et intemporel.",
     "cta_primary": "Offrir une biographie sur mesure",
@@ -23,7 +23,7 @@
     "feature1_description": "Les objets s'oublient. Les souvenirs restent. Avec MyWai, vous offrez un récit sur mesure, intime, qui traverse le temps.",
     "feature2_title": "La puissance de l'IA au service de l'émotion",
     "feature2_description": "Notre intelligence artificielle transforme les témoignages, anecdotes, photos et traits de caractère en une histoire unique, cohérente et profondément humaine.",
-    "feature3_title": "Un vrai livre dans vos mains imprimé avec  ❤️ en Bretagne",
+    "feature3_title": "Un vrai livre dans vos mains imprimé avec  ❤️ en France",
     "feature3_description": "Reliure de qualité, mise en page élégante, couverture personnalisée… Le résultat est digne d'une autobiographie d'éditeur."
   },
   "calameo": {
