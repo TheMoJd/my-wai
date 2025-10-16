@@ -1,10 +1,23 @@
 import Button from '../ui/button/Button';
 import { ArrowRight } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import Avatar from '../ui/avatar/Avatar';
+import { getAssetPath } from '../../lib/utils';
 
 const TestimonialsB2B = () => {
   const { t } = useTranslation();
   const testimonials = t('b2b.testimonials.items', { returnObjects: true }) as Array<{ content: string; author: string; role: string }>;
+
+  // Mapping des photos pour chaque auteur B2B
+  const getAuthorPhoto = (author: string) => {
+    const photoMap: { [key: string]: string } = {
+      "Nathalie D.": "2. Sophie Dubois.png",
+      "Pierre M.": "2. Thomas Bernard.png",
+      "Julien T.": "2. Elodie Martin.png",
+    };
+    
+    return photoMap[author] || null;
+  };
 
   return (
     <section className="section-padding bg-cream relative" id="testimonials-b2b">
@@ -21,9 +34,19 @@ const TestimonialsB2B = () => {
               </div>
         <p className="text-gray-700 italic flex-grow">{item.content}</p>
               <div className="mt-6 pt-4 border-t border-gray-100 flex items-center justify-between">
-                <div>
-          <h4 className="font-medium">{item.author}</h4>
-          <p className="text-sm text-muted-foreground">{item.role}</p>
+                <div className="flex items-center gap-3">
+                  <Avatar
+                    src={getAuthorPhoto(item.author) 
+                      ? getAssetPath(getAuthorPhoto(item.author)!)
+                      : `https://api.dicebear.com/7.x/initials/svg?seed=${item.author}`
+                    }
+                    alt={item.author}
+                    size="small"
+                  />
+                  <div>
+                    <h4 className="font-medium">{item.author}</h4>
+                    <p className="text-sm text-muted-foreground">{item.role}</p>
+                  </div>
                 </div>
                 <span className="text-xs bg-green-100 text-green-700 px-2 py-1 rounded">{t('b2b.testimonials.verified')}</span>
               </div>

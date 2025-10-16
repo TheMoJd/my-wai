@@ -7,7 +7,7 @@
   "faq": "FAQ",
   "back_to_top": "Retour en haut",
   "navbar": {
-    "about": "MyWai, c'est quoi ?",
+    "about": "Particulier",
     "account": "Mon compte",
     "try_free": "Essayer gratuitement",
     "language": "Langue"
@@ -23,7 +23,7 @@
     "feature1_description": "Les objets s'oublient. Les souvenirs restent. Avec MyWai, vous offrez un récit sur mesure, intime, qui traverse le temps.",
     "feature2_title": "La puissance de l'IA au service de l'émotion",
     "feature2_description": "Notre intelligence artificielle transforme les témoignages, anecdotes, photos et traits de caractère en une histoire unique, cohérente et profondément humaine.",
-    "feature3_title": "Un vrai livre dans vos mains imprimé avec  ❤️ en Bretagne",
+    "feature3_title": "Un vrai livre dans vos mains imprimé avec  ❤️ en France",
     "feature3_description": "Reliure de qualité, mise en page élégante, couverture personnalisée… Le résultat est digne d'une autobiographie d'éditeur."
   },
   "calameo": {
@@ -366,7 +366,7 @@
       "starting_price": "490€",
       "pay_later": "Paiement sur facture après validation.",
       "cta_quote": "Demander un devis",
-      "chapters_title": "Exemple de chapitres",
+      "chapters_title": "Pack histoire de l’entreprise",
       "chapters_disclaimer": "Chaque projet est unique : nous adaptons l’angle, la structure et le ton selon vos enjeux (culture, marque employeur, transmission, communication, événement...).",
       "cta_discuss": "Discuter de votre projet",
       "features": [

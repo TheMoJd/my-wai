@@ -1,9 +1,9 @@
-import React from "react";
 import { ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import Button from "../ui/button/Button";
 import Avatar from "../ui/avatar/Avatar";
 import Badge from "../ui/badge/Badge";
+import { getAssetPath } from "../../lib/utils";
 
 const Testimonials = () => {
   const { t } = useTranslation();
@@ -16,6 +16,19 @@ const Testimonials = () => {
     role: string;
   }>;
 
+  // Mapping des photos pour chaque auteur B2C
+  const getAuthorPhoto = (author: string) => {
+    const photoMap: { [key: string]: string } = {
+      "Élodie M.": "1. Elodie Martin.png",
+      "Julien T.": "1. Julien Thomas .png",
+      "Marie L.": "1. Marie Laurent .png",
+      "Thomas B.": "1. Alain Girard.png",
+      "Sophie D.": "1. Clara Petit.png",
+      "Lucas M.": "1. Lucas Moreau.png",
+    };
+    
+    return photoMap[author] || null;
+  };
   return (
     <section className="section-padding bg-cream relative" id="testimonials">
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNGRkE1NUEiIGZpbGwtb3BhY2l0eT0iMC4xIj48cGF0aCBkPSJNMzYgMzRjMC0yIDEtMyAzLTNzMyAxIDMgMy0xIDMtMyAzLTMtMS0zLTN6bTAtMTBjMC0yIDEtMyAzLTNzMyAxIDMgMy0xIDMtMyAzLTMtMS0zLTN6bTEwIDEwYzAtMiAxLTMgMy0zczMgMSAzIDMtMSAzLTMgMy0zLTEtMy0zem0tMTAgMTBjMC0yIDEtMyAzLTNzMyAxIDMgMy0xIDMtMyAzLTMtMS0zLTN6bS0xMC0yMGMwLTIgMS0zIDMtM3MzIDEgMyAzLTEgMy0zIDMtMy0xLTMtM3ptLTEwIDEwYzAtMiAxLTMgMy0zczMgMSAzIDMtMSAzLTMgMy0zLTEtMy0zem0zMCAxMGMwLTIgMS0zIDMtM3MzIDEgMyAzLTEgMy0zIDMtMy0xLTMtM3pNMTYgMzRjMC0yIDEtMyAzLTNzMyAxIDMgMy0xIDMtMyAzLTMtMS0zLTN6bS0xMC0xMGMwLTIgMS0zIDMtM3MzIDEgMyAzLTEgMy0zIDMtMy0xLTMtM3ptMTAgMTBjMC0yIDEtMyAzLTNzMyAxIDMgMy0xIDMtMyAzLTMtMS0zLTN6TTM2IDE0YzAtMiAxLTMgMy0zczMgMSAzIDMtMSAzLTMgMy0zLTEtMy0zek0xNiAxNGMwLTIgMS0zIDMtM3MzIDEgMyAzLTEgMy0zIDMtMy0xLTMtM3ptMTAgNDBjMC0yIDEtMyAzLTNzMyAxIDMgMy0xIDMtMyAzLTMtMS0zLTN6Ii8+PC9nPjwvZz48L3N2Zz4=')] opacity-30"></div>
@@ -46,7 +59,10 @@ const Testimonials = () => {
               <div className="mt-6 pt-4 border-t border-gray-100 flex items-center justify-between">
                 <div className="flex items-center gap-3">
                   <Avatar
-                    src={`https://api.dicebear.com/7.x/initials/svg?seed=${testimonial.author}`}
+                    src={getAuthorPhoto(testimonial.author) 
+                      ? getAssetPath(getAuthorPhoto(testimonial.author)!)
+                      : `https://api.dicebear.com/7.x/initials/svg?seed=${testimonial.author}`
+                    }
                     alt={testimonial.author}
                     size="small"
                   />

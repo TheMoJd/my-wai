@@ -1,4 +1,3 @@
-import React from "react";
 import { ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import Button from "../ui/button/Button";
@@ -17,8 +16,8 @@ const Hero = () => {
       <div className="absolute bottom-10 left-10 w-72 h-72 bg-mywai-light/20 rounded-full blur-3xl"></div>
 
       <div className="container mx-auto px-6 sm:px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6 text-center lg:text-left">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div className="space-y-6 text-center lg:text-left lg:col-span-7">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight">
               {t("hero.title")} <br />
               <span className="text-mywai">{t("hero.title_highlight")}</span>
@@ -54,16 +53,15 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="relative hidden lg:block">
+          <div className="relative hidden lg:block lg:col-span-5">
             <div className="relative z-10 animate-float">
               <div className="bg-white rounded-xl shadow-xl p-6 transform rotate-3 max-w-md mx-auto">
-                <div className="relative w-full aspect-[4/5] bg-gradient-to-br from-mywai-light to-mywai rounded-lg mb-4 overflow-hidden">
+                <div className="relative w-full aspect-[4/5] rounded-lg mb-4 overflow-hidden">
                   <img
-                    src={getAssetPath("famille.png")}
+                    src={getAssetPath("lauriane.jpeg")}
                     alt="Famille heureuse avec des souvenirs"
                     className="absolute inset-0 w-full h-full object-cover rounded-lg opacity-90 hover:opacity-100 transition-opacity duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-br from-mywai-light/20 to-mywai/20 rounded-lg"></div>
                 </div>
                 <div className="space-y-2">
                   <div className="h-6 bg-mywai/20 rounded-full w-3/4"></div>
@@ -72,7 +70,7 @@ const Hero = () => {
                 </div>
               </div>
 
-              <div className="absolute top-1/4 -left-14 bg-white rounded-lg shadow-lg p-3 transform -rotate-6">
+              {/* <div className="absolute top-1/4 -left-14 bg-white rounded-lg shadow-lg p-3 transform -rotate-6">
                 <div className="h-24 w-28 rounded-md bg-mywai/20 flex items-center justify-center">
                   <img
                     src={getAssetPath("premier-offert.png")}
@@ -90,7 +88,7 @@ const Hero = () => {
                     className="w-full h-full object-cover rounded-md"
                   />
                 </div>
-              </div>
+              </div> */}
             </div>
 
             <div className="absolute bottom-0 right-0 w-64 h-64 bg-gradient-radial from-mywai-light/40 to-transparent blur-2xl"></div>
