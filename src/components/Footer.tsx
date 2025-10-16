@@ -14,7 +14,7 @@ const Footer = () => {
             <a href="#" className="flex items-center gap-2">
               <div className="relative h-14 w-14">
                 <img
-                  src={getAssetPath("logo.png")}
+                  src={getAssetPath("logo-mywai-rose.png")}
                   alt="Logo MyWai"
                   className="h-full w-full object-contain"
                 />
@@ -100,7 +100,6 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-
           <div>
             <h3 className="font-display font-bold mb-4">
               {t("footer.contact.title")}

@@ -14,7 +14,7 @@
   },
   "hero": {
     "title": "Offrez le plus beau des cadeaux : une",
-    "title_highlight": " personnalisée",
+    "title_highlight": "biographie personnalisée",
     "subtitle": "Anniversaire, départ à la retraite, hommage...",
     "description": "Généré par l’IA et enrichi des souvenirs des proches, ce livre autobiographique, à la fois structuré et profondément émouvant, devient un cadeau personnalisé, chargé de sens et intemporel.",
     "cta_primary": "Offrir une biographie sur mesure",
@@ -366,7 +366,7 @@
       "starting_price": "490€",
       "pay_later": "Paiement sur facture après validation.",
       "cta_quote": "Demander un devis",
-      "chapters_title": "Exemple de chapitres",
+      "chapters_title": "Pack histoire de l’entreprise",
       "chapters_disclaimer": "Chaque projet est unique : nous adaptons l’angle, la structure et le ton selon vos enjeux (culture, marque employeur, transmission, communication, événement...).",
       "cta_discuss": "Discuter de votre projet",
       "features": [

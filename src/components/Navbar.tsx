@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown, Facebook, Instagram, Linkedin } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import Button from "./ui/button/Button";
 import { Dropdown } from "./ui/dropdown/Dropdown";
@@ -85,6 +85,37 @@ const Navbar = () => {
           >
             {t("navbar.account")}
           </a>
+
+          {/* Réseaux sociaux */}
+          <div className="flex items-center gap-3">
+            <a
+              href="https://www.facebook.com/people/My-Wai/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-mywai transition-colors"
+              aria-label="Facebook"
+            >
+              <Facebook size={20} />
+            </a>
+            <a
+              href="https://www.instagram.com/mywai_memories/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-mywai transition-colors"
+              aria-label="Instagram"
+            >
+              <Instagram size={20} />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/my-wai/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-mywai transition-colors"
+              aria-label="LinkedIn"
+            >
+              <Linkedin size={20} />
+            </a>
+          </div>
 
           <Button
             variant="primary"
@@ -176,6 +207,37 @@ const Navbar = () => {
             >
               {t("navbar.try_free")}
             </Button>
+
+            {/* Réseaux sociaux mobile */}
+            <div className="flex items-center justify-center gap-6 pt-4 border-t border-mywai/20">
+              <a
+                href="https://www.facebook.com/profile.php?id=61571358324990"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-mywai transition-colors"
+                aria-label="Facebook"
+              >
+                <Facebook size={24} />
+              </a>
+              <a
+                href="https://www.instagram.com/mywai_memories/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-mywai transition-colors"
+                aria-label="Instagram"
+              >
+                <Instagram size={24} />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/mywai"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-mywai transition-colors"
+                aria-label="LinkedIn"
+              >
+                <Linkedin size={24} />
+              </a>
+            </div>
 
             <div className="flex items-center justify-between pt-2">
               <div className="flex gap-2">
