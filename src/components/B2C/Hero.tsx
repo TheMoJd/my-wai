@@ -17,9 +17,10 @@ const Hero = () => {
 
       <div className="container mx-auto px-6 sm:px-4">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          <div className="space-y-6 text-center lg:text-left lg:col-span-7">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight">
-              {t("hero.title")} <br />
+          <div className="space-y-6 text-center lg:text-left lg:col-span-7
+          ">
+            <h1 className="text-3xl lg:text-5xl font-display font-bold leading-tight">
+              {t("hero.title")}<br />
               <span className="text-mywai">{t("hero.title_highlight")}</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground">
@@ -53,7 +54,7 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="relative hidden lg:block lg:col-span-5">
+          <div className="relative lg:col-span-5">
             <div className="relative z-10 animate-float">
               <div className="bg-white rounded-xl shadow-xl p-6 transform rotate-3 max-w-md mx-auto">
                 <div className="relative w-full aspect-[4/5] rounded-lg mb-4 overflow-hidden">
