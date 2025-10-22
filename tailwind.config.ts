@@ -104,7 +104,7 @@ export default {
 				'float': 'float 6s ease-in-out infinite'
 			},
 			fontFamily: {
-				sans: ['Nunito', 'sans-serif'],
+				sans: ['Manrope', 'Nunito', 'sans-serif'],
 				display: ['Playfair Display', 'serif']
 			},
 			backgroundImage: {

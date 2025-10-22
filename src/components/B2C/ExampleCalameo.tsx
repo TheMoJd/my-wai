@@ -69,14 +69,45 @@ const ExampleCalameo = () => {
           </h2>
         </div>
         <p className="section-subtitle text-center">{t("calameo.subtitle")}</p>
-        {/* Calaméo Embed Integration */}
-        <div className="mt-8 max-w-6xl mx-auto text-center">
-          <img
-            src={getAssetPath("pop-up2.png")}
-            alt={t("calameo.alt")}
-            className="mx-auto cursor-pointer"
-            onClick={handleImageClick}
-          />
+        {/* Aperçu du livre en 3 colonnes */}
+        <div className="mt-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+            {/* Colonne 1 : Photo principale "Mich" */}
+            <div className="flex flex-col">
+              <img
+                src={getAssetPath("photo1.png")}
+                alt="Mich - Photo principale"
+                className="w-full h-auto shadow-lg rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                onClick={handleImageClick}
+              />
+            </div>
+
+            {/* Colonne 2 : Photo enfant + Photo de groupe */}
+            <div className="flex flex-col gap-4 md:gap-6">
+              <img
+                src={getAssetPath("photo2.png")}
+                alt="Partie 1 - Chapitre 1: Les Racines de Mich"
+                className="w-full h-auto shadow-lg rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                onClick={handleImageClick}
+              />
+              <img
+                src={getAssetPath("photo3.png")}
+                alt="Photo de famille"
+                className="w-full h-auto shadow-lg rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                onClick={handleImageClick}
+              />
+            </div>
+
+            {/* Colonne 3 : Texte biographique */}
+            <div className="flex flex-col">
+              <img
+                src={getAssetPath("photo4.png")}
+                alt="Texte biographique"
+                className="w-full h-auto shadow-lg rounded-lg cursor-pointer hover:scale-105 transition-transform duration-300"
+                onClick={handleImageClick}
+              />
+            </div>
+          </div>
         </div>
         <div className="mt-16 text-center">
           <Button
