@@ -25,7 +25,7 @@ const Pricing = () => {
                   99€
                 </span>
                 <span className="text-5xl font-display font-bold text-mywai">
-                  79€
+                  49€
                 </span>
                 <span className="ml-2 text-muted-foreground">
                   {t("pricing_section.price_suffix")}

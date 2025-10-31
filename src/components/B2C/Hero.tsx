@@ -17,7 +17,7 @@ const Hero = () => {
 
       <div className="container mx-auto px-6 sm:px-4">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          <div className="space-y-6 text-center lg:text-left lg:col-span-7
+          <div className="space-y-6 text-center lg:text-left lg:col-span-8
           ">
             <h1 className="text-3xl lg:text-5xl font-display font-bold leading-tight">
               {t("hero.title")}<br />
@@ -27,6 +27,8 @@ const Hero = () => {
               {t("hero.subtitle")}
               <br />
               {t("hero.description")}
+              <br />
+              {t("hero.cta")}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center lg:justify-start">
               <Button
@@ -54,7 +56,7 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="relative lg:col-span-5">
+          <div className="relative lg:col-span-4">
             <div className="relative z-10 animate-float">
               <div className="bg-white rounded-xl shadow-xl p-6 transform rotate-3 max-w-md mx-auto">
                 <div className="relative w-full aspect-[4/5] rounded-lg mb-4 overflow-hidden">
