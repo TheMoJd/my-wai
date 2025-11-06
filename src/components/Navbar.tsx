@@ -78,7 +78,7 @@ const Navbar = () => {
             Entreprise
           </Link>
           <a
-            href="https://my-w.ai/session/new"
+            href="https://app.my-w.ai/session/new"
             className="text-foreground hover:text-mywai transition-colors"
             target="_blank"
             rel="noopener noreferrer"
@@ -121,7 +121,7 @@ const Navbar = () => {
             variant="primary"
             size="sm"
             onClick={() =>
-              (window.location.href = "https://my-w.ai/session/new")
+              (window.location.href = "https://app.my-w.ai/session/new")
             }
             className="!bg-mywai hover:!bg-mywai-dark !text-white"
           >
@@ -187,7 +187,7 @@ const Navbar = () => {
               Entreprise
             </Link>
             <a
-              href="https://my-w.ai/session/new"
+              href="https://app.my-w.ai/session/new"
               className="text-foreground hover:text-mywai py-2 transition-colors"
               target="_blank"
               rel="noopener noreferrer"

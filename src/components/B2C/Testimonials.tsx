@@ -87,7 +87,7 @@ const Testimonials = () => {
             size="md"
             endIcon={<ArrowRight className="h-4 w-4" />}
             onClick={() =>
-              (window.location.href = "https://my-w.ai/session/new")
+              (window.location.href = "https://app.my-w.ai/session/new")
             }
             className="!bg-mywai hover:!bg-mywai-dark !text-white"
           >
