@@ -1,6 +1,13 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, ChevronDown, Facebook, Instagram, Linkedin } from "lucide-react";
+import {
+  Menu,
+  X,
+  ChevronDown,
+  Facebook,
+  Instagram,
+  Linkedin,
+} from "lucide-react";
 import { useTranslation } from "react-i18next";
 import Button from "./ui/button/Button";
 import { Dropdown } from "./ui/dropdown/Dropdown";
@@ -121,7 +128,7 @@ const Navbar = () => {
             variant="primary"
             size="sm"
             onClick={() =>
-              (window.location.href = "https://app.my-w.ai/session/new")
+              (window.location.href = "https://app.my-w.ai/books/new")
             }
             className="!bg-mywai hover:!bg-mywai-dark !text-white"
           >
