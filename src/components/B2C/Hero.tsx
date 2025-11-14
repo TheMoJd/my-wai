@@ -31,7 +31,8 @@ const Hero = () => {
               <br />
               {t("hero.description")}
               <br />
-              {t("hero.cta")}
+              <br />
+              <span dangerouslySetInnerHTML={{ __html: t("hero.cta") }} />
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center lg:justify-start">
               <Button

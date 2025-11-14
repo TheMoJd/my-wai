@@ -14,10 +14,10 @@
   },
   "hero": {
     "title": "Offrez le plus beau des cadeaux :",
-    "title_highlight": "une biographie personnalisée avec les anecdotes des gens que vous aimez",
+    "title_highlight": "une biographie personnalisée",
     "subtitle": "Anniversaire, départ à la retraite, hommage...",
-    "description": "Généré par l’IA et enrichi des souvenirs des proches, ce livre autobiographique, à la fois structuré et profondément émouvant, devient un cadeau personnalisé, chargé de sens et intemporel.",
-    "cta": "Faites la biographie en 15 minutes grâce à l'IA.",
+    "description": "Généré par l'IA et enrichi des souvenirs des proches, ce livre autobiographique, à la fois structuré et profondément émouvant, devient un cadeau personnalisé, chargé de sens et intemporel.",
+    "cta": "<strong>Invitez Vos Proches à Contribuer en 10min</strong>, <span class='text-mywai'>L'IA Se Charge De La Rédaction</span>",
     "cta_primary": "Offrir une biographie sur mesure",
     "cta_secondary": "Exemple d'un livre",
     "feature1_title": "Une idée cadeau personnalisé et intemporel",
