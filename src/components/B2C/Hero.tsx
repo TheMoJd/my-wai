@@ -17,10 +17,13 @@ const Hero = () => {
 
       <div className="container mx-auto px-6 sm:px-4">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          <div className="space-y-6 text-center lg:text-left lg:col-span-8
-          ">
+          <div
+            className="space-y-6 text-center lg:text-left lg:col-span-8
+          "
+          >
             <h1 className="text-3xl lg:text-5xl font-display font-bold leading-tight">
-              {t("hero.title")}<br />
+              {t("hero.title")}
+              <br />
               <span className="text-mywai">{t("hero.title_highlight")}</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground">
@@ -36,7 +39,7 @@ const Hero = () => {
                 size="md"
                 endIcon={<ArrowRight className="h-4 w-4" />}
                 onClick={() =>
-                  (window.location.href = "https://app.my-w.ai/session/new")
+                  (window.location.href = "https://app.my-w.ai/books/new")
                 }
                 className="!bg-mywai hover:!bg-mywai-dark !text-white"
               >
