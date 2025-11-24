@@ -1,4 +1,3 @@
-import React from "react";
 import { useTranslation } from "react-i18next";
 import { getAssetPath } from "../lib/utils";
 
@@ -33,7 +32,7 @@ const Footer = () => {
               {t("footer.quick_links.title")}
             </h3>
             <ul className="space-y-2">
-              
+
               <li>
                 <a
                   href="#process"
@@ -92,7 +91,15 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="javascript:Sddan.cmp.displayUI();"
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    // @ts-ignore
+                    if (typeof window !== 'undefined' && window.Sddan?.cmp?.displayUI) {
+                      // @ts-ignore
+                      window.Sddan.cmp.displayUI();
+                    }
+                  }}
                   className="text-muted-foreground hover:text-mywai transition-colors"
                 >
                   {t("footer.information.cookies")}

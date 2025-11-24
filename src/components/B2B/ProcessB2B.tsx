@@ -14,65 +14,46 @@ const ProcessB2B = () => {
     <path d="M19 2H8c-1.1 0-2 .9-2 2v15.5c0 .83.67 1.5 1.5 1.5.39 0 .74-.15 1-.39.26.24.61.39 1 .39s.74-.15 1-.39c.26.24.61.39 1 .39s.74-.15 1-.39c.26.24.61.39 1 .39s.74-.15 1-.39c.26.24.61.39 1 .39.83 0 1.5-.67 1.5-1.5V4c0-1.1-.9-2-2-2zm0 15H8V4h11v13z" key="p5" />, // mise en page
     <path d="M19 8H5c-1.66 0-3 1.34-3 3v4h4v5h12v-5h4v-4c0-1.66-1.34-3-3-3zm-3 10H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zM17 2H7v4h10V2z" key="p6" /> // impression
   ];
-  const stepNumbers = ['1','2','3','4','5','6'];
+  const stepNumbers = ['1', '2', '3', '4', '5', '6'];
 
   return (
     <section className="section-padding bg-white relative" id="process-b2b">
       <div className="container mx-auto px-4">
-  <h2 className="section-title">{t('b2b.process.title')}</h2>
-  <p className="section-subtitle">{t('b2b.process.subtitle')}</p>
-        {/* Stepper horizontal desktop + scrollable on petits écrans */}
-        <div className="mt-14">
-          {/* Horizontal (md+) */}
-          <div className="hidden md:block relative">
-            <div className="absolute left-0 right-0 top-9 h-px bg-gradient-to-r from-transparent via-mywai/50 to-transparent" />
-            <ol className="grid grid-cols-6 gap-6">
-              {steps.map((step, i) => (
-                <li key={i} className="relative group">
-                  <div className="flex flex-col items-center text-center">
-                    <div className="relative mb-5">
-                      <div className="w-18 h-18" aria-hidden="true" />
-                      <span className="relative z-10 inline-flex w-16 h-16 rounded-3xl bg-white/80 backdrop-blur ring-2 ring-mywai/30 group-hover:ring-mywai transition shadow-sm items-center justify-center">
-                        <svg viewBox="0 0 24 24" className="h-8 w-8 fill-mywai">{stepIcons[i]}</svg>
-                      </span>
-                      <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 text-xs font-semibold text-mywai/80 tracking-wide">{t('common.step', 'Étape')} {stepNumbers[i]}</span>
-                    </div>
-                    <h3 className="text-sm font-display font-semibold leading-snug mb-2 px-2">{step.title}</h3>
-                    <p className="text-xs text-muted-foreground leading-relaxed px-2">{step.description}</p>
-                  </div>
-                  <div className="absolute inset-0 rounded-3xl -m-2 opacity-0 group-hover:opacity-100 transition pointer-events-none bg-mywai-light/20 blur-sm" />
-                </li>
-              ))}
-            </ol>
-          </div>
-          {/* Mobile vertical */}
-          <ol className="md:hidden relative pl-5 before:absolute before:top-2 before:bottom-2 before:left-2 before:w-px before:bg-linear-to-b before:from-mywai/60 before:via-mywai-light/40 before:to-transparent space-y-10">
-            {steps.map((step, i) => (
-              <li key={i} className="relative">
-                <span className="absolute -left-[11px] top-1 w-6 h-6 rounded-full bg-white ring-4 ring-mywai/30 flex items-center justify-center text-[11px] font-semibold text-mywai shadow">{stepNumbers[i]}</span>
-                <div className="flex items-start gap-4">
-                  <span className="shrink-0 inline-flex w-12 h-12 rounded-2xl bg-mywai/10 ring-1 ring-mywai/20 items-center justify-center">
-                    <svg viewBox="0 0 24 24" className="h-7 w-7 fill-mywai">{stepIcons[i]}</svg>
-                  </span>
-                  <div>
-                    <h3 className="text-base font-display font-semibold leading-tight mb-1">{step.title}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{step.description}</p>
-                  </div>
+        <h2 className="section-title">{t('b2b.process.title')}</h2>
+        <p className="section-subtitle">{t('b2b.process.subtitle')}</p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+          {steps.map((step, index) => (
+            <div
+              key={index}
+              className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 relative group hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+            >
+              <div className="absolute -top-4 -right-4 w-12 h-12 rounded-xl bg-mywai text-white flex items-center justify-center font-bold shadow-lg transform group-hover:scale-110 transition-transform duration-300">
+                {stepNumbers[index]}
+              </div>
+              <div className="mb-6 w-16 h-16 bg-mywai/5 rounded-2xl flex items-center justify-center group-hover:bg-mywai group-hover:text-white transition-colors duration-300">
+                <div className="h-8 w-8 fill-current text-mywai group-hover:text-white transition-colors duration-300">
+                  <svg viewBox="0 0 24 24" className="w-full h-full fill-current">{stepIcons[index]}</svg>
                 </div>
-              </li>
-            ))}
-          </ol>
+              </div>
+              <h3 className="text-xl font-display font-bold mb-3 flex items-center gap-2 text-gray-900">
+                {step.title}
+              </h3>
+              <p className="text-muted-foreground leading-relaxed">{step.description}</p>
+            </div>
+          ))}
         </div>
+
         <div className="mt-16 text-center">
           <Button
             variant="primary"
-            size="md"
-            endIcon={<ArrowRight className="h-4 w-4" />}
+            size="lg"
+            endIcon={<ArrowRight className="h-5 w-5" />}
             onClick={() => {
               const contact = document.getElementById('contact-b2b');
               contact?.scrollIntoView({ behavior: 'smooth' });
             }}
-            className="!bg-mywai hover:!bg-mywai-dark !text-white"
+            className="!bg-mywai hover:!bg-mywai-dark !text-white shadow-lg shadow-mywai/25 hover:shadow-xl hover:shadow-mywai/30 transition-all transform hover:-translate-y-1"
           >
             {t('b2b.process.cta')}
           </Button>

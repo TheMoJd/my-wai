@@ -41,22 +41,24 @@ const Process = () => {
         <h2 className="section-title">{t("process_section.title")}</h2>
         <p className="section-subtitle">{t("process_section.subtitle")}</p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
           {steps.map((step, index) => (
             <div
               key={index}
-              className="bg-cream p-6 rounded-xl shadow-md relative card-hover"
+              className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 relative group hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
             >
-              <div className="absolute -top-4 -right-4 w-12 h-12 rounded-full bg-mywai flex items-center justify-center text-white font-bold">
+              <div className="absolute -top-4 -right-4 w-12 h-12 rounded-xl bg-mywai text-white flex items-center justify-center font-bold shadow-lg transform group-hover:scale-110 transition-transform duration-300">
                 {stepNumbers[index]}
               </div>
-              <div className="mb-6 w-16 h-16 bg-mywai/10 rounded-full flex items-center justify-center">
-                {stepIcons[index]}
+              <div className="mb-6 w-16 h-16 bg-mywai/5 rounded-2xl flex items-center justify-center group-hover:bg-mywai group-hover:text-white transition-colors duration-300">
+                <div className="text-mywai group-hover:text-white transition-colors duration-300">
+                  {stepIcons[index]}
+                </div>
               </div>
-              <h3 className="text-xl font-display font-bold mb-3 flex items-center gap-2">
+              <h3 className="text-xl font-display font-bold mb-3 flex items-center gap-2 text-gray-900">
                 {step.title}
               </h3>
-              <p className="text-muted-foreground">{step.description}</p>
+              <p className="text-muted-foreground leading-relaxed">{step.description}</p>
             </div>
           ))}
         </div>

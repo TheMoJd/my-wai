@@ -14,6 +14,8 @@ import { Dropdown } from "./ui/dropdown/Dropdown";
 import { DropdownItem } from "./ui/dropdown/DropdownItem";
 import { getAssetPath } from "../lib/utils";
 
+import BlackFridayBanner from "./BlackFridayBanner";
+
 const Navbar = () => {
   const { i18n, t } = useTranslation();
   const location = useLocation();
@@ -48,13 +50,13 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-cream/95 backdrop-blur-sm shadow-md py-2"
-          : "bg-transparent py-4"
-      }`}
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled
+          ? "bg-cream/95 backdrop-blur-sm shadow-md"
+          : "bg-transparent"
+        }`}
     >
-      <div className="container mx-auto px-6 sm:px-4 flex justify-between items-center">
+      <BlackFridayBanner />
+      <div className={`container mx-auto px-6 sm:px-4 flex justify-between items-center transition-all duration-300 ${isScrolled ? "py-2" : "py-4"}`}>
         <a href="/" className="flex items-center gap-2">
           <div className="relative h-14 w-14">
             <img
@@ -206,8 +208,7 @@ const Navbar = () => {
               variant="primary"
               size="sm"
               onClick={() => {
-                const contactSection = document.getElementById("contact");
-                contactSection?.scrollIntoView({ behavior: "smooth" });
+                window.location.href = "https://app.my-w.ai/books/new";
                 setIsMenuOpen(false);
               }}
               className="!bg-mywai hover:!bg-mywai-dark !text-white w-full"
@@ -253,11 +254,10 @@ const Navbar = () => {
                     changeLanguage("fr");
                     setIsMenuOpen(false);
                   }}
-                  className={`px-2 py-1 text-sm rounded ${
-                    i18n.language === "fr"
-                      ? "bg-mywai text-white"
-                      : "border border-mywai text-mywai hover:bg-mywai hover:text-white"
-                  }`}
+                  className={`px-2 py-1 text-sm rounded ${i18n.language === "fr"
+                    ? "bg-mywai text-white"
+                    : "border border-mywai text-mywai hover:bg-mywai hover:text-white"
+                    }`}
                 >
                   FR
                 </button>
@@ -266,11 +266,10 @@ const Navbar = () => {
                     changeLanguage("en");
                     setIsMenuOpen(false);
                   }}
-                  className={`px-2 py-1 text-sm rounded ${
-                    i18n.language === "en"
-                      ? "bg-mywai text-white"
-                      : "border border-mywai text-mywai hover:bg-mywai hover:text-white"
-                  }`}
+                  className={`px-2 py-1 text-sm rounded ${i18n.language === "en"
+                    ? "bg-mywai text-white"
+                    : "border border-mywai text-mywai hover:bg-mywai hover:text-white"
+                    }`}
                 >
                   EN
                 </button>
@@ -279,11 +278,10 @@ const Navbar = () => {
                     changeLanguage("es");
                     setIsMenuOpen(false);
                   }}
-                  className={`px-2 py-1 text-sm rounded ${
-                    i18n.language === "es"
-                      ? "bg-mywai text-white"
-                      : "border border-mywai text-mywai hover:bg-mywai hover:text-white"
-                  }`}
+                  className={`px-2 py-1 text-sm rounded ${i18n.language === "es"
+                    ? "bg-mywai text-white"
+                    : "border border-mywai text-mywai hover:bg-mywai hover:text-white"
+                    }`}
                 >
                   ES
                 </button>
