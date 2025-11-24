@@ -77,7 +77,7 @@ const Hero = () => {
                 </div>
 
                 <div className="mt-4 text-center">
-                  <p className="text-lg font-display font-bold text-mywai-dark">✨ 1er chapitre offert</p>
+                  <p className="text-lg font-display font-bold text-mywai-dark">{t("hero.first_chapter_free")}</p>
                 </div>
               </div>
             </div>
