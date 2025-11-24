@@ -23,11 +23,8 @@ const Hero = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight tracking-tight">
               {t("hero.title")}
               <br />
-              <span className="text-mywai relative inline-block">
+              <span className="text-mywai">
                 {t("hero.title_highlight")}
-                <svg className="absolute w-full h-3 -bottom-1 left-0 text-mywai/20" viewBox="0 0 100 10" preserveAspectRatio="none">
-                  <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="8" fill="none" />
-                </svg>
               </span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto lg:mx-0">
@@ -57,7 +54,7 @@ const Hero = () => {
                   const calameoSection = document.getElementById("calameo");
                   calameoSection?.scrollIntoView({ behavior: "smooth" });
                 }}
-                className="!border-2 !border-mywai !text-mywai hover:!bg-mywai/5 backdrop-blur-sm"
+                className="!border-2 !border-mywai !text-mywai hover:!bg-mywai/5 backdrop-blur-sm transition-all transform hover:-translate-y-1"
               >
                 {t("hero.cta_secondary")}
               </Button>
@@ -76,8 +73,20 @@ const Hero = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                 </div>
 
-                <div className="mt-4 text-center">
-                  <p className="text-lg font-display font-bold text-mywai-dark">{t("hero.first_chapter_free")}</p>
+                <div className="mt-4 flex items-center gap-3">
+                  <div className="bg-mywai/10 p-2 rounded-full">
+                    <svg className="w-5 h-5 text-mywai" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="font-display font-bold text-lg leading-none text-foreground">
+                      {t("hero.first_chapter_free")}
+                    </p>
+                    <p className="text-xs text-muted-foreground font-medium mt-1">
+                      {t("hero.no_commitment")}
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
