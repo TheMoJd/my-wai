@@ -15,8 +15,8 @@ const indexPath = path.join(__dirname, 'dist', 'index.html');
 const indexContent = fs.readFileSync(indexPath, 'utf8');
 
 // Extraire les noms des fichiers CSS et JS
-const cssMatch = indexContent.match(/href="([^"]*\.css)"/);
-const jsMatch = indexContent.match(/src="([^"]*\.js)"/);
+const cssMatch = indexContent.match(/href="(\/assets\/[^"]*\.css)"/);
+const jsMatch = indexContent.match(/src="(\/assets\/[^"]*\.js)"/);
 
 if (!cssMatch || !jsMatch) {
   console.error('❌ Impossible de trouver les assets CSS/JS dans index.html');

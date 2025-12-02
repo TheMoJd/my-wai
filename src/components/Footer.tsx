@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import { getAssetPath } from "../lib/utils";
 
 const Footer = () => {
@@ -74,20 +75,20 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a
-                  href="/mentions-legales"
+                <Link
+                  to="/mentions-legales"
                   className="text-muted-foreground hover:text-mywai transition-colors"
                 >
                   {t("footer.information.legal")}
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/cgu"
+                <Link
+                  to="/cgu"
                   className="text-muted-foreground hover:text-mywai transition-colors"
                 >
                   {t("footer.information.terms")}
-                </a>
+                </Link>
               </li>
               <li>
                 <a
