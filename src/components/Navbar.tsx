@@ -60,7 +60,7 @@ const Navbar = () => {
         <a href="/" className="flex items-center gap-2">
           <div className="relative h-14 w-14">
             <img
-              src={getAssetPath("logo-mywai-rose.png")}
+              src={getAssetPath("logo_mywai_no_bg.png")}
               alt="Logo MyWai"
               className="h-full w-full object-contain"
             />
