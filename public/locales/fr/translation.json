@@ -24,14 +24,14 @@
     "feature1_description": "Les objets s'oublient. Les souvenirs restent. Avec MyWai, vous offrez un récit sur mesure, intime, qui traverse le temps.",
     "feature2_title": "La puissance de l'IA au service de l'émotion",
     "feature2_description": "Notre intelligence artificielle transforme les témoignages, anecdotes, photos et traits de caractère en une histoire unique, cohérente et profondément humaine.",
-    "feature3_title": "Un vrai livre dans vos mains imprimé avec  ❤️ en France",
+    "feature3_title": "Un vrai livre dans vos mains imprimé avec ❤️ en France",
     "feature3_description": "Reliure de qualité, mise en page élégante, couverture personnalisée… Le résultat est digne d'une autobiographie d'éditeur.",
     "first_chapter_free": "1er chapitre offert",
     "no_commitment": "Sans engagement"
   },
   "calameo": {
     "title": "Découvrez un extrait de livre biographique",
-    "subtitle": "Un livre composé d'une cinquantaine de pages découpé en plusieurs chapitres thématiques qui retrace une vie à travers les souvenirs et témoignages des proches, amis, collègue et famille.",
+    "subtitle": "Un livre composé d'une cinquantaine de pages découpé en plusieurs chapitres thématiques qui retrace une vie à travers les souvenirs et témoignages des proches, amis, collègues et famille.",
     "alt": "Cliquez pour ouvrir le livre feuilletable",
     "button": "Voir un exemple de la biographie",
     "modal_title": "Extrait de livre biographique MyWai",
@@ -282,7 +282,7 @@
       },
       "director": {
         "title": "Directeur de la publication",
-        "content": "Cyril De Sousa Cardoso"
+        "content": "Baptiste Jeauneau, directeur de la communication"
       },
       "hosting": {
         "title": "Hébergement",
