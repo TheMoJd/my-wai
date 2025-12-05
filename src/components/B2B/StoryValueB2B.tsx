@@ -78,7 +78,7 @@ const StoryValueB2B = () => {
                   {b.description}
                 </p>
                 <div className="mt-6 pt-4 border-t border-mywai/10 text-xs uppercase tracking-wide text-mywai/70">
-                  Pillier #{i + 1}
+                  Pilier #{i + 1}
                 </div>
               </div>
             </article>
