@@ -14,8 +14,6 @@ import { Dropdown } from "./ui/dropdown/Dropdown";
 import { DropdownItem } from "./ui/dropdown/DropdownItem";
 import { getAssetPath } from "../lib/utils";
 
-import BlackFridayBanner from "./BlackFridayBanner";
-
 const Navbar = () => {
   const { i18n, t } = useTranslation();
   const location = useLocation();
@@ -55,7 +53,6 @@ const Navbar = () => {
           : "bg-transparent"
         }`}
     >
-      <BlackFridayBanner />
       <div className={`container mx-auto px-6 sm:px-4 flex justify-between items-center transition-all duration-300 ${isScrolled ? "py-2" : "py-4"}`}>
         <a href="/" className="flex items-center gap-2">
           <div className="relative h-14 w-14">
