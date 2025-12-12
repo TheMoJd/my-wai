@@ -12,7 +12,7 @@ const StoryValueB2B = () => {
       title: 'Un récit professionnel qui',
       highlight: 'traverse le temps',
       description:
-        'Les objets promotionnels s’oublient. Les histoires restent. Avec MyWai, valorisez vos collaborateurs en leur offrant une biographie de carrière construite sur mesure à partir de leurs parcours, expériences et témoignages.',
+        'Les objets promotionnels s'oublient. Les histoires restent. Avec My Wai, valorisez vos collaborateurs en leur offrant une biographie de carrière construite sur mesure à partir de leurs parcours, expériences et témoignages.',
       icon: <BookOpen className="h-8 w-8 text-mywai" aria-hidden="true" />,
       accent: 'from-mywai-light/40 to-mywai/10'
     },

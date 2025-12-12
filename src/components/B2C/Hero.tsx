@@ -65,7 +65,7 @@ const Hero = () => {
                 <div className="relative w-full aspect-[4/5] rounded-xl overflow-hidden shadow-inner">
                   <img
                     src={getAssetPath("GIF-MyWai.gif")}
-                    alt="Démonstration de l'application MyWai"
+                    alt="Démonstration de l'application My Wai"
                     className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>

@@ -58,12 +58,12 @@ const Navbar = () => {
           <div className="relative h-14 w-14">
             <img
               src={getAssetPath("logo_mywai_no_bg.png")}
-              alt="Logo MyWai"
+              alt="Logo My Wai"
               className="h-full w-full object-contain"
             />
           </div>
           <span className="text-2xl font-display font-bold text-mywai-dark">
-            MyWai
+            My Wai
           </span>
         </a>
         <div className="hidden md:flex items-center gap-8">

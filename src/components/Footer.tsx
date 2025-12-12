@@ -15,12 +15,12 @@ const Footer = () => {
               <div className="relative h-14 w-14">
                 <img
                   src={getAssetPath("logo_mywai_no_bg.png")}
-                  alt="Logo MyWai"
+                  alt="Logo My Wai"
                   className="h-full w-full object-contain"
                 />
               </div>
               <span className="text-2xl font-display font-bold text-mywai-dark">
-                MyWai
+                My Wai
               </span>
             </a>
             <p className="text-muted-foreground">
@@ -129,7 +129,7 @@ const Footer = () => {
 
         <div className="mt-12 pt-8 border-t border-mywai/10 text-center">
           <p className="text-muted-foreground text-sm">
-            © {currentYear} MyWai. {t("footer.copyright")}
+            © {currentYear} My Wai. {t("footer.copyright")}
           </p>
         </div>
       </div>
