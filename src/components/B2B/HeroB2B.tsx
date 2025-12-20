@@ -47,7 +47,7 @@ const HeroB2B = () => {
               </Button>
             </div>
           </div>
-          <div className="relative hidden lg:block perspective-1000">
+          <div className="relative perspective-1000">
             <div className="relative z-10 animate-float duration-3000">
               <div className="bg-white/40 backdrop-blur-xl border border-white/50 rounded-2xl shadow-2xl p-4 transform rotate-2 max-w-md mx-auto transition-transform hover:rotate-0 duration-500">
                 <div className="relative w-full aspect-[5/5] bg-gradient-to-br from-mywai-light to-mywai rounded-xl mb-4 overflow-hidden shadow-inner">
