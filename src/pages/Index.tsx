@@ -5,6 +5,7 @@ import Hero from '../components/B2C/Hero';
 import LazyWrapper from '../components/ui/loading/LazyWrapper';
 import LoadingSpinner from '../components/ui/loading/LoadingSpinner';
 import Footer from '../components/Footer';
+import LatestArticles from '../components/LatestArticles';
 
 // Lazy load des composants lourds
 const Process = lazy(() => import('../components/B2C/Process'));
@@ -24,8 +25,8 @@ const Index = () => {
     <div className="min-h-screen">
       <Navbar />
       <Hero />
-      
-      <LazyWrapper 
+
+      <LazyWrapper
         minHeight="400px"
         fallback={
           <div className="section-padding bg-white flex items-center justify-center">
@@ -35,8 +36,8 @@ const Index = () => {
       >
         <Process />
       </LazyWrapper>
-      
-      <LazyWrapper 
+
+      <LazyWrapper
         minHeight="600px"
         fallback={
           <div className="section-padding bg-cream flex items-center justify-center">
@@ -46,8 +47,8 @@ const Index = () => {
       >
         <ExampleCalameo />
       </LazyWrapper>
-      
-      <LazyWrapper 
+
+      <LazyWrapper
         minHeight="400px"
         fallback={
           <div className="section-padding bg-white flex items-center justify-center">
@@ -57,8 +58,8 @@ const Index = () => {
       >
         <Testimonials />
       </LazyWrapper>
-      
-      <LazyWrapper 
+
+      <LazyWrapper
         minHeight="500px"
         fallback={
           <div className="section-padding bg-cream flex items-center justify-center">
@@ -68,8 +69,8 @@ const Index = () => {
       >
         <Pricing />
       </LazyWrapper>
-      
-      <LazyWrapper 
+
+      <LazyWrapper
         minHeight="400px"
         fallback={
           <div className="section-padding bg-white flex items-center justify-center">
@@ -79,9 +80,11 @@ const Index = () => {
       >
         <FAQ />
       </LazyWrapper>
-      
+
+      <LatestArticles />
+
       <Footer />
-      
+
       {/* <button
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         className="fixed bottom-6 right-6 w-12 h-12 bg-mywai text-white rounded-full flex items-center justify-center shadow-lg hover:bg-mywai-dark transition-colors z-50"

@@ -33,7 +33,7 @@ const Footer = () => {
               {t("footer.quick_links.title")}
             </h3>
             <ul className="space-y-2">
-              
+
               <li>
                 <a
                   href="#process"
@@ -48,6 +48,14 @@ const Footer = () => {
                   className="text-muted-foreground hover:text-mywai transition-colors"
                 >
                   {t("footer.quick_links.pricing")}
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/blogues"
+                  className="text-muted-foreground hover:text-mywai transition-colors"
+                >
+                  Blog
                 </a>
               </li>
               <li>
