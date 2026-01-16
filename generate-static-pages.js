@@ -15,8 +15,8 @@ const indexPath = path.join(__dirname, 'dist', 'index.html');
 const indexContent = fs.readFileSync(indexPath, 'utf8');
 
 // Extraire les noms des fichiers CSS et JS
-const cssMatch = indexContent.match(/href="([^"]*\.css)"/);
-const jsMatch = indexContent.match(/src="([^"]*\.js)"/);
+const cssMatch = indexContent.match(/href="(\/assets\/[^"]*\.css)"/);
+const jsMatch = indexContent.match(/src="(\/assets\/[^"]*\.js)"/);
 
 if (!cssMatch || !jsMatch) {
   console.error('❌ Impossible de trouver les assets CSS/JS dans index.html');
@@ -39,7 +39,7 @@ const createHtmlTemplate = (title, description, ogTitle, routePath) => `<!DOCTYP
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>${title}</title>
     <meta name="description" content="${description}" />
-    <meta name="author" content="MyWai" />
+    <meta name="author" content="My Wai" />
 
     <meta property="og:title" content="${ogTitle}" />
     <meta property="og:description" content="${description}" />
@@ -87,30 +87,30 @@ const createHtmlTemplate = (title, description, ogTitle, routePath) => `<!DOCTYP
 const pages = [
   {
     filename: 'cgu.html',
-    title: 'Conditions Générales d\'Utilisation - MyWai',
-    description: 'Consultez les conditions générales d\'utilisation de MyWai, notre service de création de biographies personnalisées avec l\'IA.',
-    ogTitle: 'CGU - MyWai',
+    title: 'Conditions Générales d\'Utilisation - My Wai',
+    description: 'Consultez les conditions générales d\'utilisation de My Wai, notre service de création de biographies personnalisées avec l\'IA.',
+    ogTitle: 'CGU - My Wai',
     routePath: '/cgu'
   },
   {
     filename: 'mentions-legales.html',
-    title: 'Mentions Légales - MyWai',
-    description: 'Consultez les mentions légales de MyWai, informations sur l\'éditeur, l\'hébergeur et la propriété intellectuelle.',
-    ogTitle: 'Mentions Légales - MyWai',
+    title: 'Mentions Légales - My Wai',
+    description: 'Consultez les mentions légales de My Wai, informations sur l\'éditeur, l\'hébergeur et la propriété intellectuelle.',
+    ogTitle: 'Mentions Légales - My Wai',
     routePath: '/mentions-legales'
   },
   {
     filename: 'entreprise.html',
-    title: 'Solutions Entreprise - MyWai',
-    description: 'Découvrez les solutions MyWai pour les entreprises : biographies personnalisées et services sur mesure pour vos équipes.',
-    ogTitle: 'Solutions Entreprise - MyWai',
+    title: 'Solutions Entreprise - My Wai',
+    description: 'Découvrez les solutions My Wai pour les entreprises : biographies personnalisées et services sur mesure pour vos équipes.',
+    ogTitle: 'Solutions Entreprise - My Wai',
     routePath: '/entreprise'
   },
   {
     filename: '404.html',
-    title: 'Page non trouvée - MyWai',
-    description: 'La page que vous recherchez n\'existe pas. Retournez à l\'accueil de MyWai pour créer votre biographie personnalisée.',
-    ogTitle: 'Page non trouvée - MyWai',
+    title: 'Page non trouvée - My Wai',
+    description: 'La page que vous recherchez n\'existe pas. Retournez à l\'accueil de My Wai pour créer votre biographie personnalisée.',
+    ogTitle: 'Page non trouvée - My Wai',
     routePath: '/404'
   }
 ];

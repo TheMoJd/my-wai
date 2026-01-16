@@ -1,6 +1,13 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, ChevronDown, Facebook, Instagram, Linkedin } from "lucide-react";
+import {
+  Menu,
+  X,
+  ChevronDown,
+  Facebook,
+  Instagram,
+  Linkedin,
+} from "lucide-react";
 import { useTranslation } from "react-i18next";
 import Button from "./ui/button/Button";
 import { Dropdown } from "./ui/dropdown/Dropdown";
@@ -41,23 +48,22 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-cream/95 backdrop-blur-sm shadow-md py-2"
-          : "bg-transparent py-4"
-      }`}
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled
+          ? "bg-cream/95 backdrop-blur-sm shadow-md"
+          : "bg-transparent"
+        }`}
     >
-      <div className="container mx-auto px-6 sm:px-4 flex justify-between items-center">
+      <div className={`container mx-auto px-6 sm:px-4 flex justify-between items-center transition-all duration-300 ${isScrolled ? "py-2" : "py-4"}`}>
         <a href="/" className="flex items-center gap-2">
           <div className="relative h-14 w-14">
             <img
-              src={getAssetPath("logo-mywai-rose.png")}
-              alt="Logo MyWai"
+              src={getAssetPath("logo_mywai_no_bg.png")}
+              alt="Logo My Wai"
               className="h-full w-full object-contain"
             />
           </div>
           <span className="text-2xl font-display font-bold text-mywai-dark">
-            MyWai
+            My Wai
           </span>
         </a>
         <div className="hidden md:flex items-center gap-8">
@@ -78,7 +84,7 @@ const Navbar = () => {
             Entreprise
           </Link>
           <a
-            href="https://my-w.ai/session/new"
+            href="https://app.my-w.ai/session/new"
             className="text-foreground hover:text-mywai transition-colors"
             target="_blank"
             rel="noopener noreferrer"
@@ -121,7 +127,7 @@ const Navbar = () => {
             variant="primary"
             size="sm"
             onClick={() =>
-              (window.location.href = "https://my-w.ai/session/new")
+              (window.location.href = "https://app.my-w.ai/books/new")
             }
             className="!bg-mywai hover:!bg-mywai-dark !text-white"
           >
@@ -187,7 +193,7 @@ const Navbar = () => {
               Entreprise
             </Link>
             <a
-              href="https://my-w.ai/session/new"
+              href="https://app.my-w.ai/session/new"
               className="text-foreground hover:text-mywai py-2 transition-colors"
               target="_blank"
               rel="noopener noreferrer"
@@ -199,8 +205,7 @@ const Navbar = () => {
               variant="primary"
               size="sm"
               onClick={() => {
-                const contactSection = document.getElementById("contact");
-                contactSection?.scrollIntoView({ behavior: "smooth" });
+                window.location.href = "https://app.my-w.ai/books/new";
                 setIsMenuOpen(false);
               }}
               className="!bg-mywai hover:!bg-mywai-dark !text-white w-full"
@@ -246,11 +251,10 @@ const Navbar = () => {
                     changeLanguage("fr");
                     setIsMenuOpen(false);
                   }}
-                  className={`px-2 py-1 text-sm rounded ${
-                    i18n.language === "fr"
-                      ? "bg-mywai text-white"
-                      : "border border-mywai text-mywai hover:bg-mywai hover:text-white"
-                  }`}
+                  className={`px-2 py-1 text-sm rounded ${i18n.language === "fr"
+                    ? "bg-mywai text-white"
+                    : "border border-mywai text-mywai hover:bg-mywai hover:text-white"
+                    }`}
                 >
                   FR
                 </button>
@@ -259,11 +263,10 @@ const Navbar = () => {
                     changeLanguage("en");
                     setIsMenuOpen(false);
                   }}
-                  className={`px-2 py-1 text-sm rounded ${
-                    i18n.language === "en"
-                      ? "bg-mywai text-white"
-                      : "border border-mywai text-mywai hover:bg-mywai hover:text-white"
-                  }`}
+                  className={`px-2 py-1 text-sm rounded ${i18n.language === "en"
+                    ? "bg-mywai text-white"
+                    : "border border-mywai text-mywai hover:bg-mywai hover:text-white"
+                    }`}
                 >
                   EN
                 </button>
@@ -272,11 +275,10 @@ const Navbar = () => {
                     changeLanguage("es");
                     setIsMenuOpen(false);
                   }}
-                  className={`px-2 py-1 text-sm rounded ${
-                    i18n.language === "es"
-                      ? "bg-mywai text-white"
-                      : "border border-mywai text-mywai hover:bg-mywai hover:text-white"
-                  }`}
+                  className={`px-2 py-1 text-sm rounded ${i18n.language === "es"
+                    ? "bg-mywai text-white"
+                    : "border border-mywai text-mywai hover:bg-mywai hover:text-white"
+                    }`}
                 >
                   ES
                 </button>
