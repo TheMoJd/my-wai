@@ -1,5 +1,5 @@
-import React from "react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import { getAssetPath } from "../lib/utils";
 
 const Footer = () => {
@@ -14,13 +14,13 @@ const Footer = () => {
             <a href="#" className="flex items-center gap-2">
               <div className="relative h-14 w-14">
                 <img
-                  src={getAssetPath("logo-mywai-rose.png")}
-                  alt="Logo MyWai"
+                  src={getAssetPath("logo_mywai_no_bg.png")}
+                  alt="Logo My Wai"
                   className="h-full w-full object-contain"
                 />
               </div>
               <span className="text-2xl font-display font-bold text-mywai-dark">
-                MyWai
+                My Wai
               </span>
             </a>
             <p className="text-muted-foreground">
@@ -83,24 +83,32 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a
-                  href="/mentions-legales"
+                <Link
+                  to="/mentions-legales"
                   className="text-muted-foreground hover:text-mywai transition-colors"
                 >
                   {t("footer.information.legal")}
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/cgu"
+                <Link
+                  to="/cgu"
                   className="text-muted-foreground hover:text-mywai transition-colors"
                 >
                   {t("footer.information.terms")}
-                </a>
+                </Link>
               </li>
               <li>
                 <a
-                  href="javascript:Sddan.cmp.displayUI();"
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    // @ts-ignore
+                    if (typeof window !== 'undefined' && window.Sddan?.cmp?.displayUI) {
+                      // @ts-ignore
+                      window.Sddan.cmp.displayUI();
+                    }
+                  }}
                   className="text-muted-foreground hover:text-mywai transition-colors"
                 >
                   {t("footer.information.cookies")}
@@ -129,7 +137,7 @@ const Footer = () => {
 
         <div className="mt-12 pt-8 border-t border-mywai/10 text-center">
           <p className="text-muted-foreground text-sm">
-            © {currentYear} MyWai. {t("footer.copyright")}
+            © {currentYear} My Wai. {t("footer.copyright")}
           </p>
         </div>
       </div>

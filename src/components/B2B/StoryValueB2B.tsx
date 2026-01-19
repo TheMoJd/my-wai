@@ -12,21 +12,21 @@ const StoryValueB2B = () => {
       title: 'Un récit professionnel qui',
       highlight: 'traverse le temps',
       description:
-        'Les objets promotionnels s’oublient. Les histoires restent. Avec MyWai, valorisez vos collaborateurs en leur offrant une biographie de carrière construite sur mesure à partir de leurs parcours, expériences et témoignages.',
+        'Les objets promotionnels s\'oublient. Les histoires restent. Avec My Wai, valorisez vos collaborateurs en leur offrant une biographie de carrière construite sur mesure à partir de leurs parcours, expériences et témoignages.',
       icon: <BookOpen className="h-8 w-8 text-mywai" aria-hidden="true" />,
       accent: 'from-mywai-light/40 to-mywai/10'
     },
     {
-      title: 'La puissance de l’IA au service de votre histoire',
+      title: 'La puissance de l\'IA au service de votre histoire',
       description:
-        'Notre intelligence artificielle rassemble témoignages, anecdotes, photos et archives de l’entreprise pour construire un récit cohérent, structuré et profondément humain.',
+        'Notre intelligence artificielle rassemble témoignages, anecdotes, photos et archives de l\'entreprise pour construire un récit cohérent, structuré et profondément humain.',
       icon: <BrainCircuit className="h-8 w-8 text-mywai" aria-hidden="true" />,
       accent: 'from-mywai/20 to-mywai-dark/10'
     },
     {
       title: 'Un vrai livre, symbole de reconnaissance et de patrimoine',
       description:
-        'Imprimé en France : reliure de qualité, mise en page élégante, couverture personnalisée qui honore vos collaborateurs et valorise l’image de votre organisation.',
+        'Imprimé en France : reliure de qualité, mise en page élégante, couverture personnalisée qui honore vos collaborateurs et valorise l\'image de votre organisation.',
       icon: <Award className="h-8 w-8 text-mywai" aria-hidden="true" />,
       accent: 'from-mywai-dark/10 to-mywai-light/20'
     }
@@ -78,7 +78,7 @@ const StoryValueB2B = () => {
                   {b.description}
                 </p>
                 <div className="mt-6 pt-4 border-t border-mywai/10 text-xs uppercase tracking-wide text-mywai/70">
-                  Pillier #{i + 1}
+                  Pilier #{i + 1}
                 </div>
               </div>
             </article>

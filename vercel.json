@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/contributions/:slug/edit",
+      "destination": "https://app.my-w.ai/contributions/:slug/edit",
+      "permanent": true
+    },
+    {
+      "source": "/books/:slug/summary",
+      "destination": "https://app.my-w.ai/books/:slug/summary",
+      "permanent": true
+    }
+  ]
+}

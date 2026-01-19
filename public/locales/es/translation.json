@@ -7,32 +7,35 @@
   "faq": "FAQ",
   "back_to_top": "Volver arriba",
   "navbar": {
-    "about": "¿Qué es MyWai?",
+    "about": "¿Qué es My Wai?",
     "account": "Mi cuenta",
     "try_free": "Prueba gratis",
     "language": "Idioma"
   },
   "hero": {
-    "title": "Regala el más hermoso de los regalos: una",
-    "title_highlight": "biografía personalizada",
+    "title": "Regala el más hermoso de los regalos:",
+    "title_highlight": "una biografía personalizada",
     "subtitle": "Cumpleaños, jubilación, homenaje...",
-    "description": "Generada por IA, nutrida por los recuerdos de los seres queridos. Un libro autobiográfico coherente y emotivo, creando un regalo personalizado y atemporal.",
+    "description": "Generada por IA y enriquecida con los recuerdos de los seres queridos, este libro autobiográfico, a la vez estructurado y profundamente emotivo, se convierte en un regalo personalizado, lleno de significado y atemporal.",
+    "cta": "<strong>Invite a sus seres queridos a contribuir en 10min</strong>, <span class='text-mywai'>la IA se encarga de la redacción</span>",
     "cta_primary": "Ofrecer una biografía a medida",
     "cta_secondary": "Ejemplo de un libro",
     "feature1_title": "Una idea de regalo personalizada y atemporal",
-    "feature1_description": "Los objetos se olvidan. Los recuerdos permanecen. Con MyWai, ofreces una historia a medida, íntima, que trasciende el tiempo.",
+    "feature1_description": "Los objetos se olvidan. Los recuerdos permanecen. Con My Wai, ofreces una historia a medida, íntima, que trasciende el tiempo.",
     "feature2_title": "El poder de la IA al servicio de la emoción",
     "feature2_description": "Nuestra inteligencia artificial transforma testimonios, anécdotas, fotos y rasgos de carácter en una historia única, coherente y profundamente humana.",
     "feature3_title": "Un libro real en tus manos",
-    "feature3_description": "Encuadernación de calidad, diseño elegante, portada personalizada... El resultado es digno de una autobiografía de editorial."
+    "feature3_description": "Encuadernación de calidad, diseño elegante, portada personalizada... El resultado es digno de una autobiografía de editorial.",
+    "first_chapter_free": "1er capítulo gratis",
+    "no_commitment": "Sin compromiso"
   },
   "calameo": {
     "title": "Descubra un extracto de libro biográfico",
     "subtitle": "Un libro de unas cincuenta páginas dividido en varios capítulos temáticos que recorre una vida a través de los recuerdos y testimonios de familiares, amigos, compañeros y familia.",
     "alt": "Haga clic para abrir el libro animado",
     "button": "Ver un ejemplo de biografía",
-    "modal_title": "Extracto del libro biográfico de MyWai",
-    "iframe_title": "Extracto del libro de MyWai en Calaméo",
+    "modal_title": "Extracto del libro biográfico de My Wai",
+    "iframe_title": "Extracto del libro de My Wai en Calaméo",
     "fullscreen": "Abrir en pantalla completa en Calaméo"
   },
   "pricing_section": {
@@ -90,7 +93,7 @@
   },
   "testimonials_section": {
     "title": "Lo que dicen nuestros clientes",
-    "subtitle": "Descubre los testimonios de quienes ofrecieron un libro biográfico MyWai",
+    "subtitle": "Descubre los testimonios de quienes ofrecieron un libro biográfico My Wai",
     "verified": "Verificado",
     "testimonials": [
       {
@@ -109,7 +112,7 @@
         "role": "Para el cumpleaños de su madre"
       },
       {
-        "content": "El proceso es increíblemente simple. El equipo de MyWai hizo todo el trabajo difícil, desde coordinar las contribuciones hasta la edición. El resultado está bellamente maquetado y es muy profesional.",
+        "content": "El proceso es increíblemente simple. El equipo de My Wai hizo todo el trabajo difícil, desde coordinar las contribuciones hasta la edición. El resultado está bellamente maquetado y es muy profesional.",
         "author": "Thomas B.",
         "role": "Para la jubilación de su padre"
       },
@@ -128,11 +131,11 @@
   },
   "faq_section": {
     "title": "Preguntas frecuentes",
-    "subtitle": "Encuentra aquí las respuestas a tus preguntas más comunes sobre MyWai y la creación de tu libro biográfico.",
+    "subtitle": "Encuentra aquí las respuestas a tus preguntas más comunes sobre My Wai y la creación de tu libro biográfico.",
     "questions": [
       {
         "question": "¿Por qué regalar un libro biográfico personalizado?",
-        "answer": "Porque algunos recuerdos merecen ser transmitidos, compartidos, celebrados. MyWai te ayuda a crear una biografía a medida, a partir de las palabras de quienes mejor conocen a la persona a celebrar. Familia, amigos, colegas: cada uno puede añadir una anécdota, una foto, un mensaje. Todo está cuidadosamente redactado, maquetado como un libro real, luego impreso y entregado en tu casa."
+        "answer": "Porque algunos recuerdos merecen ser transmitidos, compartidos, celebrados. My Wai te ayuda a crear una biografía a medida, a partir de las palabras de quienes mejor conocen a la persona a celebrar. Familia, amigos, colegas: cada uno puede añadir una anécdota, una foto, un mensaje. Todo está cuidadosamente redactado, maquetado como un libro real, luego impreso y entregado en tu casa."
       },
       {
         "question": "¿Puedo pedir otras copias del libro?",
@@ -140,7 +143,7 @@
       },
       {
         "question": "¿A quién pertenece el contenido final del libro?",
-        "answer": "El texto generado por MyWai te pertenece. Puedes imprimirlo, compartirlo o modificarlo en cualquier momento. Nada se publica sin tu validación final."
+        "answer": "El texto generado por My Wai te pertenece. Puedes imprimirlo, compartirlo o modificarlo en cualquier momento. Nada se publica sin tu validación final."
       },
       {
         "question": "¿Qué pasa con los datos y contribuciones recolectadas?",
@@ -212,13 +215,13 @@
     "copyright": "Todos los derechos reservados."
   },
   "cgu": {
-    "title": "📋 Términos y Condiciones de Uso – MyWai",
+    "title": "📋 Términos y Condiciones de Uso – My Wai",
     "last_updated": "Última actualización:",
     "effective_date": "Fecha de entrada en vigor:",
     "sections": {
       "introduction": {
         "title": "1. Objeto",
-        "content": "Los presentes Términos y Condiciones de Uso tienen por objeto definir las modalidades de uso del servicio MyWai, accesible a través del sitio https://my-w.ai, y precisar los derechos y obligaciones de los usuarios y del editor.\n\nMyWai es un servicio en línea que permite crear una biografía personalizada a partir de las contribuciones de seres queridos, generada con la ayuda de inteligencia artificial, y que puede imprimirse en forma de libro."
+        "content": "Los presentes Términos y Condiciones de Uso tienen por objeto definir las modalidades de uso del servicio My Wai, accesible a través del sitio https://my-w.ai, y precisar los derechos y obligaciones de los usuarios y del editor.\n\nMy Wai es un servicio en línea que permite crear una biografía personalizada a partir de las contribuciones de seres queridos, generada con la ayuda de inteligencia artificial, y que puede imprimirse en forma de libro."
       },
       "service_description": {
         "title": "2. Aceptación de las condiciones",
@@ -226,7 +229,7 @@
       },
       "user_obligations": {
         "title": "3. Acceso al servicio",
-        "content": "El acceso a la plataforma está abierto a cualquier usuario que disponga de acceso a Internet. Ciertas funcionalidades están sujetas a la creación de una cuenta o al pago de un proyecto (compra directa o crowdfunding).\n\nMyWai se reserva el derecho de suspender temporal o definitivamente el acceso a sus servicios, sin previo aviso, especialmente para mantenimiento o actualización."
+        "content": "El acceso a la plataforma está abierto a cualquier usuario que disponga de acceso a Internet. Ciertas funcionalidades están sujetas a la creación de una cuenta o al pago de un proyecto (compra directa o crowdfunding).\n\nMy Wai se reserva el derecho de suspender temporal o definitivamente el acceso a sus servicios, sin previo aviso, especialmente para mantenimiento o actualización."
       },
       "content_creation": {
         "title": "4. Creación de contenido",
@@ -234,15 +237,15 @@
       },
       "intellectual_property": {
         "title": "5. Propiedad intelectual",
-        "content": "Todos los textos generados en el marco de un proyecto MyWai son propiedad del usuario final una vez efectuado el pago.\n\nMyWai no reivindica ningún derecho de difusión o explotación comercial sobre los contenidos finalizados, salvo acuerdo explícito.\n\nEl usuario garantiza disponer de los derechos necesarios sobre los contenidos (textos, imágenes, testimonios) que sube o invita a compartir."
+        "content": "Todos los textos generados en el marco de un proyecto My Wai son propiedad del usuario final una vez efectuado el pago.\n\nMy Wai no reivindica ningún derecho de difusión o explotación comercial sobre los contenidos finalizados, salvo acuerdo explícito.\n\nEl usuario garantiza disponer de los derechos necesarios sobre los contenidos (textos, imágenes, testimonios) que sube o invita a compartir."
       },
       "data_privacy": {
         "title": "6. Protección de datos personales",
-        "content": "MyWai se compromete a respetar la confidencialidad de los datos recopilados:\n\n• Las contribuciones son privadas, no indexadas, y accesibles únicamente a las personas invitadas\n\n• Ningún dato se cede a terceros\n\n• El usuario puede solicitar en cualquier momento la eliminación de sus datos a través de Alia@my-w.ai\n\nLos datos se almacenan de forma segura en servidores alojados en Europa, conforme al RGPD."
+        "content": "My Wai se compromete a respetar la confidencialidad de los datos recopilados:\n\n• Las contribuciones son privadas, no indexadas, y accesibles únicamente a las personas invitadas\n\n• Ningún dato se cede a terceros\n\n• El usuario puede solicitar en cualquier momento la eliminación de sus datos a través de Alia@my-w.ai\n\nLos datos se almacenan de forma segura en servidores alojados en Europa, conforme al RGPD."
       },
       "payment_delivery": {
         "title": "7. Tarifas",
-        "content": "Las tarifas de los servicios (libro impreso, opciones adicionales, versiones digitales, etc.) se indican en el sitio. MyWai se reserva el derecho de modificar sus precios en cualquier momento.\n\nLos proyectos financiados por crowdfunding se desbloquean únicamente si se alcanza el monto total. En caso de fracaso, los contribuyentes pueden ser reembolsados o invitados a completar el monto."
+        "content": "Las tarifas de los servicios (libro impreso, opciones adicionales, versiones digitales, etc.) se indican en el sitio. My Wai se reserva el derecho de modificar sus precios en cualquier momento.\n\nLos proyectos financiados por crowdfunding se desbloquean únicamente si se alcanza el monto total. En caso de fracaso, los contribuyentes pueden ser reembolsados o invitados a completar el monto."
       },
       "cancellation": {
         "title": "8. Derecho de desistimiento",
@@ -250,7 +253,7 @@
       },
       "liability": {
         "title": "9. Responsabilidad",
-        "content": "MyWai no puede ser considerado responsable:\n\n• De los comentarios compartidos por los contribuyentes\n\n• De errores u omisiones en el contenido validado por el usuario\n\n• De retrasos relacionados con proveedores de impresión o entrega\n\nEl usuario se compromete a usar el servicio de manera respetuosa, sin comentarios de odio, difamatorios o discriminatorios."
+        "content": "My Wai no puede ser considerado responsable:\n\n• De los comentarios compartidos por los contribuyentes\n\n• De errores u omisiones en el contenido validado por el usuario\n\n• De retrasos relacionados con proveedores de impresión o entrega\n\nEl usuario se compromete a usar el servicio de manera respetuosa, sin comentarios de odio, difamatorios o discriminatorios."
       },
       "modifications": {
         "title": "10. Modificación de los Términos",
@@ -262,12 +265,12 @@
       },
       "contact": {
         "title": "12. Contacto",
-        "content": "Para cualquier pregunta sobre estas condiciones o el uso de MyWai:\n\n📧 contact@my-w.ai"
+        "content": "Para cualquier pregunta sobre estas condiciones o el uso de My Wai:\n\n📧 contact@my-w.ai"
       }
     }
   },
   "mentions_legales": {
-    "title": "📄 Aviso Legal – MyWai",
+    "title": "📄 Aviso Legal – My Wai",
     "sections": {
       "editor": {
         "title": "Editor del sitio",
@@ -279,7 +282,7 @@
       },
       "director": {
         "title": "Director de publicación",
-        "content": "[Nombre del fundador o CEO]"
+        "content": "Baptiste Jeauneau, director de comunicación"
       },
       "hosting": {
         "title": "Alojamiento",
@@ -289,7 +292,7 @@
       },
       "intellectual_property": {
         "title": "Propiedad intelectual",
-        "content_1": "Todo el contenido de este sitio (textos, visuales, estructura, logo) es propiedad exclusiva de MyWai o sus contribuyentes.",
+        "content_1": "Todo el contenido de este sitio (textos, visuales, estructura, logo) es propiedad exclusiva de My Wai o sus contribuyentes.",
         "content_2": "Cualquier reproducción parcial o total sin autorización está prohibida."
       },
       "personal_data": {
@@ -310,7 +313,7 @@
     "hero": {
       "title": "Cuenta la <strong>historia</strong> de tu <strong>empresa</strong> con IA",
       "paragraph": "Ofrece a tus colaboradores un recuerdo inolvidable para un hito (5/10/50/100 años) o una salida. Transforma archivos, testimonios y momentos clave en un relato potente: un libro corporativo coescrito por tus equipos y estructurado por IA.",
-      "cta_quote": "Solicitar presupuesto (desde 490€)",
+      "cta_quote": "Solicitar presupuesto (desde 990€)",
       "cta_consumer": "Crear una biografía para un ser querido",
       "features": [
         {
@@ -363,7 +366,7 @@
       "subtitle": "El mejor regalo corporativo para un aniversario, jubilación u homenaje.",
       "pricing_title": "Tarifa e incluye",
       "from": "Desde",
-      "starting_price": "490€",
+      "starting_price": "990€",
       "pay_later": "Pago por factura tras validación.",
       "cta_quote": "Solicitar presupuesto",
       "chapters_title": "Ejemplo de capítulos",
@@ -372,11 +375,10 @@
       "features": [
         "Libro compuesto de varios capítulos",
         "Sin límite de colaboradores",
-        "Edición profesional",
-        "Maquetación cuidada",
+        "Edición a Medida",
         "Libro encuadernado de calidad",
-        "Entrega gratuita",
-        "Espacio privado para reeditar"
+        "10 incluidos en el precio",
+        "Acompañamiento personalizado"
       ],
       "chapters": [
         "La génesis",
@@ -390,23 +392,23 @@
     },
     "testimonials": {
       "title": "Lo que dicen las empresas",
-      "subtitle": "Descubre testimonios de quienes crearon un libro corporativo MyWai",
+      "subtitle": "Descubre testimonios de quienes crearon un libro corporativo My Wai",
       "verified": "Verificado",
       "cta": "Contactarnos",
       "items": [
         {
-          "content": "« Buscábamos una idea original para marcar las jubilaciones. Con MyWai encontramos un formato simple y profundamente humano. El libro supera con creces el regalo clásico. »",
+          "content": "« Buscábamos una idea original para marcar las jubilaciones. Con My Wai encontramos un formato simple y profundamente humano. El libro supera con creces el regalo clásico. »",
           "author": "Nathalie D.",
           "role": "RRHH, Grupo agroalimentario"
         },
         {
-          "content": "« Usamos MyWai para contar los 50 años de la empresa. Antiguos, empleados actuales e incluso clientes contribuyeron. Resultado: una obra magnífica que retrata cultura y valores de forma viva. »",
+          "content": "« Usamos My Wai para contar los 50 años de la empresa. Antiguos, empleados actuales e incluso clientes contribuyeron. Resultado: una obra magnífica que retrata cultura y valores de forma viva. »",
           "author": "Pierre M.",
           "role": "Director Comunicación"
         },
         {
           "content": "« En su despedida le entregamos el libro. Lo hojeó, reconoció mensajes y anécdotas y se detuvo con lágrimas. Incluso los escépticos quedaron impresionados. »",
-          "author": "Julien T.",
+          "author": "Nora Benali",
           "role": "Jefe de proyecto"
         }
       ]

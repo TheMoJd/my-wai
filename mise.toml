@@ -1,5 +1,5 @@
 [env]
 # Asset prefix for Rails integration
 # Set to "/landing/" when deploying assets to Rails app's public/landing folder
-VITE_ASSET_PREFIX = "/landing/"
-# VITE_ASSET_PREFIX = "/"
+# VITE_ASSET_PREFIX = "/landing/"
+VITE_ASSET_PREFIX = "/"
