@@ -313,7 +313,7 @@
     "hero": {
       "title": "Tell your <strong>company story</strong> with AI",
       "paragraph": "Offer employees a memorable gift for a milestone (5/10/50/100 years...) or a departure. Turn archives, testimonials and key moments into a powerful narrative: a company book co-written by your teams and structured by AI.",
-      "cta_quote": "Request a quote (from €490)",
+      "cta_quote": "Request a quote (from €990)",
       "cta_consumer": "Create a biography for a loved one",
       "features": [
         {
@@ -366,7 +366,7 @@
       "subtitle": "The finest corporate gift for an anniversary, retirement or tribute.",
       "pricing_title": "Pricing & included",
       "from": "From",
-      "starting_price": "€490",
+      "starting_price": "€990",
       "pay_later": "Invoice payment after approval.",
       "cta_quote": "Request a quote",
       "chapters_title": "Example chapters",
@@ -375,11 +375,10 @@
       "features": [
         "Book composed of several chapters",
         "No contributor limit",
-        "Professional editing",
-        "Refined layout",
+        "Custom Editing",
         "Quality hardbound book",
-        "Free delivery",
-        "Private space for future edits"
+        "10 included in price",
+        "Tailor-made support"
       ],
       "chapters": [
         "Genesis",

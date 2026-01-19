@@ -313,7 +313,7 @@
     "hero": {
       "title": "Cuenta la <strong>historia</strong> de tu <strong>empresa</strong> con IA",
       "paragraph": "Ofrece a tus colaboradores un recuerdo inolvidable para un hito (5/10/50/100 años) o una salida. Transforma archivos, testimonios y momentos clave en un relato potente: un libro corporativo coescrito por tus equipos y estructurado por IA.",
-      "cta_quote": "Solicitar presupuesto (desde 490€)",
+      "cta_quote": "Solicitar presupuesto (desde 990€)",
       "cta_consumer": "Crear una biografía para un ser querido",
       "features": [
         {
@@ -366,7 +366,7 @@
       "subtitle": "El mejor regalo corporativo para un aniversario, jubilación u homenaje.",
       "pricing_title": "Tarifa e incluye",
       "from": "Desde",
-      "starting_price": "490€",
+      "starting_price": "990€",
       "pay_later": "Pago por factura tras validación.",
       "cta_quote": "Solicitar presupuesto",
       "chapters_title": "Ejemplo de capítulos",
@@ -375,11 +375,10 @@
       "features": [
         "Libro compuesto de varios capítulos",
         "Sin límite de colaboradores",
-        "Edición profesional",
-        "Maquetación cuidada",
+        "Edición a Medida",
         "Libro encuadernado de calidad",
-        "Entrega gratuita",
-        "Espacio privado para reeditar"
+        "10 incluidos en el precio",
+        "Acompañamiento personalizado"
       ],
       "chapters": [
         "La génesis",
