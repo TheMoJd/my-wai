@@ -5,6 +5,8 @@ import NotFound from "./pages/NotFound";
 import CGU from "./pages/CGU";
 import MentionsLegales from "./pages/MentionsLegales";
 import Entreprise from "./pages/Entreprise";
+import Blogues from "./pages/Blogues";
+import BloguePost from "./pages/BloguePost";
 
 const queryClient = new QueryClient();
 
@@ -16,6 +18,8 @@ const App = () => (
         <Route path="/mentions-legales" element={<MentionsLegales />} />
         <Route path="/cgu" element={<CGU />} />
         <Route path="/entreprise" element={<Entreprise />} />
+        <Route path="/blogues" element={<Blogues />} />
+        <Route path="/blogue/:slug" element={<BloguePost />} />
         {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
         <Route path="*" element={<NotFound />} />
       </Routes>

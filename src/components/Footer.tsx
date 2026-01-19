@@ -52,6 +52,14 @@ const Footer = () => {
               </li>
               <li>
                 <a
+                  href="/blogues"
+                  className="text-muted-foreground hover:text-mywai transition-colors"
+                >
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a
                   href="#testimonials"
                   className="text-muted-foreground hover:text-mywai transition-colors"
                 >
