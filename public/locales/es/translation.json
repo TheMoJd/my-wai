@@ -414,19 +414,11 @@
       ]
     },
     "contact": {
-      "title": "Contacto / Solicitud de presupuesto",
-      "subtitle": "Explícanos tu proyecto: tipo de evento, objetivos, número de copias...",
-      "thank_you": "¡Gracias!",
-      "thank_you_msg": "Te contactaremos pronto para hablar del proyecto.",
-      "fields": {
-        "name": "Nombre / Apellido",
-        "email": "Email profesional",
-        "company": "Empresa",
-        "website": "Sitio web",
-        "phone": "Teléfono",
-        "message": "Mensaje"
-      },
-      "submit": "Enviar solicitud"
+      "title": "Reserva una llamada",
+      "subtitle": "Hablemos de tu proyecto en una llamada de 15 minutos.",
+      "booking_title": "Agenda una reunión",
+      "booking_description": "Reserva un espacio de 15 minutos para hablar de tu proyecto: tipo de evento, objetivos, número de copias... Responderemos todas tus preguntas.",
+      "booking_cta": "Reservar llamada de 15 min"
     }
   }
 }

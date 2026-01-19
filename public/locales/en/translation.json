@@ -414,19 +414,11 @@
       ]
     },
     "contact": {
-      "title": "Contact / Quote request",
-      "subtitle": "Tell us about your project: event type, objectives, number of copies desired...",
-      "thank_you": "Thank you!",
-      "thank_you_msg": "We’ll get back to you shortly to discuss your project.",
-      "fields": {
-        "name": "Name",
-        "email": "Business email",
-        "company": "Company",
-        "website": "Website",
-        "phone": "Phone",
-        "message": "Message"
-      },
-      "submit": "Send request"
+      "title": "Book a call",
+      "subtitle": "Let's discuss your project in a 15-minute call.",
+      "booking_title": "Schedule a meeting",
+      "booking_description": "Book a 15-minute slot to discuss your project: event type, objectives, number of copies desired... We'll answer all your questions.",
+      "booking_cta": "Book a 15-min call"
     }
   }
 }
