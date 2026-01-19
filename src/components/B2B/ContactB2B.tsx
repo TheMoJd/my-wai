@@ -1,15 +1,10 @@
 import Button from "../ui/button/Button";
-import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 const ContactB2B = () => {
-  const [submitted, setSubmitted] = useState(false);
   const { t } = useTranslation();
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setSubmitted(true);
-  };
+  const calendarUrl = "https://calendar.notion.so/meet/baptistejeauneau/k32uk3rre";
 
   return (
     <section className="section-padding bg-cream" id="contact-b2b">
@@ -19,102 +14,29 @@ const ContactB2B = () => {
           {t("b2b.contact.subtitle")}
         </p>
         <div className="max-w-3xl mx-auto mt-10 bg-white/80 backdrop-blur rounded-3xl p-8 md:p-10 ring-1 ring-mywai/15">
-          {submitted ? (
-            <div className="text-center">
-              <h3 className="text-2xl font-display font-bold mb-4 text-mywai">
-                {t("b2b.contact.thank_you")}
+          <div className="text-center space-y-6">
+            <div className="space-y-4">
+              <h3 className="text-2xl font-display font-bold text-mywai">
+                {t("b2b.contact.booking_title")}
               </h3>
-              <p className="text-muted-foreground">
-                {t("b2b.contact.thank_you_msg")}
+              <p className="text-muted-foreground max-w-xl mx-auto">
+                {t("b2b.contact.booking_description")}
               </p>
             </div>
-          ) : (
-            <form
-              className="space-y-6"
-              action="https://formspree.io/f/xanpygdo"
+            <a
+              href={calendarUrl}
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-sm font-medium mb-2">
-                    {t("b2b.contact.fields.name")}
-                  </label>
-                  <input
-                    name="name"
-                    required
-                    type="text"
-                    className="w-full border border-mywai/20 rounded-xl px-4 py-2 focus:outline-none focus:ring-2 focus:ring-mywai bg-white/60"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium mb-2">
-                    {t("b2b.contact.fields.email")}
-                  </label>
-                  <input
-                    name="email"
-                    required
-                    type="email"
-                    className="w-full border border-mywai/20 rounded-xl px-4 py-2 focus:outline-none focus:ring-2 focus:ring-mywai bg-white/60"
-                  />
-                </div>
-              </div>
-              <div>
-                <label className="block text-sm font-medium mb-2">
-                  {t("b2b.contact.fields.company")}
-                </label>
-                <input
-                  name="company"
-                  type="text"
-                  className="w-full border border-mywai/20 rounded-xl px-4 py-2 focus:outline-none focus:ring-2 focus:ring-mywai bg-white/60"
-                />
-              </div>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-sm font-medium mb-2">
-                    {t("b2b.contact.fields.website")}
-                  </label>
-                  <input
-                    name="website"
-                    type="url"
-                    placeholder="https://"
-                    className="w-full border border-mywai/20 rounded-xl px-4 py-2 focus:outline-none focus:ring-2 focus:ring-mywai bg-white/60"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium mb-2">
-                    {t("b2b.contact.fields.phone")}
-                  </label>
-                  <input
-                    type="tel"
-                    placeholder="+33"
-                    className="w-full border border-mywai/20 rounded-xl px-4 py-2 focus:outline-none focus:ring-2 focus:ring-mywai bg-white/60"
-                  />
-                </div>
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium mb-2">
-                  {t("b2b.contact.fields.message")}
-                </label>
-                <textarea
-                  name="message"
-                  required
-                  rows={5}
-                  className="w-full border border-mywai/20 rounded-xl px-4 py-2 focus:outline-none focus:ring-2 focus:ring-mywai bg-white/60"
-                />
-              </div>
-              <div className="text-center">
-                <button type="submit">
-                  <Button
-                    variant="primary"
-                    size="md"
-                    className="!bg-mywai hover:!bg-mywai-dark !text-white"
-                  >
-                    {t("b2b.contact.submit")}
-                  </Button>
-                </button>
-              </div>
-            </form>
-          )}
+              <Button
+                variant="primary"
+                size="lg"
+                className="!bg-mywai hover:!bg-mywai-dark !text-white mt-4"
+              >
+                {t("b2b.contact.booking_cta")}
+              </Button>
+            </a>
+          </div>
         </div>
       </div>
     </section>

@@ -414,19 +414,11 @@
       ]
     },
     "contact": {
-      "title": "Contact / Demande de devis",
-      "subtitle": "Expliquez-nous votre projet : type d'événement, objectifs, nombre d'exemplaires souhaités...",
-      "thank_you": "Merci !",
-      "thank_you_msg": "Nous revenons vers vous très vite pour échanger sur votre projet.",
-      "fields": {
-        "name": "Nom / Prénom",
-        "email": "Email professionnel",
-        "company": "Société",
-        "website": "Site internet",
-        "phone": "Téléphone",
-        "message": "Message"
-      },
-      "submit": "Envoyer la demande"
+      "title": "Réservez un appel",
+      "subtitle": "Discutons de votre projet lors d'un appel de 15 minutes.",
+      "booking_title": "Prenez rendez-vous",
+      "booking_description": "Réservez un créneau de 15 minutes pour échanger sur votre projet : type d'événement, objectifs, nombre d'exemplaires souhaités... Nous répondrons à toutes vos questions.",
+      "booking_cta": "Réserver un appel de 15 min"
     }
   }
 }
